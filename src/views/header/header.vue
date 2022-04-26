@@ -44,7 +44,8 @@ onMounted(()=>{
         justify-content: center;
         align-items: center;
         img{
-            width:26vw;
+            height: 70px;
+            margin-top: 5px;
         }
     }
     .nav{
@@ -52,7 +53,8 @@ onMounted(()=>{
         font-family: "Roboto";
         color: rgba(32, 33, 36, 1);
         font-size: 22px ;
-        justify-content: space-evenly;
+        margin: 0 6.5vw 0 7vw;
+        justify-content: space-between;
         flex: 1;
         .nav-item{
             cursor: pointer;

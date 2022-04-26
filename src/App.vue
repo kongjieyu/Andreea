@@ -7,8 +7,9 @@ body{
   padding: 0;
   box-sizing: border-box; 
 }
-/* #app{
+#app{
   height: 100vh;
-} */
+  overflow: hidden;
+}
 </style>
 
