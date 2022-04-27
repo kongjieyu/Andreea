@@ -7,19 +7,46 @@
 		"run workshops for your company.",
 		"consult on for forensic linguistics as an expert witness."
 	],
-	"highlights": [{
+	"highlights": [
+	{
 		"title": "Ted Ed educator",
-		"content": "Leading the lesson Does grammar matter (viewed more than 2 million times). "
+		"content": "Leading the lesson \"Does grammar matter\"(viewed more than 2 million times). "
 	}, {
-		"title": "Academic track-record",
+		"title": "Academic\ntrack-record",
 		"content": "10+ years research experience in NZ and UK universities. "
 	}, {
 		"title": "Latest book",
 		"content": "Linguistics of Social Media(Routledge, to appear in 2023)."
-	}],
-	"contact": {
-		"email": "andreea.calude@waikato.ac.nz",
-		"post": ["School of Computer Science", "The University of Auckland", "Private Bag 92019", "Auckland, New Zealand"],
-		"address": "Room 810.839,  School of Computer Science\nCorner Short Street with Eden Crescent\nThe University of Auckland\nAuckland, New Zealand"
 	}
+],
+	"contact": 
+		[{
+			"title":"Email",
+			"icon":"/static/image/email.png",
+			"list":"andreea.calude@waikato.ac.nz"
+		},
+		{
+			"title":"Postal address",
+			"icon":"/static/image/post.png",
+			"list":"Private Bag 3105 Hamilton 3240"
+		},
+		{
+			"title":"Address",
+			"icon":"/static/image/address.png",
+			"list":"University of Waikato,\nSchool of Arts, Linguistics\nKnighton Road\nHillcrest, Hamilton, New Zealand"
+		}
+	]
+	,
+	"iconList":[{
+		"pic_src":"/static/image/Instagram.png",
+		"pic_url":""
+	},
+	{
+		"pic_src":"/static/image/Linkedin.png",
+		"pic_url":""
+	},
+	{
+		"pic_src":"/static/image/twitter.png",
+		"pic_url":""
+	}]
 }

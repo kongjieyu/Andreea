@@ -24,35 +24,55 @@
         </template>          
       </div>
       <div class="btn-bottom">
-        <div class="btn-one" @click="openModal(highlights)">HIGHLIGHTS</div>
-        <div class="btn-two" @click="openModal(contact)">Contact me</div>
+        <div class="btn-one" @click="openModal('highlights')">HIGHLIGHTS</div>
+        <div class="btn-two" @click="openModal('contact')">Contact me</div>
       </div>
       <div class="iconList">
-        <div>
-          <img src="/public/static/image/Instagram.png" alt="">
-        </div>
-        <div>
-          <img src="/public/static/image/Linkedin.png" alt="">
-        </div>
-        <div>
-          <img src="/public/static/image/twitter.png" alt="">
+        <div v-for="(item,index) in iconList" :key="index">
+          <a :href="item.pic_url">
+              <img :src="item.pic_src" alt="">
+          </a>
         </div>
     </div>
-    </div>
-    <div class="custom-modal">
+     <div class="custom-modal"  v-if="contactShow">
         <div class="header">
-          <div>{{title}}</div>
-          <div></div>
+          <div class="title blue">Contact me</div>
+          <div class="cancle" @click="cancleModal"></div>
         </div>
+        <div class="contain">
+            <div v-for="item in contact" v-if="contactShow" class="ctn-main">
+              <div class="customAction blue">
+                <div class="pic"><img :src="item.icon" alt=""></div>
+                <div class="title" >{{item.title}}</div>
+              </div>
+              <div class="customList" :title="item.list" v-html="item.list">
+              </div>
+            </div>
+        </div>
+    </div>
+      <div class="custom-modal custom-pd" v-if="hightlightShow">
+        <div class="header">
+          <div class="title yellow" >HIGHLIGHTS</div>
+          <div class="cancle" @click="cancleModal"></div>
+        </div>
+        <div class="contain">
+            <div v-for="item in highlights" v-if="hightlightShow" class="ctn-main">
+              <div class="hight-item yellow">
+                  <div class="item-list" v-html="item.title"></div>
+              </div>
+              <div  class="customList" :title="item.content">{{item.content}}</div>
+            </div>
+        </div>
+    </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import axios from "axios";
-import {onMounted, reactive, ref} from "vue";
+import {onMounted, ref} from "vue";
 
-let respData  = 
+
 onMounted(()=>{
   getHomeData()
   
@@ -60,21 +80,29 @@ onMounted(()=>{
 
 const belife = ref('')          //信条
 const belifeList = ref([])      //列表
-const contact = ref({})         //联系
+const contact = ref([])         //联系
 const highlights = ref([])      //高亮
 const introdution = ref('')     //介绍
 const occupationList = ref([])  //职业
+const iconList = ref([])        //外部链接
 //获取home数据
 const getHomeData = () =>{ 
     try{
        axios.get('/public/static/json/home.json').then(response=>{
-          console.log(66,response.data)
             belife.value = response.data.belife
             belifeList.value = response.data.belifeList
             contact.value = response.data.contact
             highlights.value = response.data.highlights
+            highlights.value.forEach(item=>{
+                item.title = item.title.replace(/\n/g,'<br>')
+            })
+
             introdution.value = response.data.introdution.replace(/\n/g,'<br>')
             occupationList.value = response.data.occupationList
+            iconList.value = response.data.iconList
+            contact.value.forEach(item=>{
+              item.list = item.list.replace(/\n/g,'<br>')
+            })
 
        })
     }catch{
@@ -87,9 +115,16 @@ const contactShow = ref(false)
 const openModal = (type:any) =>{
     if(type=='highlights'){
         hightlightShow.value = true
+        contactShow.value = false
     }else{
         contactShow.value = true
+        hightlightShow.value = false
     }
+}
+//关闭弹窗
+const cancleModal = () =>{
+  hightlightShow.value = false
+  contactShow.value = false
 }
 
 
@@ -99,6 +134,7 @@ const openModal = (type:any) =>{
 .home{
 display: flex;
 height: calc(100% - 75px);
+box-sizing: border-box;
 .bg{
   width:32vw;
   img{
@@ -184,13 +220,121 @@ height: calc(100% - 75px);
     position: absolute;
     right: 0;
     bottom: 76px;
-    div{
+    img{
       width: 41px;
       height: 41px;
       margin-top: 28px;
       cursor: pointer;
     }
   }
+  .custom-modal{
+    position: absolute;
+    padding: 38px 45px;
+    top: 14%;
+    left: 12%;
+    width: 500px;
+    height: 410px;
+    background: rgba(255, 255, 255, 1);;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px 2px rgba(166, 166, 166, 0.5);
+    z-index:99;
+    .header{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .title{
+          font-family: Roboto;
+          font-weight: bold;
+          font-size: 28px;
+      }
+        .cancle{
+          position: absolute;
+          margin-top:12px;
+          right: 0;
+          cursor: pointer;
+          display: inline-block;
+          width: 12px;
+          height: 2px;
+          background: #999;
+          line-height: 0;
+          font-size: 0;
+          vertical-align: middle;
+          -webkit-transform: rotate(45deg);
+        }
+        .cancle:after{
+          content: "/";
+          display: block;
+          width: 12px;
+          height: 2px;
+          background: #999;
+          -webkit-transform: rotate(-90deg);
+        }
+    }
+    .contain{
+            margin-top: 55px;
+            font-family: Roboto;
+            font-size: 20px;
+            .ctn-main{
+              display: flex;
+              margin-bottom: 25px;
+                .customAction{
+                    width: 160px;
+                    display: flex;
+                    .pic{
+                          width: 32px;
+                          height: 32px;
+                          margin-left: 20px;
+                        img{
+                           padding: 3px;
+                           width: 26px;
+                           height: 26px;
+                        }
+                    }
+                    .title{
+                      width: 100px;
+                      margin-left: 5px;
+                      line-height: 32px;
+                    }
+                }
+                .customList{
+                  // margin-left: 32px;
+                  flex: 1;
+                  line-height: 32px;
+                  max-width: 360px;
+                  max-height: 100px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  // white-space: nowrap;
+                }
+                .hight-item{
+                    width: 160px;
+                    text-align:right;
+                    margin-right: 20px;
+                    line-height: 32px;
+                    .item-list{
+                        display: inline-block;
+                        border-bottom: 2px solid rgba(255, 195, 0, 1);
+                    }
+                }
+        }
+    }
+    
+  }
+  .custom-pd{padding: 38px 45px 38px 20px;}
+}
+.blue{
+    color:rgba(2, 182, 205, 1) ;
+    font-weight: bold;
+}
+.yellow{
+    color: rgba(255, 195, 0, 1);
+    font-weight: bold;
+}
+.t-right{text-align: right;}
+.custom-span{
+    height: 100%;
+    padding-bottom: 14px;
+    border-bottom: 2px solid;
 }
 }
 </style>
