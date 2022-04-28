@@ -4,7 +4,7 @@
       <div @click="linkTo(item.book_url)" class="book-pic">
         <img :src="item.book_image" alt="" v-if="item.book_image">
       </div>
-      <div @click="linkTo(item.book_url)" class="title">{{item.title}}</div>
+      <!-- <div @click="linkTo(item.book_url)" class="title" >{{item.title}}</div> -->
       <div class="desc">
         {{item.des}}
         <span v-if="item.publish_year">({{item.publish_year}})</span>
@@ -52,8 +52,10 @@ const linkTo = (data) =>{
 .books{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 7vw;
   .book-item{
-    width: 250px;
+    width: 240px;
     margin-top: 80px;
     .book-pic{
       width: 100%;
@@ -80,7 +82,7 @@ const linkTo = (data) =>{
       margin-top:17px ;
       font-family: Roboto;
       color: rgba(112, 117, 122, 0.9);
-      font-size: 22px;
+      font-size: 18px;
       line-height: 32px;
     }
   }

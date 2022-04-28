@@ -1,75 +1,80 @@
 <template>
   <div class="home">
     <div class="bg">
-      <img src="/public/static/image/woman.jpg" alt="">
+      <img :src="bgPic" alt="">
     </div>
     <div class="ctn">
-      <div class="occupationList">
-        <template v-for="(item,index) in occupationList" :key="index">
-          <div>{{item}}</div>
-        </template>
+      <div style="position:relative;z-index:10;">
+        <div class="occupationList">
+          <template v-for="(item,index) in occupationList" :key="index">
+            <div>{{item}}</div>
+          </template>
+        </div>
+        <div class="introdution">
+          <div class="text" v-html="introdution"></div>
+          <div class="diver"></div>
+        </div>
+        <div class="belife">
+          {{belife}}
+        </div>
+        <div class="belifeList" style="white-space: pre-wrap;">    
+          <template v-for="(item,index) in belifeList" :key="index">
+            <div class="belife-item">
+              <div class="circle"></div>{{item}}
+            </div>  
+          </template>          
+        </div>
+        <div class="btn-bottom">
+          <div class="btn-one" @click="openModal('highlights')">HIGHLIGHTS</div>
+          <div class="btn-two" @click="openModal('contact')">Contact me</div>
+        </div>
       </div>
-      <div class="introdution">
-        <div class="text" v-html="introdution"></div>
-        <div class="diver"></div>
-      </div>
-      <div class="belife">
-        {{belife}}
-      </div>
-      <div class="belifeList" style="white-space: pre-wrap;">    
-        <template v-for="(item,index) in belifeList" :key="index">
-          <div class="belife-item">
-            <div class="circle"></div>{{item}}
-          </div>  
-        </template>          
-      </div>
-      <div class="btn-bottom">
-        <div class="btn-one" @click="openModal('highlights')">HIGHLIGHTS</div>
-        <div class="btn-two" @click="openModal('contact')">Contact me</div>
-      </div>
-      <div class="iconList">
+    <div class="popover-container">
+        <div class="custom-modal custom-pd" v-if="hightlightShow">
+          <div class="header">
+            <div class="title yellow" >HIGHLIGHTS</div>
+            <div class="cancle" @click="cancleModal"></div>
+          </div>
+          <div class="contain">
+              <div v-for="item in highlights" v-if="hightlightShow" class="ctn-main">
+                <div class="hight-item yellow">
+                    <div class="item-list" v-html="item.title"></div>
+                </div>
+                <div  class="customList" :title="item.content">{{item.content}}</div>
+              </div>
+          </div>
+        </div>
+        <div class="custom-modal"  v-if="contactShow">
+            <div class="header">
+              <div class="title blue">Contact me</div>
+              <div class="cancle" @click="cancleModal"></div>
+            </div>
+            <div class="contain">
+                <div v-for="item in contact" v-if="contactShow" class="ctn-main">
+                  <div class="customAction blue">
+                    <div class="pic"><img :src="item.icon" alt=""></div>
+                    <div class="title" >{{item.title}}</div>
+                  </div>
+                  <div class="customList" :title="item.list" v-html="item.list">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="iconList">
         <div v-for="(item,index) in iconList" :key="index">
-          <a :href="item.pic_url">
+          <a :href="item.pic_url" target="_blank">
               <img :src="item.pic_src" alt="">
           </a>
         </div>
-    </div>
-     <div class="custom-modal"  v-if="contactShow">
-        <div class="header">
-          <div class="title blue">Contact me</div>
-          <div class="cancle" @click="cancleModal"></div>
-        </div>
-        <div class="contain">
-            <div v-for="item in contact" v-if="contactShow" class="ctn-main">
-              <div class="customAction blue">
-                <div class="pic"><img :src="item.icon" alt=""></div>
-                <div class="title" >{{item.title}}</div>
-              </div>
-              <div class="customList" :title="item.list" v-html="item.list">
-              </div>
-            </div>
-        </div>
-    </div>
-      <div class="custom-modal custom-pd" v-if="hightlightShow">
-        <div class="header">
-          <div class="title yellow" >HIGHLIGHTS</div>
-          <div class="cancle" @click="cancleModal"></div>
-        </div>
-        <div class="contain">
-            <div v-for="item in highlights" v-if="hightlightShow" class="ctn-main">
-              <div class="hight-item yellow">
-                  <div class="item-list" v-html="item.title"></div>
-              </div>
-              <div  class="customList" :title="item.content">{{item.content}}</div>
-            </div>
-        </div>
-    </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import axios from "axios";
+import { log } from "console";
 import {onMounted, ref} from "vue";
 
 
@@ -78,6 +83,7 @@ onMounted(()=>{
   
 })
 
+const bgPic = ref('')              //背景图片
 const belife = ref('')          //信条
 const belifeList = ref([])      //列表
 const contact = ref([])         //联系
@@ -89,6 +95,7 @@ const iconList = ref([])        //外部链接
 const getHomeData = () =>{ 
     try{
        axios.get('/public/static/json/home.json').then(response=>{
+            bgPic.value = response.data.backgroundBg
             belife.value = response.data.belife
             belifeList.value = response.data.belifeList
             contact.value = response.data.contact
@@ -96,7 +103,6 @@ const getHomeData = () =>{
             highlights.value.forEach(item=>{
                 item.title = item.title.replace(/\n/g,'<br>')
             })
-
             introdution.value = response.data.introdution.replace(/\n/g,'<br>')
             occupationList.value = response.data.occupationList
             iconList.value = response.data.iconList
@@ -131,49 +137,59 @@ const cancleModal = () =>{
 </script>
 
 <style lang="less" scoped>
+.popover-container {
+  position: absolute;top: 0;left: 0;width: 100%;height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+}
 .home{
-display: flex;
-height: calc(100% - 75px);
-box-sizing: border-box;
+  display: flex;
+  height: calc(100% - 75px);
+  box-sizing: border-box;
+  position: relative;
 .bg{
-  width:32vw;
+  flex: 0 0 560px;
+  display: flex;
+  align-items: flex-end;
   img{
     width: 100%;
     height: 100%;
   }
 }
 .ctn{
-  width: 56.5vw;
-  margin: 0 6.5vw 0 5vw;
+  flex: 1;
+  margin: 0 4.5vw 0 5vw;
   position: relative;
   .occupationList{
     display: flex;
     justify-content: space-between;
-    margin-top: 2.6vw;
+    margin-top: 70px;
+    flex-wrap: wrap;
     div{
       color: rgba(2, 182, 205, 1);
       font-family: ArchivoNarrow;
       font-weight: bold;
-      font-size: 50px;
+      font-size: 48px;
     }
   }
   .introdution{
     .text{
-      margin-top: 2vw;
+      margin-top: 40px;
       font-family: chancery;
-      font-size: 30px;
+      font-size: 28px;
       color: rgba(32, 33, 36, 1);
     }
     .diver{
-      width: 50%;
-      margin: 1vw 0 2.5vw 0;
-      border: 1px solid rgba(166, 166, 166, 0.7);;
+      width: 60%;
+      margin: 20px 0 30px 0;
+      border: 1px solid rgba(166, 166, 166, 0.5);;
     }
   }
   .belife{
      font-family: Roboto;
      color:rgba(32, 33, 36, 1);
-     font-size: 30px;
+     font-size: 28px;
 
   }
   .belifeList{
@@ -182,56 +198,48 @@ box-sizing: border-box;
       display: flex;
       font-family: Roboto;
       color:rgba(32, 33, 36, 1);
-      font-size: 30px;
+      font-size: 28px;
       margin-bottom: 1vw;
       .circle{
         display: inline-block;
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
         background:rgba(2, 182, 205, 1) ;
-        border-radius: 18px;
-        margin-right: 1.5vw;
+        border-radius: 16px;
+        margin-right: 25px;
         margin-top: 10px;
       }
     }
   }
   .btn-bottom{
+    font-family: Roboto;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 5vw;
     cursor: pointer;
+    font-size: 20px;
     .btn-one{
         background: rgba(253, 194, 16, 1);
+        box-shadow: 6px 8px 6px 2px rgba(255, 196, 3, 0.27);
         color: #fff;
-        padding: 15px 25px;
+        padding: 15px 30px;
         border-radius: 40px;
         margin-right: 6.5vw;
     }
     .btn-two{
         background:rgba(2, 182, 205, 1);
+        box-shadow: 6px 8px 6px 2px rgba(67, 114, 120, 0.18);
         color: #fff;
-        padding: 15px 25px;
+        padding: 15px 30px;
         border-radius: 40px;
 
     }
 
   }
-  .iconList{
-    position: absolute;
-    right: 0;
-    bottom: 76px;
-    img{
-      width: 41px;
-      height: 41px;
-      margin-top: 28px;
-      cursor: pointer;
-    }
-  }
   .custom-modal{
-    position: absolute;
+    
     padding: 38px 45px;
-    top: 14%;
-    left: 12%;
+   
     width: 500px;
     height: 410px;
     background: rgba(255, 255, 255, 1);;
@@ -249,12 +257,12 @@ box-sizing: border-box;
       }
         .cancle{
           position: absolute;
-          margin-top:12px;
+          margin-top:18px;
           right: 0;
           cursor: pointer;
           display: inline-block;
-          width: 12px;
-          height: 2px;
+          width: 18px;
+          height: 4px;
           background: #999;
           line-height: 0;
           font-size: 0;
@@ -264,8 +272,8 @@ box-sizing: border-box;
         .cancle:after{
           content: "/";
           display: block;
-          width: 12px;
-          height: 2px;
+          width: 18px;
+          height: 4px;
           background: #999;
           -webkit-transform: rotate(-90deg);
         }
@@ -336,5 +344,16 @@ box-sizing: border-box;
     padding-bottom: 14px;
     border-bottom: 2px solid;
 }
+.iconList{
+    position: absolute;
+    right: 40px;
+    bottom: 76px;
+    img{
+      width: 41px;
+      height: 41px;
+      margin-top: 28px;
+      cursor: pointer;
+    }
+  }
 }
 </style>

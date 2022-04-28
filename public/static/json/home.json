@@ -1,5 +1,6 @@
 {
 	"occupationList": ["SPEAKER", "WRITER", "EDUCATOR"],
+	"backgroundBg":"/static/image/woman.png",
 	"introdution": "I research various aspects of language,\nespecially the language of social  media and I speak,\n write and teach courses and workshops about this.",
 	"belife": "I am available  to :",
 	"belifeList": [
@@ -39,14 +40,14 @@
 	,
 	"iconList":[{
 		"pic_src":"/static/image/Instagram.png",
-		"pic_url":""
+		"pic_url":"https://www.baidu.com"
 	},
 	{
 		"pic_src":"/static/image/Linkedin.png",
-		"pic_url":""
+		"pic_url":"https://www.routledge.com/Mysteries-of-English-Grammar-A-Guide-to-Complexities-of-the-English-Language/Calude-Bauer/p/book/9780367710279"
 	},
 	{
 		"pic_src":"/static/image/twitter.png",
-		"pic_url":""
+		"pic_url":"https://www.routledge.com/Mysteries-of-English-Grammar-A-Guide-to-Complexities-of-the-English-Language/Calude-Bauer/p/book/9780367710279"
 	}]
 }
