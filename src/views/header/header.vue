@@ -3,16 +3,16 @@
         <div class="header-bg">
             <img src="../../../public/static/image/header.png" alt="photo">
         </div>
-        <div class="nav">
+        <div id="top-nav" class="nav">
             <div class="nav-item" :class="{'active':currentAtive==item}" v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">{{item}}</div>
-            <!-- <div class="nav-item circle-es">...</div> -->
+            <div v-if="showNavIcon" class="nav-icon">...</div>
         </div>
         <!-- <div class="expand-show">other</div> -->
     </div>
 </template>
 
 <script setup lang="ts">
-import {onMounted, reactive, ref,watchEffect} from "vue";
+import {onMounted, reactive, ref, watchEffect, nextTick} from "vue";
 import { useRouter} from 'vue-router'
 const router = useRouter();
 const navList:any= ref([]) //头部导航栏
@@ -37,37 +37,57 @@ const changeTab = (data:any) =>{
     router.push({name:data})
 }
 
+const showNavIcon = ref(false)
+const isNavIconShow = () => {
+    let topNav = document.querySelector('#top-nav') as HTMLElement
+    let height = topNav.clientHeight
+    let scrollHeight = topNav.scrollHeight
+    if(scrollHeight > height) {
+        showNavIcon.value = true
+    } else {
+        showNavIcon.value = false
+    }
+}
 onMounted(()=>{
     currentAtive.value = <any>router.currentRoute.value.name
     getList()
+    nextTick(() => {
+        isNavIconShow()
+    })
+    window.onresize = function () {
+        isNavIconShow()
+    }
 })
 
+
+//document.querySelector('.nav').scrollHeight
 </script>
 
 <style lang="less" scoped>
 .header{
     display: flex;
-    height: 75px;
-    position: relative;
     .header-bg{
-        flex: 0 0 560px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
+        width: 560px;
+        text-align: center;
+        img {
             height: 70px;
             margin-top: 5px;
         }
     }
-    .nav{
+    .nav {
+        position: relative;
+        overflow: hidden;
+        padding: 0 4vw;
         flex: 1;
         display: flex;
-        font-family: "Roboto";
+        height: 75px;
         color: rgba(32, 33, 36, 1);
         font-size: 20px ;
-        margin: 0 4.5vw 0 5vw;
         justify-content: space-between;
-        flex: 1;
+        flex-basis: auto;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
         .nav-item{
             cursor: pointer;
             line-height: 75px;
@@ -96,4 +116,12 @@ onMounted(()=>{
         top: 60px;
     }
 }
-</style>>
+.nav-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+</style>

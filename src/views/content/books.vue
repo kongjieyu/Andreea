@@ -7,7 +7,7 @@
       <!-- <div @click="linkTo(item.book_url)" class="title" >{{item.title}}</div> -->
       <div class="desc">
         {{item.des}}
-        <span v-if="item.publish_year">({{item.publish_year}})</span>
+        <span v-if="item.publish_year">({{' publisher '+','+item.publish_year}})</span>
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@ const books:any = ref([])
 //获取book数据
 const getHomeData = () =>{ 
     try{
-       axios.get('/public/static/json/books.json').then(response=>{
+       axios.get('/static/json/books.json').then(response=>{
           books.value = response.data.books
           books.value.push({
             book_image: "",
@@ -46,6 +46,7 @@ const getHomeData = () =>{
 const linkTo = (data:any) =>{
     window.open(data);
 }
+
 </script>
 
 <style lang="less" scoped>
@@ -53,7 +54,7 @@ const linkTo = (data:any) =>{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 0 7vw;
+  margin: 0 5vw;
   .book-item{
     width: 240px;
     margin-top: 80px;
@@ -72,7 +73,7 @@ const linkTo = (data:any) =>{
     }
     .title{
       cursor: pointer;
-      font-family: Roboto;
+      // font-family: Roboto;
       color: rgba(32, 33, 36, 1);
       margin-top: 30px;
       font-size: 22px;
@@ -80,10 +81,10 @@ const linkTo = (data:any) =>{
     }
     .desc{
       margin-top:17px ;
-      font-family: Roboto;
+      // font-family: Roboto;
       color: rgba(112, 117, 122, 0.9);
-      font-size: 18px;
-      line-height: 32px;
+      font-size: 16px;
+      line-height: 28px;
     }
   }
 }

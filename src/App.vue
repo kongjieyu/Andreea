@@ -9,7 +9,7 @@ body{
 }
 #app{
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 </style>
 
