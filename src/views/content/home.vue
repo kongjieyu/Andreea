@@ -20,7 +20,8 @@
         <div class="belifeList" style="white-space: pre-wrap;">    
           <template v-for="(item,index) in belifeList" :key="index">
             <div class="belife-item">
-              <div class="circle"></div>{{item}}
+              <div class="circle"></div>
+              <div class="item">{{item}}</div>
             </div>  
           </template>          
         </div>
@@ -74,7 +75,6 @@
 
 <script setup lang="ts">
 import axios from "axios";
-import { log } from "console";
 import {onMounted, ref} from "vue";
 
 
@@ -86,11 +86,11 @@ onMounted(()=>{
 const bgPic = ref('')              //背景图片
 const belife = ref('')          //信条
 const belifeList = ref([])      //列表
-const contact = ref([])         //联系
-const highlights = ref([])      //高亮
+const contact:any = ref([])         //联系
+const highlights:any = ref([])      //高亮
 const introdution = ref('')     //介绍
 const occupationList = ref([])  //职业
-const iconList = ref([])        //外部链接
+const iconList:any = ref([])        //外部链接
 //获取home数据
 const getHomeData = () =>{ 
     try{
@@ -100,13 +100,13 @@ const getHomeData = () =>{
             belifeList.value = response.data.belifeList
             contact.value = response.data.contact
             highlights.value = response.data.highlights
-            highlights.value.forEach(item=>{
+            highlights.value.forEach((item:any)=>{
                 item.title = item.title.replace(/\n/g,'<br>')
             })
             introdution.value = response.data.introdution.replace(/\n/g,'<br>')
             occupationList.value = response.data.occupationList
             iconList.value = response.data.iconList
-            contact.value.forEach(item=>{
+            contact.value.forEach((item:any)=>{
               item.list = item.list.replace(/\n/g,'<br>')
             })
 
@@ -164,7 +164,7 @@ const cancleModal = () =>{
   .occupationList{
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 4vw;
     flex-wrap: wrap;
     div{
       color: rgba(2, 182, 205, 1);
@@ -175,14 +175,14 @@ const cancleModal = () =>{
   }
   .introdution{
     .text{
-      margin-top: 40px;
+      margin-top: 1.5vw;
       font-family: chancery;
       font-size: 28px;
       color: rgba(32, 33, 36, 1);
     }
     .diver{
       width: 60%;
-      margin: 20px 0 30px 0;
+      margin: 1vw 0 2vw 0;
       border: 1px solid rgba(166, 166, 166, 0.5);;
     }
   }
@@ -193,7 +193,7 @@ const cancleModal = () =>{
 
   }
   .belifeList{
-    margin-top: 2.5vw;
+    margin-top: 1.5vw;
     .belife-item{
       display: flex;
       font-family: Roboto;
@@ -201,13 +201,15 @@ const cancleModal = () =>{
       font-size: 28px;
       margin-bottom: 1vw;
       .circle{
-        display: inline-block;
-        width: 16px;
+        flex: 0 0 16px;
         height: 16px;
         background:rgba(2, 182, 205, 1) ;
         border-radius: 16px;
         margin-right: 25px;
         margin-top: 10px;
+      }
+      .item{
+        flex: 1;
       }
     }
   }
@@ -215,7 +217,7 @@ const cancleModal = () =>{
     font-family: Roboto;
     display: flex;
     justify-content: center;
-    margin-top: 5vw;
+    margin-top: 3vw;
     cursor: pointer;
     font-size: 20px;
     .btn-one{
@@ -346,8 +348,8 @@ const cancleModal = () =>{
 }
 .iconList{
     position: absolute;
-    right: 40px;
-    bottom: 76px;
+    right: 1.5vw;
+    bottom: 2vw;
     img{
       width: 41px;
       height: 41px;

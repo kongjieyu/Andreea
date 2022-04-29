@@ -23,7 +23,7 @@ onMounted(()=>{
   
 })
 
-const books = ref([])
+const books:any = ref([])
 //获取book数据
 const getHomeData = () =>{ 
     try{
@@ -43,7 +43,7 @@ const getHomeData = () =>{
     }
 }
 //点击跳转
-const linkTo = (data) =>{
+const linkTo = (data:any) =>{
     window.open(data);
 }
 </script>
