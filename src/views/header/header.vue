@@ -64,7 +64,7 @@ onMounted(()=>{
         display: flex;
         font-family: "Roboto";
         color: rgba(32, 33, 36, 1);
-        font-size: 22px ;
+        font-size: 20px ;
         margin: 0 4.5vw 0 5vw;
         justify-content: space-between;
         flex: 1;
