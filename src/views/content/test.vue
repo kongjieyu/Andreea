@@ -172,15 +172,9 @@ onMounted(()=>{
         justify-content: space-between;
         color: #02b6cd;
         font-family: ArchivoNarrow;
-        min-width: 750px;  //jiaquanju1
-        max-width: 850px;
-        word-break: break-word;
         font-weight: bold;
-        font-size: 56px;
+        font-size: 48px;
         margin-top: 8vh;
-        div{
-            margin-right: 20px;
-        }
     }
     .introdution {
         .text {
@@ -198,7 +192,7 @@ onMounted(()=>{
     .skill {
         color: #202124;
         font-size: 28px;
-        padding: 20px 0 30px;
+        padding: 20px 0 40px;
     }
     .skill-list {
         margin-top: 12px;
@@ -208,13 +202,13 @@ onMounted(()=>{
             color: #202124;
             font-size: 28px;
             line-height: 38px;
-            margin-bottom: 0.8vw;
+            margin-bottom: 1vw;
             .circle {
                 width: 16px;
                 height: 16px;
                 background: #02b6cd;
                 border-radius: 50%;
-                margin-top: 14px;
+                margin-top: 12px;
                 margin-right: 24px;
             }
             .text {flex: 1;}
@@ -228,25 +222,21 @@ onMounted(()=>{
         margin-bottom: 4vh;
         .btn {
             color: #fff;
+            padding: 15px 30px;
             border-radius: 40px;
             display: flex;
-            padding: 15px 0px;
-            width: 186px;
-            border-radius: 40px;
-            display: flex;
-            justify-content: center;
             align-items: center;
             cursor: pointer;
         }
         .btn-one {
             background: #fdc210;
             box-shadow: 6px 8px 6px 2px rgb(255 196 3 / 27%);
-            margin-right: 40px;
+            margin-right: 20px;
         }
         .btn-two {
             background: #02b6cd;
             box-shadow: 6px 8px 6px 2px rgb(67 114 120 / 18%);
-            margin-left: 40px;
+            margin-left: 20px;
         }
     }
     .custom-modal{
@@ -310,10 +300,9 @@ onMounted(()=>{
                                 }
                             }
                             .title{
-                                width: 100px;
-                                margin-left: 5px;
-                                line-height: 32px;
-                                letter-spacing: 1px;
+                            width: 100px;
+                            margin-left: 5px;
+                            line-height: 32px;
                             }
                         }
                         .customList{
@@ -348,13 +337,5 @@ onMounted(()=>{
     align-items: center;
     justify-content: center;
     display: flex;
-}
-.blue{
-    color:rgba(2, 182, 205, 1) ;
-    font-weight: bold;
-}
-.yellow{
-    color: rgba(255, 195, 0, 1);
-    font-weight: bold;
 }
 </style>

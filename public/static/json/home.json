@@ -6,7 +6,7 @@
 	"belifeList": [
 		"speak at your event.",
 		"run workshops for your company.",
-		"consult on for forensic linguistics as an expert witness."
+		"consult on forensic linguistics as an expert witness."
 	],
 	"highlights": [
 	{
@@ -40,14 +40,14 @@
 	,
 	"iconList":[{
 		"pic_src":"/static/image/Instagram.png",
-		"pic_url":"https://www.baidu.com"
+		"pic_url":"https://www.google.com"
 	},
 	{
 		"pic_src":"/static/image/Linkedin.png",
-		"pic_url":"https://www.routledge.com/Mysteries-of-English-Grammar-A-Guide-to-Complexities-of-the-English-Language/Calude-Bauer/p/book/9780367710279"
+		"pic_url":"https://www.google.com"
 	},
 	{
 		"pic_src":"/static/image/twitter.png",
-		"pic_url":"https://www.routledge.com/Mysteries-of-English-Grammar-A-Guide-to-Complexities-of-the-English-Language/Calude-Bauer/p/book/9780367710279"
+		"pic_url":"https://www.google.com"
 	}]
 }
