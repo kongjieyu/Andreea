@@ -1,68 +1,84 @@
 {
     "Written": [
         {
-            "text": "Fortnightly column in NZ newspapers (Dominion Post and Waikato Times) with Laurie Bauer, Paul Warren and Corinne Seals (Dec 2020-present)",
+            "text": "Fortnightly column in NZ newspapers (Dominion Post and Waikato Times) with Laurie Bauer, Paul Warren and Corinne Seals.",
+            "date":"Dec 2020-present",
             "cover_url": "/static/image/Fortnightly_coloum.png",
             "operation": "Archieve here",
             "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
-            "Date":"Dec 2020-present",
-            "year": "present"
+            "sort": "present"
         },
         {
-            "text": "Guest story for the SpinOff on grammar <strong>Does Grammar Really Matter?</strong>, (3 May 2018).",
+            "text": "I blog for Sciblogs as Lippy Linguist.",
+            "date":"Aug 2017-present",
+            "cover_url": "/static/image/Lippy_linguist.png",
+            "operation": "Read here",
+            "link_url": "https://sciblogs.co.nz/lippy-linguist/",
+            "sort": "present"
+        },
+        {
+            "text": "Guest story for the SpinOff on grammar <strong>Does Grammar Really Matter?</strong>.",
+            "date":"3rd May 2018",
             "cover_url": "/static/image/Does_good_gramma_really_matter.png",
             "operation": "Read here",
             "link_url": "https://thespinoff.co.nz/society/03-05-2018/does-good-grammar-really-matter",
-            "year": "2018.05"
+            "sort": "2018.05"
         },
         {
             "text": "In April 2018, I did a PechaKucha talk about the languages I speak. (video to come soon).",
+            "date":"April 2018",
             "cover_url": "/static/image/PechaKucha_talk.png",
             "operation": "Read here",
             "link_url": "https://www.calude.net/andreea/2018_PechaKucha.jpg",
-            "year": "2018.04"
+            "sort": "2018.04"
         },
         {
-            "text": "NZ Royal Society blog piece 'Words As Windows into our Minds', for the 150-years NZRS celebrations promoting linguistics research, also archived on <a href=‘https://sciblogs.co.nz/infrequently-asked-questions/2017/07/06/words-windows-minds/’>SciBlogs</a>, July 2017.",
+            "text": "NZ Royal Society blog piece 'Words As Windows into our Minds', for the 150-years NZRS celebrations promoting linguistics research, also archived on <a href=‘https://sciblogs.co.nz/infrequently-asked-questions/2017/07/06/words-windows-minds/’ target='_blank'>SciBlogs</a>, July 2017.",
+            "date":"July 2017",
             "cover_url": "/static/image/Word_as_windows_into_our_minds.png",
             "operation": "Read here",
             "link_url": "https://www.royalsociety.org.nz/150th-anniversary/past-and-future/words-as-windows-into-our-minds",
-            "year": "2017.07"
+            "sort": "2017.07"
         },
         {
             "text": "'Does Big Data Equal Big Problems?' published in Fully (sic), 13 November 2015.",
+            "date":"13th November 2015",
             "cover_url": "/static/image/default.png",
             "operation": "Read here",
             "link_url": "https://www.crikey.com.au/",
-            "year": "2015.12"
+            "sort": "2015.12"
         },
         {
             "text": "'How to lose your North, be gone with a raft, and have a bird‘ published in Fully (sic), 27 August 2015.",
+            "date":"27th August 2015",
             "cover_url": "/static/image/default.png",
             "operation": "Read here",
             "link_url": "https://www.crikey.com.au/",
-            "year": "2015.08"
+            "sort": "2015.08"
         },
         {
             "text": "Opinion Piece entitled 'Whose Words Are They Anyway' published in Waikato Times, 6 March 2013.",
+            "date":"6th March 2013",
             "cover_url": "/static/image/default.png",
             "operation": "Read here",
             "link_url": "http://www.stuff.co.nz/waikato-times/life-style/8390290/Whose-words-are-they-anyway",
-            "year": "2013.03"
+            "sort": "2013.03"
         },
         {
             "text": "Letter entitled 'Languages With Soul' published in the New Scientist, Vol. 185: p. 33, 5 March 2005.",
+            "date":"5th March 2005",
             "cover_url": "/static/image/default.png",
             "operation": "Read here",
             "link_url": "https://www.newscientist.com/article.ns/?id=mg18524890.500",
-            "year": "2005.03"
+            "sort": "2005.03"
         },
         {
             "text": "Book Review entitled 'A Beautiful Mind' published in The New Zealand Listener , reviewing John Casti's 'Mathematical Mountaintops', 183, May 18-24, 2002.",
+            "date":"May 2002",
             "cover_url": "/static/image/default.png",
             "operation": "Read here",
             "link_url": "https://www.cs.auckland.ac.nz/~cristian/andreea_listenerreview.jpg",
-            "year": "2002.05"
+            "sort": "2002.05"
         }
     ]
 }

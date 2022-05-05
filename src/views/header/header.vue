@@ -4,12 +4,14 @@
             <div class="header-bg">
                 <img :src="bgImage" alt="">
             </div>
-            <div id="top-nav" class="nav">
-                <div class="nav-item" :class="{'active':currentAtive==item}" v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">{{item}}</div>
-                <div v-if="showNavIcon" class="nav-icon" @mouseover="mouseOver" >...</div>
-            </div>
-            <div class="expand-show" v-if="hiderSider.length>0&&showBar" @mouseleave="mouseLeave">
-                <div v-for="(item,index) in hiderSider" :key="index" @click="changeTab(item)">{{item}}</div>
+            <div class="nav">
+                <div class="nav-parent" id="top-nav">
+                    <div class="nav-item"  :class="{'active':currentAtive==item,'press-style':item=='Press'}" v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">{{item}}</div>
+                    <!-- <div class="press">
+                        <div>Written</div>
+                        <div>Video/Podcasts</div>
+                    </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -48,18 +50,30 @@ const changeTab = (data:any) =>{
 const showNavIcon = ref(false)
 const isNavIconShow = () => {
     let topNav = document.querySelector('#top-nav') as HTMLElement
-    // let height = topNav.clientHeight
+    let height = topNav.scrollHeight
     // let scrollHeight = topNav.scrollHeight
     let width = topNav.scrollWidth
     let siderNum = 70
     // let relheight = scrollHeight - height
-    if( width < 575) {
-        showNavIcon.value = true
-        dataSection(width)
-        console.log('qujina',topNav.scrollWidth)
-    } else {
-        showNavIcon.value = false
+    if(height > 75) {
+        const hiddenItems = []
+        const menuItems = document.querySelectorAll('#top-nav .nav-item')
+        setTimeout(() => {
+            menuItems.forEach((item) => {
+                if(item.offsetTop > 0) {
+                    hiddenItems.push(item.innerHTML)
+                }
+            })
+            console.log('hiddenItems', hiddenItems)
+        }, 100)
     }
+    // if( width < 575) {
+    //     showNavIcon.value = true
+    //     dataSection(width)
+    //     console.log('qujina',topNav.scrollWidth)
+    // } else {
+    //     showNavIcon.value = false
+    // }
     // console.log(2258,relheight);
     
 }
@@ -102,10 +116,8 @@ onMounted(()=>{
     nextTick(() => {
         isNavIconShow()
     })
-    window.onresize = function () {
-        nextTick(() => {
-            isNavIconShow()
-        })
+    window.onresize = () => {
+        isNavIconShow()
     }
 })
 
@@ -120,72 +132,53 @@ onMounted(()=>{
 <style lang="less" scoped>
 .header{
     display: flex;
-    z-index: 99;
     .header-bg{
         width: 560px;
-        text-align: center;
-        z-index: 99;
+        text-align: left;
         img {
             height: 70px;
             margin-top: 5px;
+            margin-left: 5vw;
         }
     }
     .nav {
         // position: relative;
-        overflow: hidden;
+        // overflow: hidden;
         margin: 0 4vw;
-        flex: 1;
-        display: flex;
-        height: 75px;
-        color: rgba(32, 33, 36, 1);
-        font-size: 20px ;
-        justify-content: space-between;
-        // flex-basis: auto;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex-shrink: 1;
-        .nav-item{
-            cursor: pointer;
-            line-height: 72px;
-            margin-right: 20px;
-        }
-        .active{
-            color:rgba(2, 182, 205, 1);
-            border-bottom: 3px solid rgba(2, 182, 205, 1);
-        }
-    }
-    .circle-es:hover{
-        color:rgba(2, 182, 205, 1);
+        // flex: 1;
+        // display: flex;
+        // height: 75px;
+        // color: rgba(32, 33, 36, 1);
+        // font-size: 20px ;
+        // justify-content: space-between;
+        // // flex-basis: auto;
+        // flex-wrap: wrap;
+        // flex-grow: 1;
+        // flex-shrink: 1;
+        width:calc(100% - 560px);
+        .nav-parent{
+            flex-wrap: wrap;
+            overflow: hidden;
+            flex-basis: auto;
+            flex-grow: 1;
+            flex-shrink: 1;
 
-    }
-    .circle-hihe{
-        display: none;
-    }
-    .circle-show{
-        display: block;
-    }
-    .expand-show{
-        position: absolute;
-        padding: 9px 15px;
-        border: 1px solid rgba(166, 166, 166, 0.2);
-        box-shadow: 0px 2px 6px 2px rgba(166, 166, 166, 0.2);
-        z-index: 99;
-        border-radius: 2px;
-        right: 18px;
-        top: 55px;
-        div{
-            cursor: pointer;
+            height: 75px;
+            color: rgb(32, 33, 36);
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            .nav-item{
+                cursor: pointer;
+                line-height: 72px;
+                margin-right:20px;
+            }
+            .active{
+                color:rgba(2, 182, 205, 1);
+                border-bottom: 3px solid rgba(2, 182, 205, 1);
+            }
+
         }
     }
-    .expand-show div:hover{
-        color: rgba(2, 182, 205, 1);
-    }
-}
-.nav-icon {
-    position: absolute;
-    padding: 10px;
-    line-height: 39px;
-    right: 10px;
-    cursor: pointer;
 }
 </style>

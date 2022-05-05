@@ -32,9 +32,7 @@ const books:any = ref([])
 const getHomeData = () =>{ 
     try{
        axios.get('/static/json/books.json').then(response=>{
-          books.value = response.data.books
-          console.log(112,response.data.books,books.value);
-          
+          books.value = response.data.books          
        })
     }catch{
 
@@ -42,7 +40,12 @@ const getHomeData = () =>{
 }
 //点击跳转
 const linkTo = (data:any) =>{
-    window.open(data);
+  if(data){
+      window.open(data);
+  }else{
+    window.alert('No website，Coming soon')
+  }
+    
 }
 
 </script>
@@ -82,6 +85,10 @@ const linkTo = (data:any) =>{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        transition: all 0.4s;
+    }
+    .bookImage:hover{
+        transform: scale(1.05);
     }
     .title{
       cursor: pointer;

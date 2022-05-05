@@ -139,7 +139,8 @@ onMounted(()=>{
 
 <style lang="less">
 .home {
-    display: flex;position: relative;
+    display: flex;
+    position: relative;
     .sidebar {
         width: 560px;
         height: calc(100vh - 75px);
@@ -150,6 +151,7 @@ onMounted(()=>{
     .icon-list {
         position: absolute;
         right: 2vw;
+        z-index: 20;
         bottom: 2vw;
         img {
             width: 38px;
@@ -172,7 +174,7 @@ onMounted(()=>{
         justify-content: space-between;
         color: #02b6cd;
         font-family: ArchivoNarrow;
-        min-width: 750px;  //jiaquanju1
+        min-width: 750px;  
         max-width: 850px;
         word-break: break-word;
         font-weight: bold;
@@ -183,6 +185,8 @@ onMounted(()=>{
         }
     }
     .introdution {
+        min-width: 750px;  
+        max-width: 850px;
         .text {
             margin-top: 4vh;
             font-family: chancery;
@@ -196,11 +200,15 @@ onMounted(()=>{
         border: 1px solid rgba(166, 166, 166, 0.5);
     }
     .skill {
+        min-width: 750px;  
+        max-width: 850px;
         color: #202124;
         font-size: 28px;
         padding: 20px 0 30px;
     }
     .skill-list {
+        min-width: 750px;  
+        max-width: 850px;
         margin-top: 12px;
         .skill-item {
             display: flex;
@@ -223,6 +231,8 @@ onMounted(()=>{
     .btn-bottom {
         display: flex;
         justify-content: center;
+        min-width: 750px;  
+        max-width: 850px;
         margin-top: 6vh;
         font-size: 20px;
         margin-bottom: 4vh;
