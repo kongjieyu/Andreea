@@ -2,9 +2,9 @@
     "Publications": [
         {
             "text": "David Trye, <strong>Andreea Calude</strong>, Te Taka Keegan and Julia Falconer. (Under review). <span class='title'>When loanwords are not lone words: Using networks and hypergraphs to explore Māori loanwords in New Zealand English</span> TBA.",
-            "articlesTitle_url": "",
-            "journal_url":"",
-            "pdf_url": "",
+            "articlesTitle_url": "https://benjamins.com/catalog/aplv.5.2",
+            "journal_url":"https://benjamins.com/catalog/aplv.5.2",
+            "pdf_url": "https://benjamins.com/catalog/aplv.5.2",
             "year": "under review"
         },
         {
@@ -20,63 +20,49 @@
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "",
-            "year": "2022.1"
+            "year": "2022"
         },
         {
             "text": "<strong>Andreea Calude</strong>. (2022). <span class='title'>Māori English: lexis, grammar and discourse.</span> In <i>Wiley Blackwell Encyclopedia of World Englishes</i>, TBA.",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "",
-            "year": "2022.1"
-        },
-        {
-            "text": "<strong>Andreea Calude</strong>. (2022). <span class='title'>Māori English: lexis, grammar and discourse.</span> In <i>Wiley Blackwell Encyclopedia of World Englishes</i>, TBA.",
-            "articlesTitle_url": "",
-            "journal_url":"",
-            "pdf_url": "",
-            "year": "2022.6"
-        },
-        {
-            "text": "<strong>Andreea Calude</strong>. (2022). <span class='title'>Māori English: lexis, grammar and discourse.</span> In <i>Wiley Blackwell Encyclopedia of World Englishes</i>, TBA.",
-            "articlesTitle_url": "",
-            "journal_url":"",
-            "pdf_url": "",
-            "year": "2022.12"
+            "year": "2022"
         },
         {
             "text": "Andreea Calude. (2021). <span class='title'>The history of number words in the world's languages: What have we learnt so far?</span> <i>Philosophical Transactions of the Royal Society B(iology)</i> Special Issue on the Prehistory of Languages, edited by Antonio Benitez-Burraco and Ljiljana Progovac. DOI 10.1098/rstb.2020.0206",
             "articlesTitle_url": "https://royalsocietypublishing.org/doi/10.1098/rstb.2020.0206",
             "journal_url":"",
             "pdf_url": "",
-            "year": "2021.1"
+            "year": "2021"
         },
         {
             "text": "<strong>Andreea Calude</strong> and Gerry Delahunty. (2020). <span class='title'>\"Just Because\" Constructions in Spoken and Written New Zealand English.</span> <i>Journal of Linguistics and Language Teaching</i>, (10 Year Anniversary Issue), Vol 11(1): 29-52.",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "",
-            "year": "2020.1"
+            "year": "2020"
         },
         {
             "text": "Jim Miller and <strong>Andreea Calude</strong>. (2020). <span class='title'>Spoken and Written Language chapter</span> in <i>Handbook of English Linguistics</i>. Second edition, pp. 549-568, edited by Bas Aarts and April McMahon (Blackwell/Wiley Press).",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "",
-            "year": "2020.1"
+            "year": "2020"
         },
         {
             "text": "David Trye, <strong>Andreea Calude</strong>, Felipe Bravo-Marquez and Te Taka Keegan. (2020) <span class='title'>Hybrid Hashtags - #YouKnowYoureAKiwiWhen your Tweet contains Māori and English.<span class='title'> <i>Frontiers Special Issue on Computational Sociolinguistics</i>. doi.org/10.3389/frai.2020.00015.",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://www.frontiersin.org/articles/10.3389/frai.2020.00015/full",
-            "year": "2020.1"
+            "year": "2020"
         },
         {
             "text": "<strong>Andreea Calude</strong>, Steven Miller, Sally Harper and Hēmi Whaanga. (2019). <span class='title'>Detecting language change: Māori loanwords in a diachronic topic-constrained corpus of New Zealand English newspapers.</span> <i>Asia and Pacific Variation Journal</i>, Vol 5(2): 109-137.",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "",
-            "year": "2019.1"
+            "year": "2019"
         },
 
         {
@@ -84,56 +70,56 @@
             "articlesTitle_url": "",
             "journal_url":"https://benjamins.com/catalog/aplv.5.2",
             "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2215039019300608",
-            "year": "2019.1"
+            "year": "2019"
         },
         {
-            "text": "Katherine Levendis and <strong>Andreea Calude</strong>. (2019). <span class='title'>Flagging loanwords and what they can tell us - a case-study from New Zealand English</span>. <i>,Ampersand</i>,, Vol 6, doi.org/10.1016/j.amper.2019.100056. [PDF]",
+            "text": "Katherine Levendis and <strong>Andreea Calude</strong>. (2019). <span class='title'>Flagging loanwords and what they can tell us - a case-study from New Zealand English</span>. <i>,Ampersand</i>,, Vol 6, doi.org/10.1016/j.amper.2019.100056. <span class='pdf'>[ PDF ]</span>",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2215039019300128",
-            "year": "2019.1"
+            "year": "2019"
         },
         {
             "text": "König, Jemma, <strong>Andreea Calude</strong> and Averil Coxhead. (2019). <span class='title'>Using n-grams to automatically generate good pseudo-words and how to evaluate them.</span> <i>Applied Linguistics</i>, Vol 41(6): 878-900, doi.org/10.1093/applin/amz045.",
             "articlesTitle_url": "",
             "journal_url":"https://academic.oup.com/applij/article/doi/10.1093/applin/amz045/5580557/",
             "pdf_url": "",
-            "year": "2019.1"
+            "year": "2019"
         },
         {
             "text": "<strong>Andreea Calude</strong> and Suzanne Kemmer. (2019) <span class='title'>Special Issue in honour of Frank Lichtenberk</span>, <i>Te Reo - the Journal of the Linguistics Society of NZ.</i>, 61(1).",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://nzlingsoc.org/journal/current-issue/",
-            "year": "2019.1"
+            "year": "2019"
         },
         {
             "text": "<strong>Andreea Calude</strong>. (2019). <span class='title'>A corpus linguistics analysis of the Indirect Middle Construction in Romanian - just how peripheral is it?</span> <i>Te Reo - Special Issue in Honour of Frank Lichtenberk</i>, 62(1): 130-154.",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://nzlingsoc.org/wp-content/uploads/2019/09/9_Calude.pdf",
-            "year": "2019.1"
+            "year": "2019"
         },
         {
             "text": "<strong>Andreea Calude</strong>, Louise Stevenson, Hēmi Whaanga and Te Taka Keegan. (2019) <span class='title'>Loanwords in Digital Discourse: Māori Loanwords in National Science Challenge websites.</span> <i>Journal of the Royal Society of New Zealand</i>. doi.org/10.1080/03036758.2019.1662818.",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://www.royalsociety.org.nz/research/te-reo-loanwords-in-national-science-challenge-discourse",
-            "year": "2019.1"
+            "year": "2019"
         },
         {
-            "text": "David Trye, Felipe Bravo-Marquez, <strong>Andreea Calude</strong> and Te Taka Keegan. (2019) <span class='title'>Māori Loanwords: a Corpus of New Zealand English Tweets.</span> <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</i> pp. 136-142. [PDF]",
+            "text": "David Trye, Felipe Bravo-Marquez, <strong>Andreea Calude</strong> and Te Taka Keegan. (2019) <span class='title'>Māori Loanwords: a Corpus of New Zealand English Tweets.</span> <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</i> pp. 136-142.<span class='pdf'>[ PDF ]</span>",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://aclanthology.org/P19-2018/",
-            "year": "2019.1"
+            "year": "2019"
         },
         {
             "text": "Mark Pagel, Mark Beaumont, Andrew Meade, Annemarie Verkerk and <strong>Andreea Calude</strong>. (2019). <span class='title'>Dominant words rise to the top by positive frequency-dependent selection</span> <i>Proceedings of the National Academy of Sciences (PNAS)</i> doi.org/10.1073/pnas.1816994116.",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://www.pnas.org/doi/abs/10.1073/pnas.1816994116",
-            "year": "2019.1"
+            "year": "2019"
         }
     ]
 }

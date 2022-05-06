@@ -9,7 +9,7 @@
         </div>
         <div class="list">
             <template v-for="(obj,index) in item.list" :key="index">
-              <div v-html="obj.text" class="list-item">
+              <div v-html="obj.text" class="publications-item list-item" :articlesTitleUrl="obj.articlesTitle_url" :journalUrl="obj.journal_url" :pdfUrl="obj.pdf_url">
               </div>
             </template>
         </div>
@@ -59,14 +59,34 @@ const getList = () =>{
               buffer3[j] = temp;
           }
           buffer3.unshift({
-              year: 'under review',
+              year: 'UNDER REVIEW',
               list: buffer1
           })
           dataList.value = buffer3
-          console.log('buffer3', buffer3)
+         // @ts-ignore
+          const jq =  window.$
+          
+          nextTick(() => {
+              jq('.publications-item i').on('click', (e:any) => {
+                const journalUrl = jq(e.target).parents(".publications-item").attr('journalUrl')
+                window.open(journalUrl)
+              })
+              jq('.publications-item span.title').on('click', (e:any) => {
+                const articlesTitleUrl = jq(e.target).parents(".publications-item").attr('articlesTitleUrl')
+                window.open(articlesTitleUrl)
+              })
+              jq('.publications-item span.pdf').on('click', (e:any) => {
+                const pdfUrl = jq(e.target).parents(".publications-item").attr('pdfUrl')
+                window.open(pdfUrl)
+              })
+          })
       }).catch((error) => {
 
       })
+}
+const openUrl = (data:any) =>{
+  console.log(545,event);
+
 }
 
 onMounted(()=>{
@@ -124,11 +144,33 @@ onMounted(()=>{
       color: rgba(32, 33, 36, 1);
       margin-bottom: 36px;
       line-height: 30px;
-      /deep/.title{
+      :deep(.title){
         color: rgba(2, 182, 205, 1);
+        cursor: pointer;
+      }
+      :deep(.title:hover){
+        color: rgba(2, 182, 205, 1);
+        border-bottom: 1px solid;
+        cursor: pointer;
+      }
+      :deep(.pdf){
+        color: #ffc300;
+        cursor: pointer;
+      }
+      :deep(.pdf:hover){
+        color: #ffc300;
+        cursor: pointer;
+        border-bottom: 1px solid;
       }
       .list-item{
         margin-bottom: 25px;
+        :deep(i){
+          cursor: pointer;
+        }
+        :deep(i:hover){
+          cursor: pointer;
+          border-bottom: 1px solid;
+        }
       }
     }
   }
