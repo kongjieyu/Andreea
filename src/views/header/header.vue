@@ -56,15 +56,14 @@ const isNavIconShow = () => {
     let siderNum = 70
     // let relheight = scrollHeight - height
     if(height > 75) {
-        const hiddenItems = []
+        const hiddenItems:any = []
         const menuItems = document.querySelectorAll('#top-nav .nav-item')
         setTimeout(() => {
-            menuItems.forEach((item) => {
+            menuItems.forEach((item:any) => {
                 if(item.offsetTop > 0) {
                     hiddenItems.push(item.innerHTML)
                 }
             })
-            console.log('hiddenItems', hiddenItems)
         }, 100)
     }
     // if( width < 575) {
