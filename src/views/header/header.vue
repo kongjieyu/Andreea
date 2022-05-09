@@ -1,28 +1,33 @@
 <template>
-    <div style="position: relative;">
         <div class="header">
             <div class="header-bg">
                 <img :src="bgImage" alt="">
             </div>
             <div class="nav">
-                <div class="nav-parent" id="top-nav">
-                    <div class="nav-item"  :class="{'active':currentAtive==item,'press-style':item=='Press'}" v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">{{item}}</div>
+                <ul class="nav-parent" id="top-nav">
+                    <li class="nav-item"  :class="{'active':currentAtive==item,'press-style':item=='Press'}" v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">
+                        <span>{{item}}</span>
+                        <ul v-if="item=='Press'" class="press-more">
+                            <li v-for="(item,ibdex) in pressNav" :key="index" @click="changeTab(item)">{{item}}</li>
+                        </ul>
+                    </li>
                     <!-- <div class="press">
                         <div>Written</div>
                         <div>Video/Podcasts</div>
                     </div> -->
-                </div>
+                </ul>
             </div>
         </div>
-    </div>
 </template>
 
 <script setup lang="ts">
 import axios from "axios";
+import { log } from "console";
 import {onMounted, reactive, ref, watchEffect, nextTick} from "vue";
 import { useRouter} from 'vue-router'
 const router = useRouter();
 const navList:any= ref(['Home','Books','Publications','Press','Interviews','Teaching','Consultancy']) //头部导航栏
+const pressNav:any = ref(['Written','Video/Podcasts']) //press二级菜单
 const currentAtive = ref('Home')
 const bgImage:any = ref('')
 //获取导航栏
@@ -40,11 +45,17 @@ const getList = () =>{
 
 //缩略显示
 const hiderSider:any = ref([])
-
 //点击切换
 const changeTab = (data:any) =>{
     currentAtive.value = data
-    router.push({name:data})
+     if(data=='Press'||data=='Written'||data=='Video/Podcasts'){
+         router.push({
+                name:'Press',
+                params:{type:data}
+        })  
+     }else{
+         router.push({name:data})
+     }
 }
 //...显示
 const showNavIcon = ref(false)
@@ -141,27 +152,21 @@ onMounted(()=>{
         }
     }
     .nav {
-        // position: relative;
-        // overflow: hidden;
         margin: 0 4vw;
-        // flex: 1;
-        // display: flex;
-        // height: 75px;
-        // color: rgba(32, 33, 36, 1);
-        // font-size: 20px ;
-        // justify-content: space-between;
-        // // flex-basis: auto;
-        // flex-wrap: wrap;
-        // flex-grow: 1;
-        // flex-shrink: 1;
         width:calc(100% - 560px);
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
         .nav-parent{
-            flex-wrap: wrap;
-            overflow: hidden;
+            // flex-wrap: wrap;
+            // overflow: hidden;
             flex-basis: auto;
             flex-grow: 1;
             flex-shrink: 1;
-
             height: 75px;
             color: rgb(32, 33, 36);
             font-size: 20px;
@@ -172,11 +177,36 @@ onMounted(()=>{
                 line-height: 72px;
                 margin-right:20px;
             }
+            .nav-item:hover, .press-style ul li:hover{
+                color:rgba(2, 182, 205, 1);
+            }
             .active{
                 color:rgba(2, 182, 205, 1);
                 border-bottom: 3px solid rgba(2, 182, 205, 1);
             }
-
+            .press-style{
+                position: relative;
+            } 
+            .press-style .press-more{
+                position: absolute;
+                display: none;
+                top:60px;
+                left: 0;
+                border: 1px solid rgba(166, 166, 166, 0.3);
+                box-shadow: 0px 2px 6px rgb(166 166 166 / 20%);
+                border-radius: 3px;
+                padding: 13px;
+                background: #fff;
+                z-index: 99;
+                color: rgb(32, 33, 36);
+            }
+            .press-style:hover .press-more{
+                display: block;
+            } 
+            .press-style ul li{
+                line-height: 35px;
+                z-index: 99;
+            }
         }
     }
 }

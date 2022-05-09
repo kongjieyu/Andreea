@@ -65,7 +65,6 @@ const getList = () =>{
           dataList.value = buffer3
          // @ts-ignore
           const jq =  window.$
-          
           nextTick(() => {
               jq('.publications-item i').on('click', (e:any) => {
                 const journalUrl = jq(e.target).parents(".publications-item").attr('journalUrl')
