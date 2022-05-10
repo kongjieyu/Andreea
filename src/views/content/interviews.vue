@@ -37,17 +37,17 @@ const getListData = () =>{
           //  console.log('video',response.data);
            
           mediaList.value = response.data.Written
-          mediaList.value.forEach(item=>{
+          mediaList.value.forEach((item:any)=>{
             item.text = item.text.replace(/\n/g,'<br>')
           })
-          console.log(112,mediaList.value);
+          // console.log(112,mediaList.value);
           
        })
     }catch{
 
     }
 }
-const openTo = (data) =>{
+const openTo = (data:any) =>{
   if(data){
       window.open(data);
   }else{
