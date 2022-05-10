@@ -1,19 +1,21 @@
 <template>
   <div class="publications">
-    <div class="pub_ctn" v-for="(item,index) in dataList" :key="index">
-        <div class="timeline">
-          <div class="year">{{item.year}}</div>
-          <div class="cus-parent">
-            <div class="cus-box"></div>
-          </div>
-        </div>
-        <div class="list">
-            <template v-for="(obj,index) in item.list" :key="index">
-              <div v-html="obj.text" class="publications-item list-item" :articlesTitleUrl="obj.articlesTitle_url" :journalUrl="obj.journal_url" :pdfUrl="obj.pdf_url">
+    <div class="public-item">
+        <div class="pub_ctn" v-for="(item,index) in dataList" :key="index">
+            <div class="timeline">
+              <div class="year">{{item.year}}</div>
+              <div class="cus-parent">
+                <div class="cus-box"></div>
               </div>
-            </template>
-        </div>
+            </div>
+            <div class="list">
+                <template v-for="(obj,index) in item.list" :key="index">
+                  <div v-html="obj.text" class="publications-item list-item" :articlesTitleUrl="obj.articlesTitle_url" :journalUrl="obj.journal_url" :pdfUrl="obj.pdf_url">
+                  </div>
+                </template>
+            </div>
 
+        </div>
     </div>
   </div>
 </template>
@@ -95,80 +97,83 @@ onMounted(()=>{
 
 <style lang="less" scoped>
 .publications{
-  height: calc(100% - 75px);
+  font-family: Roboto;
+  height: calc(100% - 80px);
   overflow-x: hidden;
-  padding: 5vh 3vw 1vh 5vw;;
-  .pub_ctn{
-    display: flex;
-    .timeline{
-      flex-basis: 15%;
+  .public-item{
+    padding: 6vh 4vw 1vh 6vw;
+    .pub_ctn{
       display: flex;
-      .year{
-        // font-family: Roboto;
-        color: rgba(255, 196, 3, 1);
-        font-size: 26px;
-        margin-right: 12px;
+      .timeline{
+        flex-basis: 15%;
+        display: flex;
+        .year{
+          font-family: Roboto;
+          color: rgba(255, 196, 3, 1);
+          font-size: 26px;
+          margin-right: 12px;
+          line-height: 30px;
+          width: 100px;
+          word-wrap: break-word;
+        }
+        .cus-parent{
+            position: relative;
+          .cus-box{
+            width: 22px;
+            height: 22px;
+            margin-top: 4px;
+            border-radius: 4px;
+            background-color: rgba(255, 196, 3, 1);
+          }
+          .cus-box::before{
+            content: "";
+            display: block;
+            z-index: 1000;
+            position: absolute;
+            height: 100%;
+            border: 4px solid rgba(255, 196, 3, 1);
+            top: 24px;
+            right: 9px;
+            border-right: none;
+            border-bottom: none;
+            border-top: none;
+            box-sizing: border-box;
+          }
+        }
+      }
+      .list{
+        flex: 1;
+        font-size: 18px;
+        color: rgba(32, 33, 36, 1);
+        // margin-bottom: 36px;
         line-height: 30px;
-        width: 100px;
-        word-wrap: break-word;
-      }
-      .cus-parent{
-          position: relative;
-        .cus-box{
-          width: 22px;
-          height: 22px;
-          margin-top: 4px;
-          border-radius: 4px;
-          background-color: rgba(255, 196, 3, 1);
-        }
-        .cus-box::before{
-          content: "";
-          display: block;
-          z-index: 1000;
-          position: absolute;
-          height: 100%;
-          border: 4px solid rgba(255, 196, 3, 1);
-          top: 24px;
-          right: 9px;
-          border-right: none;
-          border-bottom: none;
-          border-top: none;
-          box-sizing: border-box;
-        }
-      }
-    }
-    .list{
-      flex: 1;
-      font-size: 18px;
-      color: rgba(32, 33, 36, 1);
-      margin-bottom: 36px;
-      line-height: 30px;
-      :deep(.title){
-        color: rgba(2, 182, 205, 1);
-        cursor: pointer;
-      }
-      :deep(.title:hover){
-        color: rgba(2, 182, 205, 1);
-        border-bottom: 1px solid;
-        cursor: pointer;
-      }
-      :deep(.pdf){
-        color: #ffc300;
-        cursor: pointer;
-      }
-      :deep(.pdf:hover){
-        color: #ffc300;
-        cursor: pointer;
-        border-bottom: 1px solid;
-      }
-      .list-item{
-        margin-bottom: 25px;
-        :deep(i){
+        :deep(.title){
+          color: rgba(2, 182, 205, 1);
           cursor: pointer;
         }
-        :deep(i:hover){
+        :deep(.title:hover){
+          color: rgba(2, 182, 205, 1);
+          border-bottom: 1px solid;
+          cursor: pointer;
+        }
+        :deep(.pdf){
+          color: #ffc300;
+          cursor: pointer;
+        }
+        :deep(.pdf:hover){
+          color: #ffc300;
           cursor: pointer;
           border-bottom: 1px solid;
+        }
+        .list-item{
+          margin-bottom: 28px;
+          :deep(i){
+            cursor: pointer;
+          }
+          :deep(i:hover){
+            cursor: pointer;
+            border-bottom: 1px solid;
+          }
         }
       }
     }

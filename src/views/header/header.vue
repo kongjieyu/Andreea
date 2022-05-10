@@ -10,6 +10,9 @@
                         <ul v-if="item=='Press'" class="press-more">
                             <li v-for="(item,ibdex) in pressNav" :key="index" @click="changeTab(item)">{{item}}</li>
                         </ul>
+                        <!-- <ul v-if="item=='Teaching'" class="press-more">
+                            <li v-for="(item,ibdex) in pressNav" :key="index" @click="changeTab(item)">{{item}}</li>
+                        </ul> -->
                     </li>
                     <!-- <div class="press">
                         <div>Written</div>
@@ -164,6 +167,7 @@ onMounted(()=>{
         .nav-parent{
             // flex-wrap: wrap;
             // overflow: hidden;
+            font-family: Roboto;
             flex-basis: auto;
             flex-grow: 1;
             flex-shrink: 1;

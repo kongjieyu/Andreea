@@ -1,0 +1,37 @@
+{
+    "Written": [
+        {
+            "text": "Fortnightly column in NZ newspapers (Dominion Post and Waikato Times) with Laurie Bauer, Paul Warren and Corinne Seals.",
+            "date":"Dec 2020-present",
+            "cover_url": "/static/image/liabary.png",
+            "operation": "Archieve here",
+            "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
+            "sort": "present"
+        },
+        {
+            "text": "I blog for Sciblogs as Lippy Linguist.",
+            "date":"Aug 2017-present",
+            "cover_url": "",
+            "operation": "Read here",
+            "link_url": "https://sciblogs.co.nz/lippy-linguist/",
+            "sort": "present"
+        },
+        {
+            "text": "Guest story for the SpinOff on grammar <strong>Does Grammar Really Matter?</strong>.",
+            "date":"3rd May 2018",
+            "cover_url": "",
+            "operation": "Read here",
+            "link_url": "https://thespinoff.co.nz/society/03-05-2018/does-good-grammar-really-matter",
+            "sort": "2018.05"
+        },
+        {
+            "text": "In April 2018, I did a PechaKucha talk about the languages I speak. (video to come soon).",
+            "date":"April 2018",
+            "cover_url": "",
+            "operation": "Read here",
+            "link_url": "https://www.calude.net/andreea/2018_PechaKucha.jpg",
+            "sort": "2018.04"
+        }
+       
+    ]
+}

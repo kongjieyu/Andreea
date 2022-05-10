@@ -30,6 +30,13 @@
             "year": "2022"
         },
         {
+            "text": "BOOK:  <strong>Andreea Calude</strong> and Laurie Bauer. (2021).  <span class='title'>Mysteries of English Grammar</span>, <i>London: Routledge</i>. See interview on RNZ by Bryan Crump on the Nights show, March, 2022 and news story by the University of Waikato.",
+            "articlesTitle_url": "https://www.routledge.com/Mysteries-of-English-Grammar-A-Guide-to-Complexities-of-the-English-Language/Calude-Bauer/p/book/9780367710279",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2021"
+        },
+        {
             "text": "Andreea Calude. (2021). <span class='title'>The history of number words in the world's languages: What have we learnt so far?</span> <i>Philosophical Transactions of the Royal Society B(iology)</i> Special Issue on the Prehistory of Languages, edited by Antonio Benitez-Burraco and Ljiljana Progovac. DOI 10.1098/rstb.2020.0206",
             "articlesTitle_url": "https://royalsocietypublishing.org/doi/10.1098/rstb.2020.0206",
             "journal_url":"",
@@ -51,7 +58,7 @@
             "year": "2020"
         },
         {
-            "text": "David Trye, <strong>Andreea Calude</strong>, Felipe Bravo-Marquez and Te Taka Keegan. (2020) <span class='title'>Hybrid Hashtags - #YouKnowYoureAKiwiWhen your Tweet contains Māori and English.<span class='title'> <i>Frontiers Special Issue on Computational Sociolinguistics</i>. doi.org/10.3389/frai.2020.00015.",
+            "text": "David Trye, <strong>Andreea Calude</strong>, Felipe Bravo-Marquez and Te Taka Keegan. (2020) <span class='title'>Hybrid Hashtags - #YouKnowYoureAKiwiWhen your Tweet contains Māori and English.<span class='title'> <i>Frontiers Special Issue on Computational Sociolinguistics</i>. doi.org/10.3389/frai.2020.00015. <span class='pdf'>[ PDF ]</span>",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://www.frontiersin.org/articles/10.3389/frai.2020.00015/full",
@@ -108,18 +115,235 @@
             "year": "2019"
         },
         {
-            "text": "David Trye, Felipe Bravo-Marquez, <strong>Andreea Calude</strong> and Te Taka Keegan. (2019) <span class='title'>Māori Loanwords: a Corpus of New Zealand English Tweets.</span> <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</i> pp. 136-142.<span class='pdf'>[ PDF ]</span>",
+            "text": "David Trye, Felipe Bravo-Marquez, <strong>Andreea Calude</strong> and Te Taka Keegan. (2019) <span class='title'>Māori Loanwords: a Corpus of New Zealand English Tweets.</span> <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</i> pp. 136-142. <span class='pdf'>[ PDF ]</span>",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://aclanthology.org/P19-2018/",
             "year": "2019"
         },
         {
-            "text": "Mark Pagel, Mark Beaumont, Andrew Meade, Annemarie Verkerk and <strong>Andreea Calude</strong>. (2019). <span class='title'>Dominant words rise to the top by positive frequency-dependent selection</span> <i>Proceedings of the National Academy of Sciences (PNAS)</i> doi.org/10.1073/pnas.1816994116.",
+            "text": "Mark Pagel, Mark Beaumont, Andrew Meade, Annemarie Verkerk and <strong>Andreea Calude</strong>. (2019). <span class='title'>Dominant words rise to the top by positive frequency-dependent selection</span> <i>Proceedings of the National Academy of Sciences (PNAS)</i> doi.org/10.1073/pnas.1816994116. <span class='pdf'>[ PDF ]</span>",
             "articlesTitle_url": "",
             "journal_url":"",
             "pdf_url": "https://www.pnas.org/doi/abs/10.1073/pnas.1816994116",
             "year": "2019"
+        },
+               {
+            "text": "<strong>Andreea Calude</strong>. (2018). Around the World in a Loanword <i>Babel Mag</i> Issue 23: 10-16, May 2018.",
+            "articlesTitle_url": "",
+            "journal_url":"https://babelzine.co.uk/",
+            "pdf_url": "",
+            "year": "2018"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2018). <span class='title'>The use of heaps as quantifier and intensifier in New Zealand English</span>. English Language and Linguistics First view: 11 December 2017. See media coverage of this project on <i>TVNZ (TV3), Radio NZ , NZ Herald</i>. <span class='pdf'>[ PDF ]</span>",
+            "articlesTitle_url": "http://www.calude.net/andreea/Heaps_data.docx",
+            "journal_url":"https://www.nzherald.co.nz/nz/why-heaps-has-heaps-more-meaning-than-you-think/HO7J476Z3RAP5IRYRDEK7HOAZI/?c_id=1&objectid=11984040",
+            "pdf_url": "http://www.calude.net/andreea/Heaps_data.docx",
+            "year": "2018"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>, Mark Pagel and Steven Miller. (2017). <span class='title'>Modelling borrowing success - a quantitative study of Māori loanwords in New Zealand English</span>. <i>Corpus Linguistics and Linguistics Theory</i>, to appear in Vol 15, Issue 2, in early 2018. [open source]",
+            "articlesTitle_url": "",
+            "journal_url":"https://www.degruyter.com/journal/key/cllt/html",
+            "pdf_url": "",
+            "year": "2017"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2017). <span class='title'>Sociolinguistic Variation at the Grammatical/Discourse Level: Demonstrative Clefts in Spoken British English</span>. <i>International Journal of Corpus Linguistics</i>, 22(3): 429-455.",
+            "articlesTitle_url": "",
+            "journal_url":"https://benjamins.com/content/home#catalog/journals/ijcl.22.3.06cal/details",
+            "pdf_url": "",
+            "year": "2017"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2017). <span class='title'>Testing the boundaries of the middle voice: Observations from English and Romanian</span>. <i>Cognitive Linguistics</i>, 28(4): 599-630.",
+            "articlesTitle_url": "https://www.degruyter.com/document/doi/10.1515/cog-2016-0046/html",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2017"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong> and Annemarie Verkerk. (2016).  <span class='title'>How to build the Number Line in Indo-European - a Phylogenetic Study</span>. <i>Journal of Language Evolution</i> [open source doi: lzw003].",
+            "articlesTitle_url": "https://academic.oup.com/jole/article/1/2/91/2281899",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2016"
+        },
+        {
+            "text": "Jeanine Treffers-Daller and <strong>Andreea Calude</strong>. (2015).  <span class='title'>The role of statistical learning in the acquisition of motion event construal in a second language</span>. <i>International Journal of Bilingual Education and Bilingualism</i> 18(5): 602-623.",
+            "articlesTitle_url": "https://academic.oup.com/jole/article/1/2/91/2281899",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2015"
+        },
+        {
+            "text": "Martin Haspelmath, <strong>Andreea Calude</strong>, Michael Spagnol, Heiko Narrog and Elif Bamyaci. (2014).  <span class='title'>Coding causal-noncausal verb alternations: a form-frequency correspondence explanation</span>. <i>Journal of Linguistics</i> 50(3): 587-625.",
+            "articlesTitle_url": "https://www.cambridge.org/core/journals/journal-of-linguistics/article/abs/coding-causalnoncausal-verb-alternations-a-formfrequency-correspondence-explanation1/7683AB32650545279C84E2B62FFA59B9",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2014"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong> and Mark Pagel. (2014). <span class='title'>Frequency of Use and Basic Vocabulary</span>. In Pütz, Martin and Filipović, Luna (eds.) <i>Multilingual Cognition and Language Use: Processing and Typological Perspectives</i> pp. 45-72. Amsterdam: John Benjamins.",
+            "articlesTitle_url": "",
+            "journal_url":"https://benjamins.com/content/home#catalog/books/hcp.44/main",
+            "pdf_url": "",
+            "year": "2014"
+        },
+        {
+            "text": "Alexander Onysko and <strong>Andreea Calude</strong>. (2014). <span class='title'>Comparing the usage of Māori loans in spoken and written New Zealand English: A case study of Māori, Pākeha, and Kiwi</span>. In Zenner, Eline and Gitte Kristiansen (eds.). <i>New Perspectives on Lexical Borrowing</i>. pp. 45-72. Berlin, New York: De Gruyter.",
+            "articlesTitle_url": "",
+            "journal_url":"https://www.degruyter.com/",
+            "pdf_url": "",
+            "year": "2014"
+        },
+        {
+            "text": "Esme Winter-Froemel, Alexander Onysko and <strong>Andreea Calude</strong>. (2014). <span class='title'>Why some non-catachrestic borrowings are more successful than others: a case study of English loans in German</span>, In A Koll-Stobbe and S Knospe (eds.). <i>Language Contact in Times of Globalization</i>. pp. 119-144. Frankfurt am Main: Lang.",
+            "articlesTitle_url": "",
+            "journal_url":"https://benjamins.com/content/home#catalog/books/hcp.44/main",
+            "pdf_url": "",
+            "year": "2014"
+        },
+        {
+            "text": "Mark Pagel, Quentin Atkinson, <strong>Andreea Calude</strong> and Andrew Meade. (2013). <span class='title'>Reply to Mahowald and Gibson and to Heggarty: No problems with short words, and no evidence provided</span>. <i>Proceedings of the National Academy of Sciences</i> 110 (35): E3254.",
+            "articlesTitle_url": "",
+            "journal_url":"https://benjamins.com/content/home#catalog/books/hcp.44/main",
+            "pdf_url": "",
+            "year": "2013"
+        },
+        {
+            "text": "Mark Pagel, Quentin Atkinson, <strong>Andreea Calude</strong> and Andrew Meade. (2013). <span class='title'>Ultra-conserved words point to deep language ancestry across Eurasia</span>. <i>Proceedings of the National Academy of Sciences</i> 110 (21): 8471-8476. Media profile posted in Daily Telegraph, The Guardian, and The Washington Post. I was interviewed on National Radio about it on 13 May 2013 at 14:10.  <span class='pdf'>[ RADIO ]</span>",
+            "articlesTitle_url": "https://www.washingtonpost.com/wp-srv/special/national/words-that-last/",
+            "journal_url":"",
+            "pdf_url": "http://podcast.radionz.co.nz/aft/aft-20130513-1410-ye_olde_words-048.mp3",
+            "year": "2013"
+        },
+        {
+            "text": "Mark Pagel, Eric Atlschuler, <strong>Andreea Calude</strong> and Andrew Meade. (2013). <span class='title'>Linguistic Evidence supports date for Homeric Epics</span>. <i>BioEssays</i> 53(5): 417-420. Media profile posted in Scientific American and in History of the Ancient World.",
+            "articlesTitle_url": "https://www.scientificamerican.com/article/geneticists-estimate-publication-date-of-the-illiad/",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2013"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong> and Gerald Delahunty. (2012). <span class='title'>Inferentials: fixed or not?</span> <i>Token</i> Volume 1: 59-82.",
+            "articlesTitle_url": "https://token.ujk.edu.pl/volumes/volume-1/",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2012"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong> and Paul James. (2011). <span class='title'>A Diachronic Corpus of New Zealand Newspapers</span>. <i>New Zealand English Journal</i> 25: 1-14.",
+            "articlesTitle_url": "https://www.wgtn.ac.nz/lals/resources/nzej",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2011"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong> and Gerald Delahunty, Gerald. (2011). <span class='title'>Inferentials in Spoken English</span>. <i>Pragmatics</i> 21(3): 307-340.",
+            "articlesTitle_url": "",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2011"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2011). <span class='title'>The Science of Numbers: does Language Help or Hinder?</span> (in a special issue in the Honour of Prof. Roy Harris) <i>Language Sciences</i> 33(4): 562-568.",
+            "articlesTitle_url": "https://www.sciencedirect.com/science/article/abs/pii/S0388000111000246",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2011"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong> and Mark Pagel. (2011). <span class='title'>How do we use language? Shared patterns in the frequency of word-use across seventeen World languages</span>. <i>Philosophical Transactions of the Royal Society B</i> 366: 1101-1107. This article is also printed in the book \"Culture Evolves\", Oxford University Press. <span class='pdf'>[ Culture Evolves ]</span>",
+            "articlesTitle_url": "https://www.sciencedirect.com/science/article/abs/pii/S0388000111000246",
+            "journal_url":"",
+            "pdf_url": "https://global.oup.com/academic/product/culture-evolves-9780199608966?cc=cn&lang=en&",
+            "year": "2011"
+        },
+        {
+            "text": "Solomon Marcus and <strong>Andreea Calude</strong>. (2010). <span class='title'>Syntactic Iconicity: With and Beyond Its Accepted Principles</span>. <i>Revue Roumaine de Linguistique</i> 4: 19-44. [ giving me Erdös number 2. ]",
+            "articlesTitle_url": "http://www.lingv.ro/RRL-2010.html",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2010"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong> and Steven Miller. (2010). <span class='title'>Are Clefts Contagious in Conversation?</span> English Language and Linguistics 13: 127-132.",
+            "articlesTitle_url": "",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2010"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2009). <span class='title'>Formulaic Tendencies of Demonstrative Clefts in Spoken English</span>. In R. Corrigan, E.A. Moravcsik, H. Quali and K.M. Wheatley (eds.) Formulaic Language: Volume 1. <i>Distribution and Historical Change</i>. pp. 55-76. Philadelphia: John Benjamins.",
+            "articlesTitle_url": "",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2009"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2008). <span class='title'>Cleft Constructions in Spoken English</span>, <i>Berlin: VDM Verlag</i>.",
+            "articlesTitle_url": "https://www.amazon.co.uk/Constructions-Spoken-English-Andreea-Calude/dp/3639106393/ref=sr_1_1?ie=UTF8&s=books&qid=1235594910&sr=1-1",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2008"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2008). <span class='title'>Clefting and Extraposition in English</span>. <i>ICAME - International Computer Archive of Modern and Medieval English Journal</i> 32: 7-33.",
+            "articlesTitle_url": "",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2008"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2008). <span class='title'>Demonstrative Clefts and Double Cleft Constructions in Spoken English</span>. <i>Studia Linguistica</i> 62(1): 78-118.",
+            "articlesTitle_url": "https://onlinelibrary.wiley.com/",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2008"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2007). <span class='title'>Light and heavy reflexive marking: the Middle Domain in Romanian</span>. <i>Annual Review of Cognitive Linguistics</i> 5: 239-269.",
+            "articlesTitle_url": "https://www.ingentaconnect.com/content/jbp/arcl/2007/00000005/00000001/art00009",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2007"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2005). <span class='title'>Reflexive-Middle and Reciprocal-Middle Continua in Romanian</span>, (Peer-reviewed) <i>Proceedings of the 2004 Conference of the Australian Linguistics Society</i>, July 13-15, archived at University of Sydney. <span class='pdf'>[ ARCHIVE ]</span>",
+            "articlesTitle_url": "https://www.calude.net/andreea/Calude_middles.pdf",
+            "journal_url":"",
+            "pdf_url": "https://ses.library.usyd.edu.au/handle/2123/93",
+            "year": "2005"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2004). <span class='title'>Machine Translation of Various Text Genres</span>. <i>Te Reo; the New Zealand Linguistic Society Journal</i> 46: 67-94. <span class='pdf'>[ PDF ]</span>",
+            "articlesTitle_url": "https://www.calude.net/andreea/MT.pdf",
+            "journal_url":"",
+            "pdf_url": "https://www.calude.net/andreea/MT.pdf",
+            "year": "2004"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2001). <span class='title'>Romanian Clitics: Siding with the French or the Serbo-Croatian?</span> Revue Roumaine de Linguistique</i> 1-4: 91-105.",
+            "articlesTitle_url": "https://www.calude.net/andreea/Clitics.pdf",
+            "journal_url":"",
+            "pdf_url": "https://www.calude.net/andreea/Clitics.pdf",
+            "year": "2001"
+        },
+        {
+            "text": "<strong>Andreea Calude</strong>. (2001). <span class='title'>The Journey of the Four Colour Theorem Through Time</span>. <i>The New Zealand Mathematics Magazine</i> 38(3): 1-10.",
+          "articlesTitle_url": "https://www.calude.net/andreea/4CT.pdf",
+            "journal_url":"http://nzjm.math.auckland.ac.nz/index.php/New_Zealand_Journal_of_Mathematics",
+            "pdf_url": "https://www.calude.net/andreea/4CT.pdf",
+            "year": "2001"
+        },
+        {
+            "text": "   ",
+            "articlesTitle_url": "",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2001"
         }
     ]
 }

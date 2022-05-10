@@ -1,11 +1,11 @@
 <template>
   <div class="press">
-    <div class="wrtten">
+    <div class="wrtten" v-if="isWrittem=='press_written'">
         <div class="title">Pieces in the media</div>
         <div class="mediaList">
           <div v-for="(item,index) in mediaList" :key="index" class="media-item">
               <div class="date">{{item.date}}</div>
-              <div class="media-image" :style="{backgroundImage:'url(' + item.cover_url + ')'}" ></div>
+              <div class="media-image" :style="{backgroundImage:'url(' + item.cover_url + ')'}" :class="{'noUrl':!item.cover_url}"></div>
               <div class="text" v-html="item.text"></div>
               <div class="operation">
                 <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
@@ -14,10 +14,19 @@
                 </div>
               </div>
           </div>
-
         </div>
     </div>
-    <div class="podcasts"></div>
+    <div class="wrtten video" v-if="isWrittem=='press_video_podcast'">
+          <div class="title">Video / Podcast</div>
+          <div class="mediaList">
+            <div v-for="(item,index) in mediaList" :key="index" class="media-item">
+                <!-- <div class="date">{{item.date}}</div> -->
+                <div class="media-image cuspointer" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')'}" @click="openTo(item.link_url)" ></div>
+                <div class="text" v-html="item.text"></div>
+                <div class="video-date">{{item.date}}</div>
+            </div>
+          </div>
+    </div>
   </div>
 </template>
 
@@ -29,16 +38,19 @@ import { useRoute,useRouter} from 'vue-router'
 const route = useRoute()
 const router = useRouter();
 onMounted(() => {
+    isWrittem.value = 'press_written'
     getListData('press_written')
 })
-
+const isWrittem = ref('') //类型
 watch(
       () => route.params,
       (val, oval) => {
             if(oval.type=='Video/Podcasts'){ //vidio
-                getListData('press_video_podcast')
+              isWrittem.value = 'press_video_podcast'
+              getListData('press_video_podcast')
             }else{  //written
-                getListData('press_written')
+              isWrittem.value = 'press_written'
+              getListData('press_written')
             }
       }
     );
@@ -49,13 +61,13 @@ const mediaList:any = ref([])
 const getListData = (type) =>{ 
     try{
        axios.get(`/static/json/${type}.json`).then(response=>{
-           console.log(response.data);
+          //  console.log('video',response.data);
            
           mediaList.value = response.data.Written
           mediaList.value.forEach(item=>{
             item.text = item.text.replace(/\n/g,'<br>')
           })
-        //   console.log(112,mediaList.value);
+          console.log(112,mediaList.value);
           
        })
     }catch{
@@ -111,12 +123,20 @@ const openTo = (data) =>{
             border-top: 1px solid rgba(166, 166, 166, 0.2);
             border-bottom: 1px solid rgba(166, 166, 166, 0.2);
           }
+          .cuspointer{
+            cursor: pointer;
+          }
           .text{
             padding: 12px 25px;
             min-height: 85px;
             color: rgba(32, 33, 36, 1);
             font-size: 18px;
             line-height: 28px;
+          }
+          .video-date{
+            padding: 10px 25px 20px 25px;
+            color: rgba(112, 117, 122, 0.9);
+            font-size: 18px;
           }
           .operation{
             padding: 12px 25px;
@@ -140,6 +160,12 @@ const openTo = (data) =>{
           }
       }
     }
+  }
+  .video .mediaList .media-item .text{
+    min-height: 60px;
+  }
+  .noUrl{
+    background: rgba(229, 229, 229, 1);
   }
 }
 

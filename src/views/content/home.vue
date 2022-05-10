@@ -178,10 +178,10 @@ onMounted(()=>{
         max-width: 850px;
         word-break: break-word;
         font-weight: bold;
-        font-size: 56px;
+        font-size: 58px;
         margin-top: 8vh;
         div{
-            margin-right: 20px;
+            margin-right: 22px;
         }
     }
     .introdution {
@@ -192,6 +192,7 @@ onMounted(()=>{
             font-family: chancery;
             font-size: 28px;
             color: #202124;
+            letter-spacing: 1px;
         }
     }
     .divider {
@@ -200,13 +201,15 @@ onMounted(()=>{
         border: 1px solid rgba(166, 166, 166, 0.5);
     }
     .skill {
+        font-family: Roboto;
         min-width: 750px;  
         max-width: 850px;
         color: #202124;
         font-size: 28px;
-        padding: 20px 0 30px;
+        padding: 20px 0 20px;
     }
     .skill-list {
+        font-family: Roboto;
         min-width: 750px;  
         max-width: 850px;
         margin-top: 12px;
@@ -229,6 +232,7 @@ onMounted(()=>{
         }
     }
     .btn-bottom {
+        font-family: Roboto;
         display: flex;
         justify-content: center;
         min-width: 750px;  
@@ -260,8 +264,9 @@ onMounted(()=>{
         }
     }
     .custom-modal{
+            font-family: Roboto;
             padding: 38px 45px;
-            width: 500px;
+            width: 600px;
             height: 410px;
             background: rgba(255, 255, 255, 1);;
             border-radius: 4px;
@@ -272,7 +277,7 @@ onMounted(()=>{
             justify-content: center;
             position: relative;
             .title{
-                // font-family: Roboto;
+                font-family: Roboto;
                 font-weight: bold;
                 font-size: 28px;
             }
@@ -282,8 +287,8 @@ onMounted(()=>{
                 right: 0;
                 cursor: pointer;
                 display: inline-block;
-                width: 18px;
-                height: 4px;
+                width: 22px;
+                height: 3px;
                 background: #999;
                 line-height: 0;
                 font-size: 0;
@@ -293,8 +298,8 @@ onMounted(()=>{
                 .cancle:after{
                 content: "/";
                 display: block;
-                width: 18px;
-                height: 4px;
+                width: 22px;
+                height: 3px;
                 background: #999;
                 -webkit-transform: rotate(-90deg);
                 }
@@ -329,6 +334,7 @@ onMounted(()=>{
                         .customList{
                         // margin-left: 32px;
                         flex: 1;
+                        margin-left: 10px;
                         line-height: 32px;
                         max-width: 360px;
                         max-height: 100px;
@@ -339,7 +345,7 @@ onMounted(()=>{
                         .hight-item{
                             width: 160px;
                             text-align:right;
-                            margin-right: 20px;
+                            margin-right: 30px;
                             line-height: 32px;
                             .item-list{
                                 display: inline-block;
@@ -350,7 +356,7 @@ onMounted(()=>{
             }
     
   }
-    .custom-pd{padding: 38px 45px 38px 20px;}
+    .custom-pd{padding: 38px 45px 38px 40px;}
 }
 
 .popover-container {
