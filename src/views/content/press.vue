@@ -58,24 +58,22 @@ watch(
 
 const mediaList:any = ref([])
 //获取数据
-const getListData = (type) =>{ 
+const getListData = (type:any) =>{ 
     try{
        axios.get(`/static/json/${type}.json`).then(response=>{
           //  console.log('video',response.data);
            
           mediaList.value = response.data.Written
-          mediaList.value.forEach(item=>{
+          mediaList.value.forEach((item:any)=>{
             item.text = item.text.replace(/\n/g,'<br>')
           })
-          console.log(112,mediaList.value);
-          
        })
     }catch{
 
     }
 }
 
-const openTo = (data) =>{
+const openTo = (data:any) =>{
   if(data){
       window.open(data);
   }else{
