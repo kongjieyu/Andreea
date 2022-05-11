@@ -22,7 +22,7 @@
             <div v-for="(item,index) in mediaList" :key="index" class="media-item">
                 <!-- <div class="date">{{item.date}}</div> -->
                 <div class="media-image cuspointer" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')'}" @click="openTo(item.link_url)" ></div>
-                <div class="text" v-html="item.text"></div>
+                <div class="text" v-html="item.text" @click="openTo(item.link_url)"></div>
                 <div class="video-date">{{item.date}}</div>
             </div>
           </div>
@@ -127,6 +127,7 @@ const openTo = (data:any) =>{
           .text{
             padding: 12px 25px;
             min-height: 85px;
+            cursor: pointer;
             color: rgba(32, 33, 36, 1);
             font-size: 18px;
             line-height: 28px;

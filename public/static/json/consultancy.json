@@ -1,0 +1,48 @@
+{
+    "Project": [
+        {
+            "text": "Fortnightly column in NZ newspapers (Dominion Post and Waikato Times) with Laurie Bauer, Paul Warren and Corinne Seals.",
+            "title":"Project name",
+            "cover_url": "/static/image/Project1.png",
+            "operation": "Learn more",
+            "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
+            "sort": "present"
+        },
+        {
+            "text": "Project description Project description description Project description Project description description Project description Project description descriptionProject description Project description description",
+            "title":"Project name",
+            "cover_url": "/static/image/screenshot.png",
+            "operation": "Read here",
+            "link_url": "https://sciblogs.co.nz/lippy-linguist/",
+            "sort": "present"
+        }
+       
+    ],
+    "Clients":[
+        {
+            "cover_url": "/static/image/Project1.png",
+            "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
+            "sort": "present"
+        },
+        {
+            "cover_url": "/static/image/client1.png",
+            "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
+            "sort": "present"
+        },
+        {
+            "cover_url": "/static/image/client2.png",
+            "link_url": "",
+            "sort": "present"
+        },
+        {
+            "cover_url": "",
+            "link_url": "",
+            "sort": "present"
+        },
+        {
+            "cover_url": "",
+            "link_url": "",
+            "sort": "present"
+        }
+    ]
+}
