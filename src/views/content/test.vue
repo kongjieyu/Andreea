@@ -242,7 +242,7 @@ onMounted(()=>{
     .custom-modal{
             padding: 38px 45px;
             width: 500px;
-            height: 410px;
+            height: 420px;
             background: rgba(255, 255, 255, 1);;
             border-radius: 4px;
             box-shadow: 0px 2px 6px 2px rgba(166, 166, 166, 0.5);

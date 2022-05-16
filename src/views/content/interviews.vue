@@ -58,10 +58,13 @@ const openTo = (data:any) =>{
 
 <style lang="less" scoped>
 .interviews{
-  padding: 0 5vw;
+  width: 100%;
   height: calc(100% - 75px);
-  overflow-x: hidden;
+  overflow: scroll;
    .wrtten{
+    width: 1420px;
+    margin: 0 auto;
+    padding: 0 5vw;
     .title{
       margin-top: 3vh;
       font-weight: bold;
@@ -72,18 +75,19 @@ const openTo = (data:any) =>{
       margin-top: 2vh;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       .media-item{
           border: 1px solid rgba(166, 166, 166, 0.6);
           box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
           border-radius: 6px;
-          width: 47%;
+          width: 600px;
           margin-right: 3vw;
           margin-bottom: 6vh;
           display: flex;
           justify-content: space-between;
           .left{
             flex-basis: 40%;
-            height: 200px;
+            height: 220px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -101,7 +105,7 @@ const openTo = (data:any) =>{
                 font-size: 16px;
               }
               .text{
-                height: 100px;
+                height: 120px;
                 overflow: auto;
                 color: rgba(32, 33, 36, 0.9);
                 font-size: 18px;
@@ -113,7 +117,7 @@ const openTo = (data:any) =>{
                 justify-content: right;
                 .opration-item{
                   color: rgba(2, 182, 205, 1);
-                  margin-right: 1vw;
+                  margin-right: 8px;
                   cursor: pointer;
                 }
                 .more-img{

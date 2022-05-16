@@ -53,7 +53,7 @@ watch(
               getListData('press_written')
             }
       }
-    );
+);
 
 
 const mediaList:any = ref([])
@@ -84,10 +84,13 @@ const openTo = (data:any) =>{
 
 <style lang="less" scoped>
 .press{
-  padding: 0 5vw;
   height: calc(100% - 75px);
-  overflow-x: hidden;
+  width: 100%;
+  overflow: scroll;
   .wrtten{
+    width: 1420px;
+    margin: 0 auto;
+    padding: 0 5vw;
     .title{
       margin-top: 3vh;
       font-weight: bold;
@@ -98,23 +101,24 @@ const openTo = (data:any) =>{
       margin-top: 2vh;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       .media-item{
           border: 1px solid rgba(166, 166, 166, 0.6);
           box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
           border-radius: 6px;
-          width: 400px;
+          width: 420px;
           margin-right: 3vw;
           margin-bottom: 6vh;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           .date{
-            padding: 12px 0 12px 25px;
+            padding: 10px 0 10px 25px;
             color: rgba(32, 33, 36, 1);
             font-size: 18px;
           }
           .media-image{
-            height: 250px;
+            height: 230px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -126,11 +130,12 @@ const openTo = (data:any) =>{
           }
           .text{
             padding: 12px 25px;
-            min-height: 85px;
+            height: 85px;
+            overflow: auto;
             cursor: pointer;
             color: rgba(32, 33, 36, 1);
             font-size: 18px;
-            line-height: 28px;
+            line-height: 25px;
           }
           .video-date{
             padding: 10px 25px 20px 25px;
@@ -144,7 +149,7 @@ const openTo = (data:any) =>{
             .opration-item{
               color: rgba(2, 182, 205, 1);
               font-size: 18px;
-              margin-right: 15px;
+              margin-right: 8px;
               cursor: pointer;
             }
             .more-img{
@@ -157,6 +162,9 @@ const openTo = (data:any) =>{
               }
             }
           }
+      }
+      .media-item:nth-child(3n){
+        margin-right: 0;
       }
     }
   }

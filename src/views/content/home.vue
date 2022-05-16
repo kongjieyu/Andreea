@@ -30,7 +30,7 @@
             </div>
             <div class="popover-container">
                 <div class="custom-modal custom-pd" v-if="hightlightShow">
-                <div class="header">
+                <div class="header HIGHLIGHTS">
                     <div class="title yellow" >HIGHLIGHTS</div>
                     <div class="cancle" @click="cancleModal"></div>
                 </div>
@@ -44,7 +44,7 @@
                 </div>
                 </div>
                 <div class="custom-modal"  v-if="contactShow">
-                    <div class="header">
+                    <div class="header Contact">
                     <div class="title blue">Contact me</div>
                     <div class="cancle" @click="cancleModal"></div>
                     </div>
@@ -372,5 +372,13 @@ onMounted(()=>{
 .yellow{
     color: rgba(255, 195, 0, 1);
     font-weight: bold;
+}
+.HIGHLIGHTS .cancle:hover,
+.HIGHLIGHTS .cancle:hover:after{
+    background: rgba(255, 195, 0, 1) !important;
+}
+.Contact .cancle:hover,
+.Contact .cancle:hover:after{
+    background:rgba(2, 182, 205, 1) !important;
 }
 </style>

@@ -1,0 +1,126 @@
+[
+    {
+        "Ph.D": [
+            {
+                "student": "David Trye",
+                "student_link": "https://www.cs.waikato.ac.nz/~dgt12/",
+                "intro":"(with Mark Apperley and David Bainbridge), <i>Visualisation techniques of multidimensional language data.</i>",
+                "intro_link":"",
+                "photo": "/static/image/David_Trye.jpg",         
+                "researchPeriod": "2020 - ongoing",
+                "institution": "University of Waikato , NZ"
+            },
+            {
+                "student": "Anita Pu",
+                "student_link": "",
+                "intro":"(with Roger Barnard and Rosemary de Luca) <i>Research perceptions of a blended collaborative approach to writing and their practices.</i>",
+                "intro_link":"",
+                "photo": "/static/image/Anita-Pu.png",     
+                "researchPeriod": "2015 - 2020",
+                "institution": "University of Waikato , NZ"
+            },
+            {
+                "student": "Jemma König",
+                "student_link": "",
+                "intro":"(with Ian Witten, Shaoqun Wu, Mark Apperley), <i>Modelling Vocabulary Acquisition in Extensive Reading.</i>",
+                "intro_link":"",
+                "photo": "/static/image/Jemma_konig.png",       
+                "researchPeriod": "2016 - 2019",
+                "institution": "University of Waikato , NZ"
+            }
+        ]
+    },
+    {
+        "Master": [
+            {
+                "student": "Jessie Burnette",
+                "student_link": "https://www.waikato.ac.nz/staff-profiles/people/jessieb",
+                "intro":"(with Maebh Long), Medical Humanities.",
+                "intro_link":"",
+                "photo": "/static/image/Jessie_Burnette.jpg",         
+                "researchPeriod": "March 2022 - Feb 2021",
+                "institution": "University of Waikato , NZ"
+            },
+            {
+                "student": "Katie Levendis",
+                "student_link": "",
+                "intro":"Māori loanwords in New Zealand newspaper data - a case-study of Māori Language Week.",
+                "intro_link": "https://www.teaomaori.news/research-shows-more-maori-loan-words-being-used",  
+                "photo": "/static/image/Katie_Levendis.png",        
+                "researchPeriod": "Oct 2018 - Oct 2019",
+                "institution": "University of Waikato , NZ"
+            }
+        ]
+    },
+    {
+        "Honors": [
+            {
+                "student": "David Trye",
+                "student_link": "https://www.cs.waikato.ac.nz/~dgt12/",
+                "intro":"(with Te Taka Keegan and Felipe Bravo Marquez) - Tweeting Māori Loanwords.",
+                "intro_link": "",  
+                "photo": "/static/image/David_Trye2.png",         
+                "researchPeriod": "2019",
+                "institution": "University of Waikato , NZ"
+            },
+            {
+                "student": "Nicole Chan",
+                "student_link": "https://www.linkedin.com/in/hi-nicole-chan/",
+                "intro":"(with Felipe Bravo Marquez) - Social Media Meets Te Reo Māori Loanwords.",
+                "intro_link": "",  
+                "photo": "/static/image/Nicole_Chan.png",        
+                "researchPeriod": "2018",
+                "institution": "University of Waikato , NZ"
+            }
+        ]
+    },
+    {
+        "Summer Scholarships": [
+            {
+                "student": "Jessie Burnette",
+                "student_link": "https://www.waikato.ac.nz/staff-profiles/people/jessieb",
+                "intro":"Stance on Social Media: the language of taking sides during a pandemic.",
+                "intro_link": "https://www.waikato.ac.nz/scholarships/search/summer-research-scholarship/jessie-burnette",  
+                "photo": "/static/image/Jessie_Burnette.jpg",         
+                "researchPeriod": "2020 - 2021",
+                "institution": "University of Waikato , NZ"
+            },
+            {
+                "student": "David Trye",
+                "student_link": "https://www.linkedin.com/in/hi-nicole-chan/",
+                "intro":"(with Felipe Bravo Marquez), Using Māori loanwords on Twitter.",
+                "intro_link": "https://www.waikato.ac.nz/news-opinion/media/2019/when-machine-learning-twitter-and-te-reo-maori-merge?fbclid=IwAR1GyEhx8sITU5nD0GJQ4gr83aT8LSiyJdeFwOMmzFiXxhbSumeRF_qpMtY",  
+                "photo": "/static/image/David_Trye3.png",        
+                "researchPeriod": "2018 - 2019",
+                "institution": "University of Waikato , NZ"
+            },
+            {
+                "student": "Abdul Aziz",
+                "student_link": "",
+                "intro":"(with Shaoqun Wu), Corpus Linguistics for Forensic Analysis.",
+                "intro_link": "",  
+                "photo": "/static/image/Abdul_Aziz.png",        
+                "researchPeriod": "2018 - 2019",
+                "institution": "University of Waikato , NZ"
+            },
+            {
+                "student": "Louise Stevenson",
+                "student_link": "",
+                "intro":"(with Te Taka Keegan and Hēmi Whaanga), Using Māori borrowings in New Zealand digital science discourse.",
+                "intro_link": "https://www.waikato.ac.nz/news-opinion/media/2018/matauranga-rising-in-science-digital-media",  
+                "photo": "/static/image/Louise_Stevenson.png",        
+                "researchPeriod": "2017 - 2018",
+                "institution": "University of Waikato , NZ"
+            },
+            {
+                "student": "Sally Harper",
+                "student_link": "",
+                "intro":"(with Steven Miller and Hēmi Whaanga), The Reo in Our Lives - using Māori borrowings in New Zealand newspapers.",
+                "intro_link": "",  
+                "photo": "/static/image/profile.png",        
+                "researchPeriod": "2016 - 2017",
+                "institution": "University of Waikato , NZ"
+            }
+        ]
+    }
+]

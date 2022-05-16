@@ -5,14 +5,14 @@
             </div>
             <div class="nav">
                 <ul class="nav-parent" id="top-nav">
-                    <li class="nav-item"  :class="{'active':currentAtive==item,'press-style':item=='Press'}" v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">
+                    <li class="nav-item"  :class="{'active':currentAtive==item,'press-style':item=='Press'||item=='Teaching'}" v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">
                         <span>{{item}}</span>
                         <ul v-if="item=='Press'" class="press-more">
                             <li v-for="(item,ibdex) in pressNav" :key="index" @click="changeTab(item)">{{item}}</li>
                         </ul>
-                        <!-- <ul v-if="item=='Teaching'" class="press-more">
-                            <li v-for="(item,ibdex) in pressNav" :key="index" @click="changeTab(item)">{{item}}</li>
-                        </ul> -->
+                        <ul v-if="item=='Teaching'" class="teching-more">
+                            <li v-for="(item,ibdex) in teachingNav" :key="index" @click="changeTab(item)">{{item}}</li>
+                        </ul>
                     </li>
                     <!-- <div class="press">
                         <div>Written</div>
@@ -31,6 +31,7 @@ import { useRouter} from 'vue-router'
 const router = useRouter();
 const navList:any= ref(['Home','Books','Publications','Press','Interviews','Teaching','Consultancy']) //头部导航栏
 const pressNav:any = ref(['Written','Video/Podcasts']) //press二级菜单
+const teachingNav:any = ref(['Courses','Supervisions'])
 const currentAtive = ref('Home')
 const bgImage:any = ref('')
 //获取导航栏
@@ -54,6 +55,11 @@ const changeTab = (data:any) =>{
      if(data=='Press'||data=='Written'||data=='Video/Podcasts'){
          router.push({
                 name:'Press',
+                params:{type:data}
+        })  
+     }else if(data=='Teaching'||data=='Courses'||data=='Supervisions'){
+         router.push({
+                name:'Teaching',
                 params:{type:data}
         })  
      }else{
@@ -191,7 +197,8 @@ onMounted(()=>{
             .press-style{
                 position: relative;
             } 
-            .press-style .press-more{
+            .press-style .press-more ,
+            .press-style .teching-more{
                 position: absolute;
                 display: none;
                 top:60px;
@@ -204,7 +211,8 @@ onMounted(()=>{
                 z-index: 99;
                 color: rgb(32, 33, 36);
             }
-            .press-style:hover .press-more{
+            .press-style:hover .press-more,
+            .press-style:hover .teching-more{
                 display: block;
             } 
             .press-style ul li{

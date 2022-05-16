@@ -1,32 +1,34 @@
 <template>
   <div class="consultancy">
-    <div class="wrtten" >
-        <div class="title">Projects</div>
-        <div class="mediaList">
-          <div v-for="(item,index) in projectList" :key="index" class="media-item">
-              <div class="left-ctn" >
-                <div class="left" :style="{backgroundImage:'url(' + item.cover_url + ')'}" :class="{'noUrl':!item.cover_url}"></div>
-              </div>
-              <div class="right">
-                <div class="date">{{item.title}}</div>
-                <div class="text" v-html="item.text"></div>
-                <div class="operation">
-                  <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
-                    <div class="more-img" @click="openTo(item.link_url)">
-                      <img src="/static/image/View_more.png"/>
-                    </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-    </div>
-    <div class="wrtten video" >
-          <div class="title">Clients</div>
+    <div class="consu-parent">
+      <div class="wrtten" >
+          <div class="title">Projects</div>
           <div class="mediaList">
-            <div v-for="(item,index) in clientstList" :key="index" class="client-item">
-                <div class="client-image" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')'}" ></div>
+            <div v-for="(item,index) in projectList" :key="index" class="media-item">
+                <div class="left-ctn" >
+                  <div class="left" :style="{backgroundImage:'url(' + item.cover_url + ')'}" :class="{'noUrl':!item.cover_url}"></div>
+                </div>
+                <div class="right">
+                  <div class="date">{{item.title}}</div>
+                  <div class="text" v-html="item.text"></div>
+                  <div class="operation">
+                    <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
+                      <div class="more-img" @click="openTo(item.link_url)">
+                        <img src="/static/image/View_more.png"/>
+                      </div>
+                    </div>
+                </div>
             </div>
           </div>
+      </div>
+      <div class="wrtten video" >
+            <div class="title">Clients</div>
+            <div class="mediaList">
+              <div v-for="(item,index) in clientstList" :key="index" class="client-item">
+                  <div class="client-image" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')'}" ></div>
+              </div>
+            </div>
+      </div>
     </div>
   </div>
 </template>
@@ -53,7 +55,7 @@ const getListData = () =>{
           projectList.value.forEach((item:any)=>{
             item.text = item.text.replace(/\n/g,'<br>')
           })
-          console.log(25,clientstList.value);
+          // console.log(25,clientstList.value);
        })
     }catch{
 
@@ -71,9 +73,9 @@ const openTo = (data:any) =>{
 
 <style lang="less" scoped>
 .consultancy{
-  padding: 0 5vw;
   height: calc(100% - 75px);
-  overflow-x: hidden;
+  width: 100%;
+  overflow: scroll;
   .wrtten{
     .title{
       margin-top: 3vh;
@@ -133,7 +135,7 @@ const openTo = (data:any) =>{
                 justify-content: right;
                 .opration-item{
                   color: rgba(2, 182, 205, 1);
-                  margin-right: 1vw;
+                  margin-right: 8px;
                   cursor: pointer;
                 }
                 .more-img{
@@ -177,6 +179,11 @@ const openTo = (data:any) =>{
   }
   .noUrl{
     background: rgba(229, 229, 229, 1);
+  }
+  .consu-parent{
+    width: 1420px;
+    margin: 0 auto;
+    padding: 0 5vw;
   }
 }
 
