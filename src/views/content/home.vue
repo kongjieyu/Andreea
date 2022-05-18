@@ -133,7 +133,7 @@ const getHomeData = () =>{
             imgArr.push(response.data.backgroundBg)
             loadImageEnd(imgArr,()=>{
                 isLoading.value = false;
-            })
+            },'')
        })
     }catch(error){
       console.log(error)

@@ -140,6 +140,7 @@ const getList = () =>{
               buffer3[j] = temp;
           }
           dataList2.value = buffer3
+           // @ts-ignore
           const jq =  window.$
           nextTick(() => {
               jq('.publications-item1 i').on('click', (e:any) => {
