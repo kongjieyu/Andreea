@@ -12,6 +12,7 @@
                   <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
                     <div class="more-img" @click="openTo(item.link_url)">
                       <img src="/static/image/View_more.png"/>
+                      <img src="/static/image/next.png"/>
                     </div>
                   </div>
               </div>
@@ -60,6 +61,7 @@ const openTo = (data:any) =>{
 .interviews{
   width: 100%;
   height: calc(100% - 75px);
+  font-family: Roboto;
   overflow: scroll;
    .wrtten{
     width: 1420px;
@@ -80,7 +82,7 @@ const openTo = (data:any) =>{
           border: 1px solid rgba(166, 166, 166, 0.6);
           box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
           border-radius: 6px;
-          width: 600px;
+          width: 47%;
           margin-right: 3vw;
           margin-bottom: 6vh;
           display: flex;
@@ -108,8 +110,8 @@ const openTo = (data:any) =>{
                 height: 120px;
                 overflow: auto;
                 color: rgba(32, 33, 36, 0.9);
-                font-size: 18px;
-                line-height: 28px;
+                font-size: 16px;
+                line-height: 25px;
               }
               .operation{
                 font-size: 16px;
@@ -117,7 +119,7 @@ const openTo = (data:any) =>{
                 justify-content: right;
                 .opration-item{
                   color: rgba(2, 182, 205, 1);
-                  margin-right: 8px;
+                  margin-right: 12px;
                   cursor: pointer;
                 }
                 .more-img{
@@ -127,6 +129,26 @@ const openTo = (data:any) =>{
                   img{
                     width: 100%;
                     height: 100%;
+                  }
+                  img:nth-child(1){
+                    display: block;
+                  }
+                  img:nth-child(2){
+                    display: none;
+                  }
+                }
+              }
+              
+              .operation:hover {
+                .opration-item{
+                  color: #047E9A;
+                }
+                .more-img{
+                   img:nth-child(1){
+                    display: none;
+                  }
+                  img:nth-child(2){
+                    display: block;
                   }
                 }
               }

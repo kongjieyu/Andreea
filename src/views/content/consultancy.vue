@@ -15,6 +15,7 @@
                     <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
                       <div class="more-img" @click="openTo(item.link_url)">
                         <img src="/static/image/View_more.png"/>
+                        <img src="/static/image/next.png"/>
                       </div>
                     </div>
                 </div>
@@ -125,8 +126,8 @@ const openTo = (data:any) =>{
                 height: 100px;
                 overflow: auto;
                 color: rgba(32, 33, 36, 0.9);
-                font-size: 18px;
-                line-height: 28px;
+                font-size: 16px;
+                line-height: 25px;
                 font-family: Roboto;
               }
               .operation{
@@ -135,7 +136,7 @@ const openTo = (data:any) =>{
                 justify-content: right;
                 .opration-item{
                   color: rgba(2, 182, 205, 1);
-                  margin-right: 8px;
+                  margin-right: 12px;
                   cursor: pointer;
                 }
                 .more-img{
@@ -145,6 +146,25 @@ const openTo = (data:any) =>{
                   img{
                     width: 100%;
                     height: 100%;
+                  }
+                  img:nth-child(1){
+                    display: block;
+                  }
+                  img:nth-child(2){
+                    display: none;
+                  }
+                }
+              }
+              .operation:hover {
+                .opration-item{
+                  color: #047E9A;
+                }
+                .more-img{
+                   img:nth-child(1){
+                    display: none;
+                  }
+                  img:nth-child(2){
+                    display: block;
                   }
                 }
               }

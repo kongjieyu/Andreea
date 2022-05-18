@@ -29,7 +29,7 @@ import { log } from "console";
 import {onMounted, reactive, ref, watchEffect, nextTick} from "vue";
 import { useRouter} from 'vue-router'
 const router = useRouter();
-const navList:any= ref(['Home','Books','Publications','Press','Interviews','Teaching','Consultancy']) //头部导航栏
+const navList:any= ref(['Home','Books','Publications','Press','Interviews','Teaching','Funding','Consultancy']) //头部导航栏
 const pressNav:any = ref(['Written','Video/Podcasts']) //press二级菜单
 const teachingNav:any = ref(['Courses','Supervisions'])
 const currentAtive = ref('Home')
@@ -152,7 +152,7 @@ onMounted(()=>{
 .header{
     display: flex;
     .header-bg{
-        width: 560px;
+        min-width: 560px;
         text-align: left;
         img {
             height: 70px;
@@ -201,23 +201,30 @@ onMounted(()=>{
             .press-style .teching-more{
                 position: absolute;
                 display: none;
-                top:60px;
-                left: 0;
-                border: 1px solid rgba(166, 166, 166, 0.3);
-                box-shadow: 0px 2px 6px rgb(166 166 166 / 20%);
-                border-radius: 3px;
-                padding: 13px;
-                background: #fff;
+                top:75px;
+                left: -65px;
+                border: 1px solid rgba(166, 166, 166, 0.6);
+                box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.4);
+                border-radius: 2px;
+                background: rgb(239,239,239);
                 z-index: 99;
+                text-align: center;
                 color: rgb(32, 33, 36);
+            }
+            .press-style .teching-more{
+                left: -45px;
             }
             .press-style:hover .press-more,
             .press-style:hover .teching-more{
-                display: block;
+                display: inline-block;
             } 
             .press-style ul li{
-                line-height: 35px;
+                line-height: 40px;
                 z-index: 99;
+                padding: 10px 25px ;
+            }
+            .press-style ul li:nth-child(1){
+                border-bottom: 1px solid rgba(166, 166, 166, 0.2);
             }
         }
     }

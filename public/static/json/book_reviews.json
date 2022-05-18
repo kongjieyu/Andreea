@@ -1,0 +1,53 @@
+{
+    "Book_reviews": [
+        {
+            "text": "Review of Vyvyan Evans's <span class='title'>\"The Crucible of Language: How language and mind create meaning\"</span> in <i>Australian Journal of Linguistics</i>, Volume 41. <span class='pdf'>[ PDF ]</span>",
+            "articlesTitle_url": "https://www.tandfonline.com/doi/abs/10.1080/07268602.2020.1751916?journalCode=cajl20",
+            "journal_url":"",
+            "pdf_url": "https://www.tandfonline.com/doi/abs/10.1080/07268602.2020.1751916?journalCode=cajl20",
+            "year": "2020"
+        },
+        {
+            "text": "Review of Natalia Levshina's <span class='title'>\"How to Do Linguistics With R: Data Exploration and Statistical Analysis\"</span> in <i>Journal of Research Design and Statistics in Linguistics and Communication Science</i>, 3(2): 286-272. <span class='pdf'>[ PDF ]</span>",
+            "articlesTitle_url": "https://journal.equinoxpub.com/JRDS/issue/view/1825",
+            "journal_url":"",
+            "pdf_url": "https://journal.equinoxpub.com/JRDS/issue/view/1825",
+            "year": "2017"
+        },
+        {
+            "text": "Review of Beatriz Tizon-Couto's <span class='title'>\"Clausal Complements in Native and Learner Spoken English: A Corpus-Based Study with LINDSEI and VICOLSE\"</span> in <i>The Australian Journal of Linguistics</i>. <span class='pdf'>[ PDF ]</span>",
+            "articlesTitle_url": "https://www.tandfonline.com/doi/abs/10.1080/07268602.2015.1135707?journalCode=cajl20#.VuxcTceoX8s",
+            "journal_url":"",
+            "pdf_url": "https://www.tandfonline.com/doi/abs/10.1080/07268602.2015.1135707?journalCode=cajl20#.VuxcTceoX8s",
+            "year": "2016"
+        },
+        {
+            "text": "Review of Stacey Katz Bourns and Lindsy L. Myers's <span class='title'>\"Perspectives on Linguistic Structure and Context\"</span> in <i>The Australian Journal of Linguistics</i>. DOI: 10.1080/07268602.2015.1084906. <span class='pdf'>[ PDF ]</span>",
+            "articlesTitle_url": "https://www.tandfonline.com/doi/full/10.1080/07268602.2015.1084906",
+            "journal_url":"",
+            "pdf_url": "https://www.tandfonline.com/doi/full/10.1080/07268602.2015.1084906",
+            "year": "2015"
+        },
+        {
+            "text": "Review of Jim Miller's book <span class='title'>\"A Critical Introduction to Syntax\"</span> (Continuum) in <i>The Australian Journal of Linguistics</i>. 31(3): 519-530. <span class='pdf'>[ PDF ]</span>",
+            "articlesTitle_url": "https://www.tandfonline.com/doi/abs/10.1080/07268602.2011.625603?journalCode=cajl20",
+            "journal_url":"",
+            "pdf_url": "https://www.tandfonline.com/doi/abs/10.1080/07268602.2011.625603?journalCode=cajl20",
+            "year": "2011"
+        },
+        {
+            "text": "Review of David Crystal's book <span class='title'>\"Just a Phrase I am Going Through: My Life in Language\"</span> (Routledge) in <i>The Australian Journal of Linguistics</i>. 30(3): 367-369.",
+            "articlesTitle_url": "",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2010"
+        },
+        {
+            "text": "Review of Nicole Dehé and Yordanka Kavalova's book <span class='title'>\"Parentheticals\"</span> (John Benjamins) in <i>Studies in Language</i>. 34(1): 205-211.",
+            "articlesTitle_url": "",
+            "journal_url":"",
+            "pdf_url": "",
+            "year": "2010"
+        }
+    ]
+}

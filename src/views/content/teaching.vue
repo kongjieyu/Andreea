@@ -119,6 +119,7 @@ const titleColor=(color:any)=>{
   height: calc(100% - 75px);
   width: 100%;
   overflow: scroll;
+  font-family: Roboto;
   .wrtten{
     width: 1420px;
     margin: 0 auto;
@@ -147,7 +148,7 @@ const titleColor=(color:any)=>{
           .date{
             padding: 12px 0 12px 25px;
             color: rgba(32, 33, 36, 1);
-            font-size: 18px;
+            font-size: 16px;
           }
           .media-image{
             height: 230px;
@@ -165,13 +166,13 @@ const titleColor=(color:any)=>{
             height: 85px;
             overflow: auto;
             color: rgba(32, 33, 36, 1);
-            font-size: 18px;
-            line-height: 28px;
+            font-size: 16px;
+            line-height: 25px;
           }
           .video-date{
             padding: 10px 25px 20px 25px;
             color: rgba(112, 117, 122, 0.9);
-            font-size: 18px;
+            font-size: 16px;
           }
           .operation{
             padding: 12px 25px;
@@ -179,13 +180,13 @@ const titleColor=(color:any)=>{
             justify-content: right;
             .opration-item{
               color: rgba(2, 182, 205, 1);
-              font-size: 18px;
-              margin-right: 15px;
+              font-size: 16px;
+              margin-right: 12px;
               cursor: pointer;
             }
             .more-img{
-              width: 25px;
-              height: 25px;
+              width: 22px;
+              height: 22px;
               cursor: pointer;
               img{
                 width: 100%;
@@ -224,7 +225,7 @@ const titleColor=(color:any)=>{
       color: rgba(112, 117, 122, 0.9);
       font-weight: 400;
       font-family: Roboto;
-      font-size: 18px;
+      font-size: 16px;
       height: 80px;
       overflow: auto;
     }
@@ -232,7 +233,7 @@ const titleColor=(color:any)=>{
       color: rgba(112, 117, 122, 0.9);
       font-weight: 400;
       font-family: Roboto;
-      font-size: 20px;
+      font-size: 16px;
     }
   }
   .supervisions{
@@ -254,7 +255,7 @@ const titleColor=(color:any)=>{
             margin: 0 30px 40px 0;
             display: flex;
           .left-ctn{
-                flex-basis: 25%;
+                flex-basis: 20%;
                 margin: 35px 25px;
                 margin-right: 0;
                 .left{
@@ -275,34 +276,34 @@ const titleColor=(color:any)=>{
               justify-content: space-between;
                 .date{
                   color: rgba(32, 33, 36, 1);
-                  font-size: 14px;
-                  font-family: Roboto;
+                  font-size: 16px;
                 }
                 .text{
                   height: 100px;
                   overflow: auto;
                   color: rgba(32, 33, 36, 0.9);
-                  font-size: 14px;
-                  line-height: 20px;
-                  font-family: Roboto;
+                  font-size: 16px;
+                  line-height: 25px;
                   cursor: pointer;
                 }
                 .nickName{
                   color: rgba(32, 33, 36, 1);
                   font-size: 20px;
-                  font-family: Roboto;
+                  margin: 5px 0 15px 0;
                   cursor: pointer;
                 }
                 .institution{
-                  font-size: 12px;
+                  font-size: 16px;
                   text-align: right;
+                  margin-top: 10px;
                   color: rgba(112, 117, 122, 0.9);
                 }
             }
       }
-      .sortList:last-child{
+      .sortList:last-child,.sortList:nth-child(3n){
         margin-right: 0;
       }
+
     }
   }
 }

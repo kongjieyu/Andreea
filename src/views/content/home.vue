@@ -1,6 +1,6 @@
 <template>
-    <div class="home">
-        <div class="sidebar" :style="style"></div>
+    <div class="home" v-if="!isLoading">
+        <div class="sidebar" :style="style" ref="siderbar"></div>
         <div class="content">
             <div style="position:relative;z-index:10;">
                 <div class="occupation">
@@ -69,11 +69,30 @@
             </div>
         </div>
     </div>
+    <div class="home" v-else>
+        <div class="loadinging">
+            <div class="rotate">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="loading-one">Welcome to my page, I am Dr.Andreea Calude.</div>
+            <div class="loading-two">I am bubbly and approachable and I can make anyone excited about </div>
+            <div class="loading-three"><span class="larger">language</span>and<span class="larger">communication.</span></div>
+        </div>
+        
+    </div>
 </template>
 
 <script setup lang="ts">
 import axios from "axios";
 import { log } from "console";
+import { loadImageEnd } from "../../utils/utils";
 import {onMounted, ref, watchEffect,nextTick} from "vue";
 
 const bgPic = ref('')              //背景图片
@@ -84,14 +103,17 @@ const highlights:any = ref([])      //高亮
 const introdution = ref('')     //介绍
 const occupationList = ref([])  //职业
 const iconList:any = ref([])        //外部链接
+const siderbar = ref()
 
 const style = ref({
     backgroundImage: ''
 })
 
+const isLoading = ref(true) //加载中
 const getHomeData = () =>{ 
     try{
        axios.get('/static/json/home.json').then(response=>{
+            isLoading.value = true
             bgPic.value = response.data.backgroundBg
             belife.value = response.data.belife
             belifeList.value = response.data.belifeList
@@ -107,6 +129,11 @@ const getHomeData = () =>{
               item.list = item.list.replace(/\n/g,'<br>')
             })
             style.value.backgroundImage = 'url(' + response.data.backgroundBg + ')'
+            let imgArr = []
+            imgArr.push(response.data.backgroundBg)
+            loadImageEnd(imgArr,()=>{
+                isLoading.value = false;
+            })
        })
     }catch(error){
       console.log(error)
@@ -135,14 +162,25 @@ const cancleModal = () =>{
 onMounted(()=>{
     getHomeData()
 })
+watchEffect(()=>{
+            //     nextTick(()=>{
+            //     isLoading.value = false
+            // })
+            if(siderbar.value){
+                let sidebarData:any = document.getElementsByClassName('sidebar')
+                console.log(6699999,sidebarData[0]);
+                
+            }
+})
 </script>
 
 <style lang="less">
 .home {
     display: flex;
     position: relative;
+    height: calc(100% - 80px);
     .sidebar {
-        width: 560px;
+        flex-basis: 560px;
         height: calc(100vh - 75px);
         background-repeat: no-repeat;
         background-position: center;
@@ -159,7 +197,113 @@ onMounted(()=>{
             margin-top: 28px;
             cursor: pointer;
         }
+        img:hover{
+            transform: scale(1.1);
+        }
     }
+    .loadinging{
+            width: 600px;
+            margin:0 auto;
+            height: 100%;
+            color:rgba(2, 182, 205, 1) ;
+            position: relative;
+            text-align: center;
+        .rotate{
+            position: absolute;
+            -webkit-transform:translate3d(-50%,-50%,0);
+            z-index: 99;
+            left: 47%;
+            top: 25%;
+        }
+        .item{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-color: #9b9797;
+            -webkit-animation-fill-mode:both;
+            animation-fill-mode: both;
+            border-radius: 100%;
+        }
+        .item:nth-child(1){
+           top: 25px;
+           left: 0;
+           -webkit-animation: loading 2s 0s infinite linear;
+           animation: loading 2s 0s infinite linear;
+        }
+        .item:nth-child(2){
+           top: 17px;
+           left: 17px;
+           -webkit-animation: loading 2s 0.24s infinite linear;
+           animation: loading 2s 0.24s infinite linear;
+        }
+        .item:nth-child(3){
+            top: 0px;
+           left: 25px;
+           -webkit-animation: loading 2s 0.48s infinite linear;
+           animation: loading 2s 0.48s infinite linear;
+        }
+        .item:nth-child(4){
+            top: -17px;
+           left: 17px;
+           -webkit-animation: loading 2s 0.72s infinite linear;
+           animation: loading 2s 0.72s infinite linear;
+        }
+        .item:nth-child(5){
+            top: -25px;
+           left: 0;
+           -webkit-animation: loading 2s 0.96s infinite linear;
+           animation: loading 2s 0.96s infinite linear;
+        }
+        .item:nth-child(6){
+            top: -17px;
+           left: -17px;
+           -webkit-animation: loading 2s 1.2s infinite linear;
+           animation: loading 2s 1.2s infinite linear;
+        }
+        .item:nth-child(7){
+            top: 0;
+           left: -25px;
+           -webkit-animation: loading 2s 1.44s infinite linear;
+           animation: loading 2s 1.44s infinite linear;
+        }
+        .item:nth-child(8){
+            top: 17px;
+           left: -17px;
+           -webkit-animation: loading 2s 1.78s infinite linear;
+           animation: loading 2s 1.78s infinite linear;
+        }
+        @-webkit-keyframes loading{
+            50%{
+                opacity: 0.3;
+                -webkit-transform: scale(0.4);
+                transform:  scale(0.4);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform:  scale(1);
+            }
+        }
+        .loading-one{
+            position: absolute;
+            top: 38%;
+            left: 20%;
+        }
+        .loading-two{
+            position: absolute;
+            top: 47%;
+            left: 5%;
+        }
+        .loading-three{
+            position: absolute;
+            top: 50.5%;
+            left: 20%;
+            .larger{
+                font-size: 21px;
+                padding: 0 15px;
+            }
+        }
+}
 }
 .content {
     flex: 1;
@@ -169,18 +313,21 @@ onMounted(()=>{
     height: calc(100vh - 75px);
     .occupation {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         text-align: center;
         justify-content: space-between;
         color: #02b6cd;
         font-family: ArchivoNarrow;
         min-width: 750px;  
         max-width: 850px;
-        word-break: break-word;
+        // word-break: break-word;
         font-weight: bold;
         font-size: 58px;
         margin-top: 8vh;
         div{
+            margin-right: 22px;
+        }
+        div:nth-child(3n){
             margin-right: 22px;
         }
     }
@@ -198,7 +345,8 @@ onMounted(()=>{
     .divider {
         width: 60%;
         margin: 2vh 0;
-        border: 1px solid rgba(166, 166, 166, 0.5);
+        height: 1px;
+        background: rgba(166, 166, 166, 0.5);
     }
     .skill {
         font-family: Roboto;
@@ -381,4 +529,5 @@ onMounted(()=>{
 .Contact .cancle:hover:after{
     background:rgba(2, 182, 205, 1) !important;
 }
+
 </style>

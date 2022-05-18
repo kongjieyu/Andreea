@@ -11,6 +11,7 @@
                 <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
                 <div class="more-img" @click="openTo(item.link_url)">
                   <img src="/static/image/View_more.png"/>
+                  <img src="/static/image/next.png"/>
                 </div>
               </div>
           </div>
@@ -87,6 +88,7 @@ const openTo = (data:any) =>{
   height: calc(100% - 75px);
   width: 100%;
   overflow: scroll;
+  font-family: Roboto;
   .wrtten{
     width: 1420px;
     margin: 0 auto;
@@ -115,7 +117,7 @@ const openTo = (data:any) =>{
           .date{
             padding: 10px 0 10px 25px;
             color: rgba(32, 33, 36, 1);
-            font-size: 18px;
+            font-size: 16px;
           }
           .media-image{
             height: 230px;
@@ -134,13 +136,13 @@ const openTo = (data:any) =>{
             overflow: auto;
             cursor: pointer;
             color: rgba(32, 33, 36, 1);
-            font-size: 18px;
+            font-size: 16px;
             line-height: 25px;
           }
           .video-date{
             padding: 10px 25px 20px 25px;
             color: rgba(112, 117, 122, 0.9);
-            font-size: 18px;
+            font-size: 16px;
           }
           .operation{
             padding: 12px 25px;
@@ -148,20 +150,39 @@ const openTo = (data:any) =>{
             justify-content: right;
             .opration-item{
               color: rgba(2, 182, 205, 1);
-              font-size: 18px;
-              margin-right: 8px;
+              font-size: 16px;
+              margin-right: 12px;
               cursor: pointer;
             }
             .more-img{
-              width: 25px;
-              height: 25px;
+              width: 22px;
+              height: 22px;
               cursor: pointer;
               img{
                 width: 100%;
                 height: 100%;
               }
+              img:nth-child(1){
+                display: block;
+              }
+              img:nth-child(2){
+                display: none;
+              }
             }
           }
+          .operation:hover {
+                .opration-item{
+                  color: #047E9A;
+                }
+                .more-img{
+                   img:nth-child(1){
+                    display: none;
+                  }
+                  img:nth-child(2){
+                    display: block;
+                  }
+                }
+              }
       }
       .media-item:nth-child(3n){
         margin-right: 0;
