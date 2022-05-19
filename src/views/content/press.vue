@@ -134,7 +134,7 @@ const openTo = (data:any) =>{
             padding: 12px 25px;
             height: 85px;
             overflow: auto;
-            cursor: pointer;
+            // cursor: pointer;
             color: rgba(32, 33, 36, 1);
             font-size: 16px;
             line-height: 25px;
