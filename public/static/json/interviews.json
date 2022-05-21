@@ -1,36 +1,36 @@
 {
     "Written": [
         {
-            "text": "Fortnightly column in NZ newspapers (Dominion Post and Waikato Times) with Laurie Bauer, Paul Warren and Corinne Seals.",
-            "date":"Dec 2020-present",
-            "cover_url": "/static/image/liabary.png",
-            "operation": "Archieve here",
-            "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
+            "text": "Interviewed on RNZ by Bryan Crump on the Nights show, March, 2022, following a story about the Language Mysteries book by the University of Waikato.",
+            "date":"March, 2022",
+            "cover_url": "/static/image/Language_Mysteries.png",
+            "operation": "Listen here",
+            "link_url": "https://www.rnz.co.nz/national/programmes/nights/audio/2018831000/is-grammar-a-mystery",
             "sort": "present"
         },
         {
-            "text": "I blog for Sciblogs as Lippy Linguist.",
-            "date":"Aug 2017-present",
-            "cover_url": "",
-            "operation": "Read here",
-            "link_url": "https://sciblogs.co.nz/lippy-linguist/",
-            "sort": "present"
+            "text": "Interviewed by Karyn Hay on Radio NZ (RNZ) programme \"Lately\", segment on Word , 10 May, 2021.",
+            "date":"10 May, 2021",
+            "cover_url": "/static/image/RNZ_interview.png",
+            "operation": "Listen here",
+            "link_url": "https://www.rnz.co.nz/national/programmes/lately/audio/2018794929/word-shadow-pronouns-and-sweet-as",
+            "sort": ""
         },
         {
-            "text": "Guest story for the SpinOff on grammar <strong>Does Grammar Really Matter?</strong>.",
-            "date":"3rd May 2018",
-            "cover_url": "",
-            "operation": "Read here",
-            "link_url": "https://thespinoff.co.nz/society/03-05-2018/does-good-grammar-really-matter",
-            "sort": "2018.05"
+            "text": "Interviewed on Re:News on the How the Kiwi accent evolved.",
+            "date":"November, 2020",
+            "cover_url": "/static/image/Kiwi_accent_interview.png",
+            "operation": "Watch here",
+            "link_url": "https://www.renews.co.nz/how-the-kiwi-accent-evolved/",
+            "sort": ""
         },
         {
-            "text": "In April 2018, I did a PechaKucha talk about the languages I speak. (video to come soon).",
-            "date":"April 2018",
-            "cover_url": "",
+            "text": "Interview for the NZ Royal Society Marsden25 Series about my Marsden project.",
+            "date":" September 2019",
+            "cover_url": "/static/image/AndreeaCalude_and_LouiseSteven.png",
             "operation": "Read here",
-            "link_url": "https://www.calude.net/andreea/2018_PechaKucha.jpg",
-            "sort": "2018.04"
+            "link_url": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/marsden/celebrating-marsden-research/marsden25/dr-andreea-calude/",
+            "sort": ""
         }
        
     ]
