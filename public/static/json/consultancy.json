@@ -3,7 +3,7 @@
         {
             "text": "Fortnightly column in NZ newspapers (Dominion Post and Waikato Times) with Laurie Bauer, Paul Warren and Corinne Seals.",
             "title":"Project name",
-            "cover_url": "/static/image/Project1.png",
+            "cover_url": "/static/image/John_Barker_Law1.png",
             "operation": "Learn more",
             "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
             "sort": "present"
@@ -20,29 +20,25 @@
     ],
     "Clients":[
         {
-            "cover_url": "/static/image/Project1.png",
-            "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
-            "sort": "present"
+            "cover_url": "/static/image/John_Barker_Law.png",
+            "link_url": "http://www.johnbarkerlaw.com/",
+            "sort": ""
         },
         {
-            "cover_url": "/static/image/client1.png",
-            "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
-            "sort": "present"
+            "cover_url": "/static/image/Shortland_Chamber.png",
+            "link_url": "https://www.shortlandchambers.co.nz/",
+            "sort": ""
         },
         {
-            "cover_url": "/static/image/client2.png",
-            "link_url": "",
-            "sort": "present"
+            "cover_url": "/static/image/James_and_Wells.png",
+            "link_url": "https://www.jamesandwells.com/nz/",
+            "sort": ""
         },
         {
-            "cover_url": "",
-            "link_url": "",
-            "sort": "present"
-        },
-        {
-            "cover_url": "",
-            "link_url": "",
-            "sort": "present"
+            "cover_url": "/static/image/WalkerLaw.png",
+            "link_url": "https://walkerlawltd.com/contact-us/",
+            "sort": ""
         }
+
     ]
 }
