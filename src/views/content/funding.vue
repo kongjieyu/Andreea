@@ -119,6 +119,8 @@ const openTo = (data:any) =>{
           border-radius: 6px;
           width: 432px;
           margin-right: 3vw;
+          height: 133px;
+          overflow: hidden;
           margin-bottom: 5vh;
           display: flex;
           justify-content: space-between;
@@ -126,20 +128,21 @@ const openTo = (data:any) =>{
               flex-basis: 23%;
               position: relative;
               overflow: hidden;
+              margin: -1px;
               .circle{
                   position:absolute;
-                  width: 70px;
-                  left: 12px;
+                  width: 75px;
+                  left: 10px;
                   bottom: 75px;
-                  height: 70px;
+                  height: 75px;
                   border-radius:100%;
                   background-color: rgba(253, 194, 16, 1);
                   img{
-                      width: 28px;
-                      height: 28px;
+                      width: 30x;
+                      height: 30px;
                       position: absolute;
-                      left: 20px;
-                      top: 24px;
+                      left: 22.5px;
+                      top: 22.5px;
                   }
               }
           }
@@ -156,7 +159,8 @@ const openTo = (data:any) =>{
                   line-height: 25px;
                   color: rgba(32, 33, 36, 1);
                   overflow: auto;
-                  margin: 0 10px 10px 0;
+                  padding-right:10px ;
+                  margin-bottom: 10px;
                   cursor: pointer;
               }
           }

@@ -13,7 +13,7 @@
                       <div class="right">
                         <div class="date" :style="{'color':titleColor(item.title)}">{{obj.researchPeriod}}</div>
                         <div class="nickName" @click="openTo(obj.student_link)">{{obj.student}}</div>
-                        <div class="text" @click="openTo(obj.intro_link)" v-html="obj.intro"></div>
+                        <div class="text" :class="{'curson':obj.intro_link}" @click="openTo(obj.intro_link)" v-html="obj.intro"></div>
                         <div class="institution">{{obj.institution}}</div>
                       </div>
                   </div>
@@ -99,8 +99,6 @@ const getListData = (type:any) =>{
 const openTo = (data:string) =>{
   if(data){
       window.open(data);
-  }else{
-    window.alert('No website，Coming soon')
   }
 }
 //标题颜色
@@ -143,6 +141,8 @@ const titleColor=(color:any)=>{
           margin-right: 3vw;
           margin-bottom: 6vh;
           display: flex;
+          height: 415px;
+          overflow: hidden;
           flex-direction: column;
           justify-content: space-between;
           .date{
@@ -155,6 +155,7 @@ const titleColor=(color:any)=>{
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            margin: -1px;
             border-top: 1px solid rgba(166, 166, 166, 0.2);
             border-bottom: 1px solid rgba(166, 166, 166, 0.2);
           }
@@ -270,13 +271,14 @@ const titleColor=(color:any)=>{
             }
             .right{
               flex: 1;
-              padding: 20px 20px 15px 20px;
+              padding: 20px 0px 15px 20px;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
                 .date{
                   color: rgba(32, 33, 36, 1);
                   font-size: 16px;
+                  padding-right: 20px;
                 }
                 .text{
                   height: 100px;
@@ -284,18 +286,21 @@ const titleColor=(color:any)=>{
                   color: rgba(32, 33, 36, 0.9);
                   font-size: 16px;
                   line-height: 25px;
-                  cursor: pointer;
+                  padding-right: 20px;
+                  // cursor: pointer;
                 }
                 .nickName{
                   color: rgba(32, 33, 36, 1);
                   font-size: 20px;
                   margin: 5px 0 15px 0;
                   cursor: pointer;
+                  padding-right: 20px;
                 }
                 .institution{
                   font-size: 16px;
                   text-align: right;
                   margin-top: 10px;
+                  padding-right: 20px;
                   color: rgba(112, 117, 122, 0.9);
                 }
             }
@@ -306,6 +311,8 @@ const titleColor=(color:any)=>{
 
     }
   }
+  .curson{cursor: pointer;}
+ .curson:hover{text-decoration: underline;}
 }
 
 </style>

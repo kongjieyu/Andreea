@@ -19,6 +19,7 @@
         </div>
     </div>
     <div class="delider"></div>
+    <div class="bookreview">Book Reviews</div>
     <div class="public-item1">
         <div class="pub_ctn" v-for="(item,index) in dataList2" :key="index">
             <div class="timeline">
@@ -264,6 +265,7 @@ onMounted(()=>{
     background: rgba(166, 166, 166, 1);
     margin: 0 4vw 0 6vw;
   }
+  .bookreview{padding: 6vh 4vw 0vh 6vw;font-size: 26px;font-weight: bold;}
 }
 
 </style>

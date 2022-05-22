@@ -13,7 +13,7 @@
                   <div class="text" v-html="item.text"></div>
                   <div class="operation">
                     <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
-                      <div class="more-img" @click="openTo(item.link_url)">
+                      <div class="more-img" @click="openTo(item.link_url)" v-if="item.operation">
                         <img src="/static/image/View_more.png"/>
                         <img src="/static/image/next.png"/>
                       </div>
@@ -88,13 +88,13 @@ const openTo = (data:any) =>{
       margin-top: 2vh;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-between;
       .media-item{
           border: 1px solid rgba(166, 166, 166, 0.6);
           box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
           border-radius: 6px;
           width: 47%;
-          margin-right: 3vw;
+          margin-right: 3.5vw;
           margin-bottom: 6vh;
           display: flex;
           justify-content: space-between;
@@ -176,13 +176,15 @@ const openTo = (data:any) =>{
       .client-item{
         width: 22%;
         height: 150px;
+        overflow: hidden;
         margin: 15px 1vw 20px 0;
         border-radius: 6px;
+        box-sizing: border-box;
         border: 1px solid rgba(166, 166, 166, 0.6);
         box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
         .client-image{
-            height: 100%;
-            width: 100%;
+            height: 150px;
+            margin: -1px;
             border-radius: 6px;
             background-repeat: no-repeat;
             background-position: center;

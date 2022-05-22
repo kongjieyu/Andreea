@@ -9,7 +9,7 @@
               <div class="text" v-html="item.text"></div>
               <div class="operation">
                 <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
-                <div class="more-img" @click="openTo(item.link_url)">
+                <div class="more-img" @click="openTo(item.link_url)" v-if="item.operation">
                   <img src="/static/image/View_more.png"/>
                   <img src="/static/image/next.png"/>
                 </div>
@@ -22,7 +22,7 @@
           <div class="mediaList">
             <div v-for="(item,index) in mediaList" :key="index" class="media-item">
                 <!-- <div class="date">{{item.date}}</div> -->
-                <div class="media-image cuspointer" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')'}" @click="openTo(item.link_url)" ></div>
+                <div class="media-image cuspointer" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')',borderRadius:'6px 6px 0 0'}" @click="openTo(item.link_url)" ></div>
                 <div class="text" v-html="item.text" @click="openTo(item.link_url)"></div>
                 <div class="video-date">{{item.date}}</div>
             </div>
@@ -104,11 +104,13 @@ const openTo = (data:any) =>{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      .media-item{
+      .media-item{  //父
           border: 1px solid rgba(166, 166, 166, 0.6);
           box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
           border-radius: 6px;
           width: 420px;
+          height: 428px;
+          overflow: hidden;
           margin-right: 3vw;
           margin-bottom: 6vh;
           display: flex;
@@ -119,8 +121,9 @@ const openTo = (data:any) =>{
             color: rgba(32, 33, 36, 1);
             font-size: 16px;
           }
-          .media-image{
+          .media-image{ //子
             height: 230px;
+            margin: -1px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;

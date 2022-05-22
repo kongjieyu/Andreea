@@ -10,7 +10,7 @@
                 <div class="text" v-html="item.text"></div>
                 <div class="operation">
                   <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
-                    <div class="more-img" @click="openTo(item.link_url)">
+                    <div class="more-img" @click="openTo(item.link_url)" v-if="item.operation">
                       <img src="/static/image/View_more.png"/>
                       <img src="/static/image/next.png"/>
                     </div>
@@ -85,37 +85,45 @@ const openTo = (data:any) =>{
           width: 47%;
           margin-right: 3vw;
           margin-bottom: 6vh;
+          height: 222px;
           display: flex;
+          overflow: hidden;
           justify-content: space-between;
           .left{
             flex-basis: 40%;
-            height: 220px;
+            // height: 220px;
             background-repeat: no-repeat;
             background-position: center;
+            margin: -1px;
+            border-radius: 6px 0 0 6px;
             background-size: cover;
             border-top: 1px solid rgba(166, 166, 166, 0.2);
             border-bottom: 1px solid rgba(166, 166, 166, 0.2);
           }
           .right{
             flex: 1;
-            padding: 2vh 2vw;
+            padding: 2vh 25px;
+            padding-right: 0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
               .date{
                 color: rgba(2, 182, 205, 1);
                 font-size: 16px;
+                padding-right: 25px;
               }
               .text{
                 height: 120px;
                 overflow: auto;
                 color: rgba(32, 33, 36, 0.9);
                 font-size: 16px;
+                padding-right: 25px;
                 line-height: 25px;
               }
               .operation{
                 font-size: 16px;
                 display: flex;
+                padding-right: 25px;
                 justify-content: right;
                 .opration-item{
                   color: rgba(2, 182, 205, 1);
