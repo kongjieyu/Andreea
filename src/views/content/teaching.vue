@@ -257,11 +257,11 @@ const titleColor=(color:any)=>{
             display: flex;
           .left-ctn{
                 flex-basis: 20%;
-                margin: 35px 25px;
+                margin: 45px 25px;
                 margin-right: 0;
                 .left{
-                  width: 150px;
-                  height: 150px;
+                  width: 120px;
+                  height: 120px;
                   cursor: pointer;
                   border-radius: 100%;
                   background-repeat: no-repeat;

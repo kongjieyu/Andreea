@@ -103,7 +103,7 @@ const openTo = (data:any) =>{
       margin-top: 2vh;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      //justify-content: space-between;
       .media-item{  //父
           border: 1px solid rgba(166, 166, 166, 0.6);
           box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
@@ -111,11 +111,11 @@ const openTo = (data:any) =>{
           width: 420px;
           height: 428px;
           overflow: hidden;
-          margin-right: 3vw;
+          margin-right: 3.5vw;
           margin-bottom: 6vh;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          //justify-content: space-between;
           .date{
             padding: 10px 0 10px 25px;
             color: rgba(32, 33, 36, 1);

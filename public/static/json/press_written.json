@@ -1,6 +1,14 @@
 {
     "Written": [
         {
+            "text": "My \"The Conversation story feed\".",
+            "date":"2017-present",
+            "cover_url": "/static/image/The_Conversation_story_feed.png",
+            "operation": "Read here",
+            "link_url": "https://theconversation.com/profiles/andreea-s-calude-388602/articles",
+            "sort": "present"
+        },
+        {
             "text": "Fortnightly column in NZ newspapers (Dominion Post and Waikato Times) with Laurie Bauer, Paul Warren and Corinne Seals.",
             "date":"Dec 2020-present",
             "cover_url": "/static/image/Fortnightly_coloum.png",
@@ -41,15 +49,15 @@
             "sort": "2017.07"
         },
         {
-            "text": "'Does Big Data Equal Big Problems?' published in Fully (sic), 13 November 2015.",
+            "text": "\"Does Big Data Equal Big Problems?\" published in Fully (sic), 13 November 2015.",
             "date":"13th November 2015",
-            "cover_url": "/static/image/default.png",
+            "cover_url": "/static/image/Does_Big_Data_Equal_Big_Problems.png",
             "operation": "Read here",
             "link_url": "https://www.crikey.com.au/",
             "sort": "2015.12"
         },
         {
-            "text": "'How to lose your North, be gone with a raft, and have a bird‘ published in Fully (sic), 27 August 2015.",
+            "text": "\"How to lose your North, be gone with a raft, and have a bird\" published in Fully (sic), 27 August 2015.",
             "date":"27th August 2015",
             "cover_url": "/static/image/default.png",
             "operation": "Read here",
@@ -73,9 +81,9 @@
             "sort": "2005.03"
         },
         {
-            "text": "Book Review entitled 'A Beautiful Mind' published in The New Zealand Listener , reviewing John Casti's 'Mathematical Mountaintops', 183, May 18-24, 2002.",
+            "text": "Book Review entitled \"A Beautiful Mind\" published in The New Zealand Listener , reviewing John Casti's 'Mathematical Mountaintops', 183, May 18-24, 2002.",
             "date":"May 2002",
-            "cover_url": "/static/image/default.png",
+            "cover_url": "/static/image/A_Beautiful_Mind.png",
             "operation": "Read here",
             "link_url": "https://www.cs.auckland.ac.nz/~cristian/andreea_listenerreview.jpg",
             "sort": "2002.05"

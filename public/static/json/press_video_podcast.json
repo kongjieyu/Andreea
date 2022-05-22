@@ -2,14 +2,14 @@
     "Written": [
         {
             "text": "My TED-ED Lesson: \"Does Grammar Matter?\"",
-            "date":"awaiting to confirm",
-            "cover_url": "/static/image/Does_Grammar_Matter",
+            "date":"Apr 2016",
+            "cover_url": "/static/image/Does_Grammar_Matter.png",
             "link_url": "https://ed.ted.com/lessons/does-grammar-matter-andreea-s-calude",
             "sort": "2020"
         },
         {
-            "text": "My The Conversation story feed produced by SciAnimated.",
-            "date":"awaiting to confirm",
+            "text": "My animation \"Why do languages borrow words?\" produced by SciAnimated .",
+            "date":"Apr 2020",
             "cover_url": "/static/image/Why_do_languages_borrow_words.png",
             "link_url": "https://www.youtube.com/watch?v=6y-NljmQIo8",
             "sort": "2020"

@@ -152,6 +152,7 @@ const openTo = (data:any) =>{
                   color: rgba(255, 195, 0, 1);
                   font-size: 16px;
                   line-height: 35px;
+                  padding-top:5px ;
               }
               .text{
                   font-size: 16px;
