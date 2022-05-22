@@ -26,12 +26,59 @@
         },
         {
             "text": "Interview for the NZ Royal Society Marsden25 Series about my Marsden project.",
-            "date":" September 2019",
+            "date":"September 2019",
             "cover_url": "/static/image/AndreeaCalude_and_LouiseSteven.png",
             "operation": "Read here",
             "link_url": "https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/marsden/celebrating-marsden-research/marsden25/dr-andreea-calude/",
             "sort": ""
+        },
+        {
+            "text": "Interview for the Dominion Post \"How Māori and English languages mix in the modern world\".",
+            "date":"10 January 2020",
+            "cover_url": "/static/image/Māori_and_English_languages.png",
+            "operation": "Read here",
+            "link_url": "https://www.stuff.co.nz/science/118713470/how-mori-and-english-languages-mix-in-the-modern-world?cid=facebook.post&fbclid=IwAR2896Rg6IBZYNbiBDS1390XRdz4kwMkdNuabLVMZ3e737ocoVy514SstCc",
+            "sort": ""
+        },
+        {
+            "text": "Interview on TVNZ news programme in te reo Māori Te Karere, screened on 24 April 2019, 4pm.",
+            "date":"24 April 2019",
+            "cover_url": "/static/image/Te_Reo_Māori_Interview.png",
+            "operation": "Watch here",
+            "link_url": "https://www.youtube.com/watch?v=EyHjXcT1OYs",
+            "sort": ""
+        },
+        {
+            "text": "Our project using machine learning to compile a Twitter corpus containing Māori loanwords received coverage on Radio NZ, in \"NZ's unique te reo tweets\".",
+            "date":"12 February 2019",
+            "cover_url": "/static/image/tweets.png",
+            "operation": "Read here",
+            "link_url": "https://www.rnz.co.nz/news/te-manu-korihi/382254/nz-s-unique-te-reo-tweets",
+            "sort": ""
+        },
+        {
+            "text": "I was interviewed on the Guardian Science Weekly postcast.",
+            "date":"July 2018",
+            "cover_url": "/static/image/The_Guardian.png",
+            "operation": "Listen here",
+            "link_url": "https://www.theguardian.com/science/audio/2018/jun/29/slice-of-pie-proto-indo-european-linguistic-common-ancestor-science-weekly-podcast",
+            "sort": ""
+        },
+        {
+            "text": "Our work on loanwords was cited in the Weekend Waikato Times and online on Stuff.co.nz, in the story \"The borrowers: Why you are speaking more Māori than you think\".",
+            "date":"8 September 2018",
+            "cover_url": "/static/image/the_borrowers.png",
+            "operation": "Watch here",
+            "link_url": "https://www.stuff.co.nz/life-style/106618244/the-borrowers-why-you-are-speaking-more-maori-than-you-thought",
+            "sort": ""
+        },
+        {
+            "text": "My story in the Conversation received attention in the Waikato Times, \"There's a reason we're bending the rules on speech grammar\".",
+            "date":"26 March 2018",
+            "cover_url": "/static/image/Dr_Andreaa_Calude_1.jpg",
+            "operation": "Read here",
+            "link_url": "https://www.stuff.co.nz/national/education/102419351/theres-a-reason-were-bending-the-rules-on-speech-grammar",
+            "sort": ""
         }
-       
     ]
 }
