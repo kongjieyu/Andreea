@@ -177,7 +177,7 @@ const openTo = (data:any) =>{
         width: 22%;
         height: 150px;
         overflow: hidden;
-        margin: 15px 1vw 20px 0;
+        margin: 15px 3vw 20px 0;
         border-radius: 6px;
         box-sizing: border-box;
         border: 1px solid rgba(166, 166, 166, 0.6);

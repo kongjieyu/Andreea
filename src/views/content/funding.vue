@@ -112,18 +112,18 @@ const openTo = (data:any) =>{
       margin-top: 2vh;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      //justify-content: space-between;
       .media-item{
           border: 1px solid rgba(166, 166, 166, 0.5);
           box-shadow: 0px 2px 6px 2px rgba(166, 166, 166, 0.2);
           border-radius: 6px;
           width: 432px;
-          margin-right: 3vw;
+          margin-right: 3.5vw;
           height: 133px;
           overflow: hidden;
           margin-bottom: 5vh;
           display: flex;
-          justify-content: space-between;
+          //justify-content: space-between;
           .left{
               flex-basis: 23%;
               position: relative;
