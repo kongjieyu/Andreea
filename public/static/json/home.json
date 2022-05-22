@@ -40,14 +40,14 @@
 	,
 	"iconList":[{
 		"pic_src":"/static/image/Instagram.png",
-		"pic_url":"https://www.google.com"
+		"pic_url":"https://www.instagram.com/drandreeacalude/"
 	},
 	{
 		"pic_src":"/static/image/Linkedin.png",
-		"pic_url":"https://www.google.com"
+		"pic_url":"https://www.linkedin.com/in/andreeacalude/ "
 	},
 	{
 		"pic_src":"/static/image/twitter.png",
-		"pic_url":"https://www.google.com"
+		"pic_url":"https://twitter.com/AndreeaCalude"
 	}]
 }
