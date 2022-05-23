@@ -8,11 +8,11 @@
               <div class="sortMain">
                   <div class="sortList" v-for="(obj,i) in item.list" :key="i">
                       <div class="left-ctn">
-                        <div class="left" @click="openTo(obj.student_link)" :style="{backgroundImage:'url(' + obj.photo + ')'}" :class="{'noUrl':!obj.photo}"></div>
+                        <div class="left" @click="openTo(obj.student_link)" :style="{backgroundImage:'url(' + obj.photo + ')'}" :class="{'noUrl':!obj.photo,'curson':obj.student_link}"></div>
                       </div>
                       <div class="right">
                         <div class="date" :style="{'color':titleColor(item.title)}">{{obj.researchPeriod}}</div>
-                        <div class="nickName" @click="openTo(obj.student_link)">{{obj.student}}</div>
+                        <div class="nickName"  :class="{'curson':obj.student_link}"  @click="openTo(obj.student_link)">{{obj.student}}</div>
                         <div class="text" :class="{'curson':obj.intro_link}" @click="openTo(obj.intro_link)" v-html="obj.intro"></div>
                         <div class="institution">{{obj.institution}}</div>
                       </div>
@@ -26,9 +26,9 @@
             <div class="mediaList">
               <div v-for="(item,index) in mediaList" :key="index" class="media-item">
                   <!-- <div class="date">{{item.date}}</div> -->
-                  <div class="media-image cuspointer" :style="{backgroundImage:'url(' + item.cover_url + ')'}" @click="openTo(item.course_link)" :class="{'noUrl':!item.cover_url}"></div>
+                  <div class="media-image" :style="{backgroundImage:'url(' + item.cover_url + ')'}" @click="openTo(item.course_link)" :class="{'noUrl':!item.cover_url,'curson': item.course_link}"></div>
                   <div class="course-parent">
-                      <div class="bookCourse" @click="openTo(item.course_link)">{{item.course}}</div>
+                      <div class="bookCourse" :class="{'curson': item.course_link}" @click="openTo(item.course_link)">{{item.course}}</div>
                       <div class="intro" v-html="item.courseIntro"></div>
                       <div class="time">{{item.year}}</div>
                   </div>
@@ -87,7 +87,7 @@ const getListData = (type:any) =>{
                 })
               }
             }
-            console.log('test',studentList.value);
+            // console.log('test',studentList.value);
             
           }      
        })
@@ -97,6 +97,8 @@ const getListData = (type:any) =>{
 }
 
 const openTo = (data:string) =>{
+  console.log(1212,data);
+  
   if(data){
       window.open(data);
   }
@@ -220,7 +222,6 @@ const titleColor=(color:any)=>{
       font-size: 20px;
       font-weight: 500;
       margin-bottom: 10px;
-      cursor: pointer;
     }
     :deep(.intro){
       color: rgba(112, 117, 122, 0.9);
@@ -262,7 +263,7 @@ const titleColor=(color:any)=>{
                 .left{
                   width: 120px;
                   height: 120px;
-                  cursor: pointer;
+                  // cursor: pointer;
                   border-radius: 100%;
                   background-repeat: no-repeat;
                   background-position: center;
@@ -293,7 +294,6 @@ const titleColor=(color:any)=>{
                   color: rgba(32, 33, 36, 1);
                   font-size: 20px;
                   margin: 5px 0 15px 0;
-                  cursor: pointer;
                   padding-right: 20px;
                 }
                 .institution{

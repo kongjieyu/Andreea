@@ -11,7 +11,7 @@
               </div>
               <div class="right">
                   <div class="year">{{item.year}}</div>
-                  <div class="text" v-html="item.text" @click="openTo(item.url)"></div>
+                  <div class="text" :class="{'curson':item.url}"  v-html="item.text" @click="openTo(item.url)"></div>
               </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="right">
                     <div class="year blue1">{{item.year}}</div>
-                    <div class="text" v-html="item.text" @click="openTo(item.url)"></div>
+                    <div class="text" :class="{'curson':item.url}" v-html="item.text" @click="openTo(item.url)"></div>
                 </div>
             </div>
         </div>
@@ -86,8 +86,6 @@ const getListData = () =>{
 const openTo = (data:any) =>{
   if(data){
       window.open(data);
-  }else{
-    window.alert('No website，Coming soon')
   }
 }
 </script>
@@ -118,7 +116,7 @@ const openTo = (data:any) =>{
           box-shadow: 0px 2px 6px 2px rgba(166, 166, 166, 0.2);
           border-radius: 6px;
           width: 432px;
-          margin-right: 3.5vw;
+          margin-right: 3vw;
           height: 133px;
           overflow: hidden;
           margin-bottom: 5vh;
@@ -162,7 +160,6 @@ const openTo = (data:any) =>{
                   overflow: auto;
                   padding-right:10px ;
                   margin-bottom: 10px;
-                  cursor: pointer;
               }
           }
       }
@@ -183,6 +180,8 @@ const openTo = (data:any) =>{
   .noUrl{
     background: rgba(229, 229, 229, 1) ;
   }
+  .curson{cursor: pointer;}
+ .curson:hover{text-decoration: underline;}
 }
 
 </style>
