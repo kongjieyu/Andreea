@@ -4,43 +4,43 @@
             "course": "Introductory linguistics",
             "course_link": "",
             "courseIntro":"Describing Language, Introduction to Linguistic Communication, Language in Context",
-            "cover_url": "",         
-            "year": "2022.0"
+            "cover_url": "/static/image/linguistics.png",         
+            "year": "2022"
         },
         {
             "course": "General English grammar and discourse",
             "course_link": "",
             "courseIntro":"Exploring English: from Grammar to Discourse",
-            "cover_url": "",         
-            "year": "2021.0"
+            "cover_url": "/static/image/english.png",         
+            "year": "2021"
         },
         {
             "course": "Introductory Morphological Analysis",
             "course_link": "",
             "courseIntro":"Linguistic Analysis",
             "cover_url": "",         
-            "year": "2021.0"
+            "year": "2021"
         },
         {
             "course": "Advanced Sociolinguistics",
             "course_link": "",
             "courseIntro":"",
-            "cover_url": "",         
-            "year": "2021.0"
+            "cover_url": "/static/image/Sociolinguistics.png",         
+            "year": "2021"
         },
         {
             "course": "Special Topics in Linguistics",
             "course_link": "",
             "courseIntro":"Corpus Linguistics, Semantic and Pragmatics, Language of Social Media",
             "cover_url": "",         
-            "year": "2020.0"
+            "year": "2020"
         },
         {
             "course": "Research Methods in Linguistics",
             "course_link": "",
             "courseIntro":"Research Apprenticeship",
             "cover_url": "",         
-            "year": "2020.0"
+            "year": "2020"
         }
     ]
 }
