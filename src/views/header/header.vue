@@ -19,6 +19,12 @@
                         <div>Video/Podcasts</div>
                     </div> -->
                 </ul>
+                <div class="listIcon">
+                    <img class="iconMore" src="/static/image/list.svg">
+                    <ul class="list-ul">
+                        <li v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">{{item}}</li>
+                    </ul>
+                </div>
             </div>
         </div>
 </template>
@@ -149,84 +155,5 @@ onMounted(()=>{
 </script>
 
 <style lang="less" scoped>
-.header{
-    display: flex;
-    .header-bg{
-        min-width: 560px;
-        text-align: left;
-        img {
-            height: 70px;
-            margin-top: 5px;
-            margin-left: 5vw;
-        }
-    }
-    .nav {
-        margin: 0 4vw;
-        width:calc(100% - 560px);
-        ul{
-            margin: 0;
-            padding: 0;
-        }
-        li{
-            list-style: none;
-        }
-        .nav-parent{
-            // flex-wrap: wrap;
-            // overflow: hidden;
-            font-family: Roboto;
-            flex-basis: auto;
-            flex-grow: 1;
-            flex-shrink: 1;
-            height: 75px;
-            color: rgb(32, 33, 36);
-            font-size: 20px;
-            display: flex;
-            justify-content: space-between;
-            .nav-item{
-                cursor: pointer;
-                line-height: 72px;
-                margin-right:20px;
-            }
-            .nav-item:hover, .press-style ul li:hover{
-                color:rgba(2, 182, 205, 1);
-            }
-            .active{
-                color:rgba(2, 182, 205, 1);
-                border-bottom: 3px solid rgba(2, 182, 205, 1);
-            }
-            .press-style{
-                position: relative;
-            } 
-            .press-style .press-more ,
-            .press-style .teching-more{
-                position: absolute;
-                display: none;
-                top:75px;
-                left: -65px;
-                border: 1px solid rgba(166, 166, 166, 0.6);
-                box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.4);
-                border-radius: 2px;
-                background: rgb(239,239,239);
-                z-index: 99;
-                text-align: center;
-                color: rgb(32, 33, 36);
-            }
-            .press-style .teching-more{
-                left: -45px;
-            }
-            .press-style:hover .press-more,
-            .press-style:hover .teching-more{
-                display: inline-block;
-            } 
-            .press-style ul li{
-                line-height: 40px;
-                z-index: 99;
-                padding: 10px 25px ;
-            }
-            .press-style ul li:nth-child(1){
-                border-bottom: 1px solid rgba(166, 166, 166, 0.2);
-            }
-        }
-    }
-}
+@import url(../../style/header.less);
 </style>
