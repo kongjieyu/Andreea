@@ -28,11 +28,11 @@
                     <div class="btn btn-two" @click="openModal('contact')">Contact me</div>
                 </div>
                 <div class="phone">
-                    <div>
-                        <div>HIGHLIGHTS</div>
+                    <div class="hights">
+                        <div class="title">HIGHLIGHTS</div>
                         <div>
-                            <div v-for="item in highlights" v-if="hightlightShow" class="ctn-main">
-                                <div class="hight-item yellow">
+                            <div v-for="item in highlights">
+                                <div>
                                     <div class="item-list" v-html="item.title"></div>
                                 </div>
                                 <div  class="customList" :title="item.content">{{item.content}}</div>
@@ -41,12 +41,13 @@
                     </div>
                     <div>
                         <div>Contact me</div>
-                        <div>
+                        <div class="contact">
                             <div v-for="item in contact"  class="ctn-main">
                                 <div class="hight-item yellow">
-                                    <div class="item-list" v-html="item.title"></div>
+                                    <div class="pic"><img :src="item.icon" alt=""></div>
+                                    <div class="item-list">{{item.title}}</div>
                                 </div>
-                                <div  class="customList" :title="item.content">{{item.content}}</div>
+                                <div  class="customList" :title="item.list" v-html="item.list"></div>
                             </div>
                         </div>
                     </div>
