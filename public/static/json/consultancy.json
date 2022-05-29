@@ -1,19 +1,19 @@
 {
     "Project": [
         {
-            "text": "Fortnightly column in NZ newspapers (Dominion Post and Waikato Times) with Laurie Bauer, Paul Warren and Corinne Seals.",
-            "title":"Project name",
+            "text": "Project introduction will be updated soon",
+            "title":"John Barker",
             "cover_url": "/static/image/John_Barker_Law1.png",
             "operation": "Learn more",
-            "link_url": "https://www.wgtn.ac.nz/lals/resources/dominion-post-language-articles",
+            "link_url": "http://www.johnbarkerlaw.com/",
             "sort": "present"
         },
         {
-            "text": "Project description Project description description Project description Project description description Project description Project description descriptionProject description Project description description",
-            "title":"Project name",
+            "text": "Project introduction will be updated soon",
+            "title":"Walker Law Limited",
             "cover_url": "/static/image/WalkerLaw1.png",
-            "operation": "Read here",
-            "link_url": "https://sciblogs.co.nz/lippy-linguist/",
+            "operation": "Learn more",
+            "link_url": "https://walkerlawltd.com/contact-us/",
             "sort": "present"
         }
        
