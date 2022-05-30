@@ -1,6 +1,8 @@
 <template>
     <div class="home" v-if="!isLoading">
-        <div class="sidebar" :style="style" ref="siderbar"></div>
+        <div class="mobileBg">
+            <div class="sidebar" :style="style" ref="siderbar"></div>
+        </div>
         <div class="content">
             <div class="ctn-div">
                 <div class="occupation">
@@ -39,14 +41,11 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div>Contact me</div>
-                        <div class="contact">
+                    <div class="contact">
+                        <div class="title">Contact me</div>
+                        <div>
                             <div v-for="item in contact"  class="ctn-main">
-                                <div class="hight-item yellow">
-                                    <div class="pic"><img :src="item.icon" alt=""></div>
-                                    <div class="item-list">{{item.title}}</div>
-                                </div>
+                                <div class="pic"><img :src="item.icon2"></div>
                                 <div  class="customList" :title="item.list" v-html="item.list"></div>
                             </div>
                         </div>
@@ -201,5 +200,4 @@ watchEffect(()=>{
 
 <style lang="less">
 @import url(@/style/home.less);
-
 </style>

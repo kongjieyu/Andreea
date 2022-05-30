@@ -146,14 +146,9 @@ onMounted(()=>{
     }
 })
 
-
-
-
-
-
 //document.querySelector('.nav').scrollHeight
 </script>
 
 <style lang="less" scoped>
-@import url(../../style/header.less);
+@import url(@/style/header.less);
 </style>

@@ -56,6 +56,7 @@ const getListData = () =>{
           projectList.value.forEach((item:any)=>{
             item.text = item.text.replace(/\n/g,'<br>')
           })
+          // console.log(25,clientstList.value);
        })
     }catch{
 

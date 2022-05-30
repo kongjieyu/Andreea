@@ -3,9 +3,13 @@
         display: flex;
         position: relative;
         height: calc(100% - 80px);
-        .sidebar {
+        .mobileBg{            
             flex-basis: 560px;
             height: calc(100vh - 75px);
+        }
+        .sidebar {
+            width: 100%;
+            height: 100%;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -366,13 +370,28 @@
         position: relative;
         flex-wrap: wrap;
         height: calc(100% - 7.8%);
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .mobileBg{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
         .sidebar {
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            background-size: cover;
+            background-position: right bottom;
+            background-size: contain;
+            // width:100%;
+            // padding-top: 143%;
+            // height:auto;
+            // background-size: 100% auto;
+            // background-repeat: no-repeat;
+            // position: rela
+
         }
         .icon-list{
             display: none;
@@ -388,8 +407,8 @@
                 position: absolute;
                 -webkit-transform:translate3d(-50%,-50%,0);
                 z-index: 99;
-                left: 47%;
-                top: 25%;
+                left: 48%;
+                top: 23%;
             }
             .item{
                 width: 10px;
@@ -462,18 +481,18 @@
             }
             .loading-one{
                 position: absolute;
-                top: 38%;
-                left: 20%;
+                top: 36%;
+                padding: 0 4.3vw;
             }
             .loading-two{
                 position: absolute;
-                top: 47%;
-                left: 5%;
+                top: 49%;
+                padding: 0 4.3vw;
             }
             .loading-three{
                 position: absolute;
-                top: 50.5%;
-                left: 20%;
+                top: 55.5%;
+                padding: 0 4.3vw;
                 .larger{
                     font-size: 21px;
                     padding: 0 15px;
@@ -482,10 +501,10 @@
         }
     }
     .content{
-        flex: 1;
+        width: 100%;
         .occupation {
             position: absolute;
-            top: 16px;
+            top: 3vh;
             left: 0;
             color: #02b6cd;
             font-family: ArchivoNarrow;
@@ -560,7 +579,33 @@
                 }
             }
             .contact{
-                
+                background: rgba(2, 182, 205, 1);
+                padding: 3vh 13vw 5vh 13vw;
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+                .title{
+                    padding-bottom: 3vh;
+                    font-size: 4.3vw;
+                    font-weight: 500;
+                }
+                .ctn-main{
+                    display: flex;
+                    padding-bottom: 3vh;
+                    text-align: left;
+                    .pic{
+                        width: 6.2vw;
+                        height: 6.2vw;
+                        margin-right: 6.7vw;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .customList{
+                        line-height: 6.2vw;
+                        font-size: 3.7vw;
+                    }
+                }
             }
         }
     }

@@ -1,0 +1,207 @@
+@media screen and (min-width:900px) {
+    .interviews{
+        width: 100%;
+        height: calc(100% - 75px);
+        font-family: Roboto;
+        overflow: scroll;
+         .wrtten{
+          width: 1420px;
+          margin: 0 auto;
+          padding: 0 5vw;
+          .title{
+            margin-top: 3vh;
+            font-weight: bold;
+            font-size: 26px;
+            color: rgba(32, 33, 36, 1);
+          }
+          .mediaList{
+            margin-top: 2vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .media-item{
+                border: 1px solid rgba(166, 166, 166, 0.6);
+                box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
+                border-radius: 6px;
+                width: 47%;
+                margin-right: 3vw;
+                margin-bottom: 6vh;
+                height: 222px;
+                display: flex;
+                overflow: hidden;
+                justify-content: space-between;
+                .left{
+                  flex-basis: 40%;
+                  // height: 220px;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  margin: -1px;
+                  border-radius: 6px 0 0 6px;
+                  background-size: cover;
+                  border-top: 1px solid rgba(166, 166, 166, 0.2);
+                  border-bottom: 1px solid rgba(166, 166, 166, 0.2);
+                }
+                .right{
+                  flex: 1;
+                  padding: 2vh 25px;
+                  padding-right: 0;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                    .date{
+                      color: rgba(2, 182, 205, 1);
+                      font-size: 16px;
+                      padding-right: 25px;
+                    }
+                    .text{
+                      height: 120px;
+                      overflow: auto;
+                      color: rgba(32, 33, 36, 0.9);
+                      font-size: 16px;
+                      padding-right: 25px;
+                      line-height: 25px;
+                    }
+                    .operation{
+                      font-size: 16px;
+                      display: flex;
+                      padding-right: 25px;
+                      justify-content: right;
+                      .date2{
+                          display: none;
+                      }
+                      .opration-item{
+                        color: rgba(2, 182, 205, 1);
+                        margin-right: 12px;
+                        cursor: pointer;
+                      }
+                      .more-img{
+                        width: 22px;
+                        height: 22px;
+                        cursor: pointer;
+                        img{
+                          width: 100%;
+                          height: 100%;
+                        }
+                        img:nth-child(1){
+                          display: block;
+                        }
+                        img:nth-child(2){
+                          display: none;
+                        }
+                      }
+                    }
+                    
+                    .operation:hover {
+                      .opration-item{
+                        color: #047E9A;
+                      }
+                      .more-img{
+                         img:nth-child(1){
+                          display: none;
+                        }
+                        img:nth-child(2){
+                          display: block;
+                        }
+                      }
+                    }
+                }
+                .noUrl{
+                  background: rgba(229, 229, 229, 1);
+                }
+            }
+            .media-item:nth-child(2n){
+              margin-right: 0;
+            }
+          }
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .interviews{
+        padding: 0 5vw ;
+        height: calc(100% - 7.8%);
+        font-family: Roboto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        .title{
+            color: rgba(255, 196, 3, 1);
+            font-size: 4.8vw;
+            margin-top: 3vh;
+            margin-bottom: 2vh;
+        }
+        .media-item{
+            border: 1px solid rgba(166, 166, 166, 0.6);
+            box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
+            border-radius: 6px;
+            width: 100%;
+            margin-bottom: 3vh;
+            // height: 222px;
+            overflow: hidden;
+            .left{
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 6px 6px 0 0;
+                background-size: cover;
+                min-height:190px ;
+            }
+            .right{
+                padding: 2vh 5.7vw;
+                .date{
+                    display: none;
+                }
+                .text{
+                    overflow: auto;
+                    color: rgba(32, 33, 36, 1);
+                    font-size: 3.7vw;
+                    line-height: 6vw;
+                    height: 85px;
+                }
+                .operation{
+                    padding-top: 2vh;
+                    font-size: 3.7vw;
+                    display: flex;
+                    justify-content: right;
+                    width: 100%;
+                    color: rgba(2, 182, 205, 1);
+                    .date2{
+                        margin-right: auto;
+                    }
+                    .opration-item{
+  
+                      margin-right: 3.2vw;
+                      cursor: pointer;
+                    }
+                    .more-img{
+       
+                        width: 5vw;
+                        height: 5vw;
+                      cursor: pointer;
+                      img{
+                        width: 100%;
+                        height: 100%;
+                      }
+                      img:nth-child(1){
+                        display: block;
+                      }
+                      img:nth-child(2){
+                        display: none;
+                      }
+                    }
+                }
+                .operation:hover {
+                    .opration-item{
+                    color: #047E9A;
+                    }
+                    .more-img{
+                    img:nth-child(1){
+                        display: none;
+                    }
+                    img:nth-child(2){
+                        display: block;
+                    }
+                    }
+                }
+            }
+        }
+    }
+}

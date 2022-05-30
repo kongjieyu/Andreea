@@ -35,7 +35,7 @@
         {
             "text": "Interview for the Dominion Post \"How Māori and English languages mix in the modern world\".",
             "date":"10 January 2020",
-            "cover_url": "/static/image/Māori_and_English_languages.png",
+            "cover_url": "/static/image/Maori_and_English_languages.png",
             "operation": "Read here",
             "link_url": "https://www.stuff.co.nz/science/118713470/how-mori-and-english-languages-mix-in-the-modern-world?cid=facebook.post&fbclid=IwAR2896Rg6IBZYNbiBDS1390XRdz4kwMkdNuabLVMZ3e737ocoVy514SstCc",
             "sort": ""
@@ -43,7 +43,7 @@
         {
             "text": "Interview on TVNZ news programme in te reo Māori Te Karere, screened on 24 April 2019, 4pm.",
             "date":"24 April 2019",
-            "cover_url": "/static/image/Te_Reo_Māori_Interview.png",
+            "cover_url": "/static/image/Te_Reo_Maori_Interview.png",
             "operation": "Watch here",
             "link_url": "https://www.youtube.com/watch?v=EyHjXcT1OYs",
             "sort": ""
@@ -78,6 +78,94 @@
             "cover_url": "/static/image/Dr_Andreaa_Calude_1.jpg",
             "operation": "Read here",
             "link_url": "https://www.stuff.co.nz/national/education/102419351/theres-a-reason-were-bending-the-rules-on-speech-grammar",
+            "sort": ""
+        },
+        {
+            "text": "My paper on <a target=“_blank” href='https://www.cambridge.org/core/journals/english-language-and-linguistics/article/abs/use-of-heaps-as-quantifier-and-intensifier-in-new-zealand-english-1/CBEEC06C42CE32D6072B8DDE3546B702'>'Heaps' in New Zealand English<a> receives media attention in:<br/><a target=“_blank” href='https://www.newshub.co.nz/home/new-zealand/2018/01/why-kiwis-use-the-word-heaps-heaps.html'>TV Interview on TV3, the AM show with Duncan Garner</a>,  30 January 2018 at 6:51am, <br/><a target=“_blank” href='https://www.rnz.co.nz/national/programmes/afternoons/audio/2018629808/heaps-of-words'>Radio NZ Interview with Jesse Mulligan</a>, 29 January 2018, 1:22pm, <br/><a target=“_blank” href='https://www.nzherald.co.nz/nz/why-heaps-has-heaps-more-meaning-than-you-think/HO7J476Z3RAP5IRYRDEK7HOAZI/?c_id=1&objectid=11984040'> NZ piece by Jamie Morton: \"Why 'heaps' has heaps more meaning than you think\" and in print</a>, page A4, 29 January 2018..",
+            "date":"January 2018",
+            "cover_url": "/static/image/TV3.jpg",
+            "operation": "Watch here",
+            "link_url": "https://www.newshub.co.nz/home/new-zealand/2018/01/why-kiwis-use-the-word-heaps-heaps.html",
+            "sort": ""
+        },
+        {
+            "text": "Quoted in New Zealand Herald, Canvas Magazine by Lucy Corry for \"2 sick 4 work soz: When is it not okay to text?\", 19 August 2017.",
+            "date":"19 August 2017",
+            "cover_url": "/static/image/2_sick_4_work.png",
+            "operation": "Read here",
+            "link_url": "https://www.nzherald.co.nz/lifestyle/2-sick-4-work-soz-when-is-it-not-okay-to-text/6PS3IMRMKCQC3D4MNPT5JWMQCY/?c_id=6&objectid=11907173",
+            "sort": ""
+        },
+        {
+            "text": "Interview for the New Zealand Herald by Jane Phare for \"Are we all on the Same Page\", 11 June 2017.",
+            "date":"11 June 2017",
+            "cover_url": "/static/image/Interview.png",
+            "operation": "Read here",
+            "link_url": "https://www.nzherald.co.nz/world/are-we-all-on-the-same-page/JXZTSQ2LAP7FQHSK2S7GPW7NJE/?c_id=2&objectid=11873907",
+            "sort": ""
+        },
+        {
+            "text": "Nicole Brewer interviews me on 18 February 2017, 7pm about grammar on CBS3 local news in Philadelphia, US.",
+            "date":"18 February 2017",
+            "cover_url": "/static/image/Interview.png",
+            "operation": "Read here",
+            "link_url": "https://philadelphia.cbslocal.com/2017/02/18/does-proper-grammar-matter-study-says-it-does-when-it-comes-to-getting-a-date/",
+            "sort": ""
+        },
+        {
+            "text": "My project on the \"The dating game of loanwords\" receives media attention: <br/>Dale Husband interview on Waatea Radio on 5 Dec 2016 at 8:10am, <br/>New Zealand Herald video story on 4 Dec 2016.",
+            "date":"Dec 2016",
+            "cover_url": "/static/image/Maori_loan_words.png",
+            "operation": "Watch here",
+            "link_url": "https://www.nzherald.co.nz/kahu/watch-nzh-local-focus-maori-loan-words-making-english-more-kiwi/ONVTWT6DSOABYAVLBXQPCVAI4Y/?c_id=252&objectid=11759966",
+            "sort": ""
+        },
+        {
+            "text": "Radio interview on FreeFM Community Radio at 8:45am, on 13 May, 2016 about my TED-ED Lesson.",
+            "date":"13 May 2016",
+            "cover_url": "/static/image/Radio.png",
+            "operation": "Listen here",
+            "link_url": "https://www.calude.net/andreea/FreeFM_interview.mp3",
+            "sort": ""
+        },
+        {
+            "text": "Interview on jargon in the Waikato Times in Saturday Edition, 14 March, 2016.",
+            "date":"14 March 2016",
+            "cover_url": "/static/image/glossary_for_teaching_jargon.jpg",
+            "operation": "Read here",
+            "link_url": "https://www.stuff.co.nz/national/education/77666690/new-zealand-teaching-jargon-gets-glossary",
+            "sort": ""
+        },
+        {
+            "text": "Interview on taboo language (profanity) in the Waikato Times in Saturday Edition, 24 October (& front page on 21 October), 2015.",
+            "date":"October 2015",
+            "cover_url": "/static/image/October_2015_Interveiw.png",
+            "operation": "Read here",
+            "link_url": "https://www.stuff.co.nz/business/73323499/look-out-workplace-potty-mouths---swearing-at-work-a-no-go",
+            "sort": ""
+        },
+        {
+            "text": "Interview on literacy and technology use in the Waikato Times in Saturday Edition, 29 August, 2015.",
+            "date":"29 August 2015",
+            "cover_url": "/static/image/Aug_2015_intervew.png",
+            "operation": "Read here",
+            "link_url": "https://www.stuff.co.nz/national/education/71471335/text-speak-no-threat-to-spelling-may-help-academic",
+            "sort": ""
+        },
+        {
+            "text": "Our Eurasian language family work receives media attention in: <br/>New Scientist, The Guardian, Washington Post, Featured in a rap song by Zach Sherwin, I was interviewed about it on National Radio on 13 May 2013 at 14:10. ",
+            "date":"13 May 2013",
+            "cover_url": "/static/image/Eurasian_language_family.jpg",
+            "operation": "Read here",
+            "link_url": "https://www.newscientist.com/article/dn23496-european-and-asian-languages-have-one-mother-tongue/?ignored=irrelevant",
+            "sort": ""
+        },
+         {
+            "text": "Our paper on the <a target=“_blank” href='https://onlinelibrary.wiley.com/doi/full/10.1002/bies.201200165'>Homeric Epics</a> receives media attention in: <br/>Scientific American, History of the Ancient World, NBC News,Science Daily.",
+            "date":"13 May 2013",
+            "cover_url": "/static/image/Interview.png",
+            "operation": "Read here",
+            "link_url": "https://www.scientificamerican.com/article/geneticists-estimate-publication-date-of-the-illiad/",
             "sort": ""
         }
     ]
