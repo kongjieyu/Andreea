@@ -81,7 +81,7 @@
             "sort": ""
         },
         {
-            "text": "My paper on <a target=“_blank” href='https://www.cambridge.org/core/journals/english-language-and-linguistics/article/abs/use-of-heaps-as-quantifier-and-intensifier-in-new-zealand-english-1/CBEEC06C42CE32D6072B8DDE3546B702'>'Heaps' in New Zealand English<a> receives media attention in:<br/><a target=“_blank” href='https://www.newshub.co.nz/home/new-zealand/2018/01/why-kiwis-use-the-word-heaps-heaps.html'>TV Interview on TV3, the AM show with Duncan Garner</a>,  30 January 2018 at 6:51am, <br/><a target=“_blank” href='https://www.rnz.co.nz/national/programmes/afternoons/audio/2018629808/heaps-of-words'>Radio NZ Interview with Jesse Mulligan</a>, 29 January 2018, 1:22pm, <br/><a target=“_blank” href='https://www.nzherald.co.nz/nz/why-heaps-has-heaps-more-meaning-than-you-think/HO7J476Z3RAP5IRYRDEK7HOAZI/?c_id=1&objectid=11984040'> NZ piece by Jamie Morton: \"Why 'heaps' has heaps more meaning than you think\" and in print</a>, page A4, 29 January 2018..",
+            "text": "My paper on <a target='_blank' href='https://www.cambridge.org/core/journals/english-language-and-linguistics/article/abs/use-of-heaps-as-quantifier-and-intensifier-in-new-zealand-english-1/CBEEC06C42CE32D6072B8DDE3546B702'>'Heaps' in New Zealand English<a> receives media attention in:<br/><a target='_blank' href='https://www.newshub.co.nz/home/new-zealand/2018/01/why-kiwis-use-the-word-heaps-heaps.html'>TV Interview on TV3, the AM show with Duncan Garner</a>,  30 January 2018 at 6:51am, <br/><a target='_blank' href='https://www.rnz.co.nz/national/programmes/afternoons/audio/2018629808/heaps-of-words'>Radio NZ Interview with Jesse Mulligan</a>, 29 January 2018, 1:22pm, <br/><a target='_blank' href='https://www.nzherald.co.nz/nz/why-heaps-has-heaps-more-meaning-than-you-think/HO7J476Z3RAP5IRYRDEK7HOAZI/?c_id=1&objectid=11984040'> NZ piece by Jamie Morton: \"Why 'heaps' has heaps more meaning than you think\" and in print</a>, page A4, 29 January 2018..",
             "date":"January 2018",
             "cover_url": "/static/image/TV3.jpg",
             "operation": "Watch here",
@@ -161,7 +161,7 @@
             "sort": ""
         },
          {
-            "text": "Our paper on the <a target=“_blank” href='https://onlinelibrary.wiley.com/doi/full/10.1002/bies.201200165'>Homeric Epics</a> receives media attention in: <br/>Scientific American, History of the Ancient World, NBC News,Science Daily.",
+            "text": "Our paper on the <a target='_blank' href='https://onlinelibrary.wiley.com/doi/full/10.1002/bies.201200165'>Homeric Epics</a> receives media attention in: <br/>Scientific American, History of the Ancient World, NBC News,Science Daily.",
             "date":"13 May 2013",
             "cover_url": "/static/image/Interview.png",
             "operation": "Read here",

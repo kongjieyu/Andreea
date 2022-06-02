@@ -23,8 +23,6 @@
 <script setup lang="ts">
 import axios from "axios";
 import {onMounted, reactive, ref} from "vue";
-
-
 onMounted(()=>{
   getHomeData()
   
@@ -35,7 +33,7 @@ const books:any = ref([])
 const getHomeData = () =>{ 
     try{
        axios.get('/static/json/books.json').then(response=>{
-          books.value = response.data.books          
+          books.value = response.data.books
        })
     }catch{
 

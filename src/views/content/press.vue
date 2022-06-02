@@ -27,7 +27,7 @@
             <div v-for="(item,index) in mediaList" :key="index" class="media-item">
                 <!-- <div class="date">{{item.date}}</div> -->
                 <div class="media-image cuspointer" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')',borderRadius:'6px 6px 0 0'}" @click="openTo(item.link_url)" ></div>
-                <div class="text" v-html="item.text" @click="openTo(item.link_url)"></div>
+                <div class="text" v-html="item.text" :class="{'hoverItem':item.link_url}"  @click="openTo(item.link_url)"></div>
                 <div class="video-date">{{item.date}}</div>
             </div>
           </div>
@@ -62,6 +62,13 @@ watch(
       }
 );
 
+watchEffect(()=>{
+  if(isWrittem.value == 'press_written'){
+      current.value = 'Written'
+  }else{
+    current.value = 'Video/Podcasts'
+  }
+})
 
 const mediaList:any = ref([])
 //获取数据

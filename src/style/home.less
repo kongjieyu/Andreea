@@ -60,19 +60,19 @@
             }
             .item:nth-child(2){
                top: 17px;
-               left: 17px;
+               left: -17px;
                -webkit-animation: loading 2s 0.24s infinite linear;
                animation: loading 2s 0.24s infinite linear;
             }
             .item:nth-child(3){
                 top: 0px;
-               left: 25px;
+               left: -25px;
                -webkit-animation: loading 2s 0.48s infinite linear;
                animation: loading 2s 0.48s infinite linear;
             }
             .item:nth-child(4){
                 top: -17px;
-               left: 17px;
+               left: -17px;
                -webkit-animation: loading 2s 0.72s infinite linear;
                animation: loading 2s 0.72s infinite linear;
             }
@@ -84,19 +84,19 @@
             }
             .item:nth-child(6){
                 top: -17px;
-               left: -17px;
+               left: 17px;
                -webkit-animation: loading 2s 1.2s infinite linear;
                animation: loading 2s 1.2s infinite linear;
             }
             .item:nth-child(7){
                 top: 0;
-               left: -25px;
+               left: 25px;
                -webkit-animation: loading 2s 1.44s infinite linear;
                animation: loading 2s 1.44s infinite linear;
             }
             .item:nth-child(8){
                 top: 17px;
-               left: -17px;
+               left: 17px;
                -webkit-animation: loading 2s 1.78s infinite linear;
                animation: loading 2s 1.78s infinite linear;
             }
@@ -397,9 +397,8 @@
             display: none;
         }
         .loadinging{
-            width: 600px;
+            width: 80vw;
             margin:0 auto;
-            height: 100%;
             color:rgba(2, 182, 205, 1) ;
             position: relative;
             text-align: center;
@@ -407,8 +406,8 @@
                 position: absolute;
                 -webkit-transform:translate3d(-50%,-50%,0);
                 z-index: 99;
-                left: 48%;
-                top: 23%;
+                left:47%;
+                top: 25%;
             }
             .item{
                 width: 10px;
@@ -420,52 +419,52 @@
                 border-radius: 100%;
             }
             .item:nth-child(1){
-            top: 25px;
-            left: 0;
-            -webkit-animation: loading 2s 0s infinite linear;
-            animation: loading 2s 0s infinite linear;
+                top: 25px;
+                left: 0;
+                -webkit-animation: loading 2s 0s infinite linear;
+                animation: loading 2s 0s infinite linear;
             }
             .item:nth-child(2){
-            top: 17px;
-            left: 17px;
-            -webkit-animation: loading 2s 0.24s infinite linear;
-            animation: loading 2s 0.24s infinite linear;
+                top: 17px;
+                left: -17px;
+                -webkit-animation: loading 2s 0.24s infinite linear;
+                animation: loading 2s 0.24s infinite linear;
             }
             .item:nth-child(3){
                 top: 0px;
-            left: 25px;
-            -webkit-animation: loading 2s 0.48s infinite linear;
-            animation: loading 2s 0.48s infinite linear;
+                left: -25px;
+                -webkit-animation: loading 2s 0.48s infinite linear;
+                animation: loading 2s 0.48s infinite linear;
             }
             .item:nth-child(4){
                 top: -17px;
-            left: 17px;
-            -webkit-animation: loading 2s 0.72s infinite linear;
-            animation: loading 2s 0.72s infinite linear;
+                left: -17px;
+                -webkit-animation: loading 2s 0.72s infinite linear;
+                animation: loading 2s 0.72s infinite linear;
             }
             .item:nth-child(5){
                 top: -25px;
-            left: 0;
-            -webkit-animation: loading 2s 0.96s infinite linear;
-            animation: loading 2s 0.96s infinite linear;
+                left: 0;
+                -webkit-animation: loading 2s 0.96s infinite linear;
+                animation: loading 2s 0.96s infinite linear;
             }
             .item:nth-child(6){
                 top: -17px;
-            left: -17px;
-            -webkit-animation: loading 2s 1.2s infinite linear;
-            animation: loading 2s 1.2s infinite linear;
+                left: 17px;
+                -webkit-animation: loading 2s 1.2s infinite linear;
+                animation: loading 2s 1.2s infinite linear;
             }
             .item:nth-child(7){
                 top: 0;
-            left: -25px;
-            -webkit-animation: loading 2s 1.44s infinite linear;
-            animation: loading 2s 1.44s infinite linear;
+                left: 25px;
+                -webkit-animation: loading 2s 1.44s infinite linear;
+                animation: loading 2s 1.44s infinite linear;
             }
             .item:nth-child(8){
                 top: 17px;
-            left: -17px;
-            -webkit-animation: loading 2s 1.78s infinite linear;
-            animation: loading 2s 1.78s infinite linear;
+                left: 17px;
+                -webkit-animation: loading 2s 1.78s infinite linear;
+                animation: loading 2s 1.78s infinite linear;
             }
             @-webkit-keyframes loading{
                 50%{
@@ -481,21 +480,24 @@
             }
             .loading-one{
                 position: absolute;
-                top: 36%;
-                padding: 0 4.3vw;
+                top: 38%;
+                width: 100%;
             }
             .loading-two{
                 position: absolute;
-                top: 49%;
-                padding: 0 4.3vw;
+                top: 47%;
+                width: 100%;
             }
             .loading-three{
                 position: absolute;
-                top: 55.5%;
-                padding: 0 4.3vw;
+                top: 53.5%;
+                width: 100%;
                 .larger{
                     font-size: 21px;
-                    padding: 0 15px;
+                    padding: 0 3vw;
+                }
+                .larger:first-child{
+                    padding-left: 0;
                 }
             }
         }
