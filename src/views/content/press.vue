@@ -9,7 +9,7 @@
         <div class="mediaList">
           <div v-for="(item,index) in mediaList" :key="index" class="media-item">
               <div class="date">{{item.date}}</div>
-              <div class="media-image" :style="{backgroundImage:'url(' + item.cover_url + ')'}" :class="{'noUrl':!item.cover_url}"></div>
+              <div class="media-image" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url"  :class="{'noUrl':!item.cover_url}"></div>
               <div class="text" v-html="item.text"></div>
               <div class="operation">
                 <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
@@ -26,7 +26,7 @@
           <div class="mediaList">
             <div v-for="(item,index) in mediaList" :key="index" class="media-item">
                 <!-- <div class="date">{{item.date}}</div> -->
-                <div class="media-image cuspointer" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')',borderRadius:'6px 6px 0 0'}" @click="openTo(item.link_url)" ></div>
+                <div class="media-image cuspointer" :class="{'noUrl':!item.cover_url}" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url" style="{borderRadius:'6px 6px 0 0'}" @click="openTo(item.link_url)" ></div>
                 <div class="text" v-html="item.text" :class="{'hoverItem':item.link_url}"  @click="openTo(item.link_url)"></div>
                 <div class="video-date">{{item.date}}</div>
             </div>

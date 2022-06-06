@@ -4,7 +4,7 @@
     <div class="books">
       <div v-for="(item,index) in books" :key="index" class="book-item">
         <div @click="linkTo(item.book_url)" class="book-pic">
-          <div  class="bookImage"  :style="{backgroundImage:'url(' + item.book_image + ')'}"></div>
+          <div  class="bookImage" v-lazy:background-image="{src: item.book_image}" :key="item.book_image"></div>
         </div>
         <div @click="linkTo(item.book_url)" class="title" v-if="item.title">{{item.title}}</div>
         <div class="desc">

@@ -12,7 +12,7 @@
               <div class="sortMain">
                   <div class="sortList" v-for="(obj,i) in item.list" :key="i">
                       <div class="left-ctn">
-                        <div class="left" @click="openTo(obj.student_link)" :style="{backgroundImage:'url(' + obj.photo + ')'}" :class="{'noUrl':!obj.photo,'curson':obj.student_link}"></div>
+                        <div class="left" @click="openTo(obj.student_link)" v-lazy:background-image="{src: obj.photo}" :key="obj.photo"  :class="{'noUrl':!obj.photo,'curson':obj.student_link}"></div>
                         <div class="nickName" :class="{'curson':obj.student_link}"  @click="openTo(obj.student_link)">{{obj.student}}</div>
                       </div>
                       <div class="right">
@@ -31,7 +31,7 @@
             <div class="mediaList">
               <div v-for="(item,index) in mediaList" :key="index" class="media-item">
                   <!-- <div class="date">{{item.date}}</div> -->
-                  <div class="media-image" :style="{backgroundImage:'url(' + item.cover_url + ')'}" @click="openTo(item.course_link)" :class="{'noUrl':!item.cover_url,'curson': item.course_link}"></div>
+                  <div class="media-image" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url"  @click="openTo(item.course_link)" :class="{'noUrl':!item.cover_url,'curson': item.course_link}"></div>
                   <div class="course-parent">
                       <div class="bookCourse" :class="{'curson': item.course_link}" @click="openTo(item.course_link)">{{item.course}}</div>
                       <div class="intro" v-html="item.courseIntro"></div>

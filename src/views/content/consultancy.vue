@@ -7,7 +7,7 @@
           <div class="mediaList">
             <div v-for="(item,index) in projectList" :key="index" class="media-item">
                 <div class="left-ctn" >
-                  <div class="left" :style="{backgroundImage:'url(' + item.cover_url + ')'}" :class="{'noUrl':!item.cover_url}"></div>
+                  <div class="left" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url"  :class="{'noUrl':!item.cover_url}"></div>
                   <div class="date">{{item.title}}</div>
                 </div>
                 <div class="right">
@@ -28,7 +28,7 @@
             <div class="title">Clients</div>
             <div class="mediaList">
               <div v-for="(item,index) in clientstList" :key="index" class="client-item">
-                  <div class="client-image" :class="{'noUrl':!item.cover_url}" :style="{backgroundImage:'url(' + item.cover_url + ')'}" ></div>
+                  <div class="client-image" :class="{'noUrl':!item.cover_url}" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url"></div>
               </div>
             </div>
       </div>

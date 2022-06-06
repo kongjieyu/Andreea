@@ -4,7 +4,7 @@
         <div class="title">Interviews</div>
         <div class="mediaList">
           <div v-for="(item,index) in mediaList" :key="index" class="media-item">
-              <div class="left" :style="{backgroundImage:'url(' + item.cover_url + ')'}" :class="{'noUrl':!item.cover_url}"></div>
+              <div class="left" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url" :class="{'noUrl':!item.cover_url}"></div>
               <div class="right">
                 <div class="date">{{item.date}}</div>
                 <div class="text" v-html="item.text"></div>
