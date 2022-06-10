@@ -1,6 +1,13 @@
 {
     "Courses": [
         {
+            "course": "Language of Social Media",
+            "course_link": "",
+            "courseIntro":"",
+            "cover_url": "/static/image/Language_of_Social_Media.png",         
+            "year": "2022"
+        },
+        {
             "course": "Introductory linguistics",
             "course_link": "",
             "courseIntro":"Describing Language, Introduction to Linguistic Communication, Language in Context",
@@ -18,7 +25,7 @@
             "course": "Introductory Morphological Analysis",
             "course_link": "",
             "courseIntro":"Linguistic Analysis",
-            "cover_url": "",         
+            "cover_url": "/static/image/Morphological_Analysis.png",         
             "year": "2021"
         },
         {
@@ -39,7 +46,7 @@
             "course": "Research Methods in Linguistics",
             "course_link": "",
             "courseIntro":"Research Apprenticeship",
-            "cover_url": "",         
+            "cover_url": "/static/image/Research_method.png",         
             "year": "2020"
         }
     ]
