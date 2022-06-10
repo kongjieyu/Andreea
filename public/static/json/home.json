@@ -24,16 +24,19 @@
 		[{
 			"title":"Email",
 			"icon":"/static/image/email.png",
+			"icon2":"/static/image/xinfen.svg",
 			"list":"andreea.calude@waikato.ac.nz"
 		},
 		{
 			"title":"Postal address",
 			"icon":"/static/image/post.png",
+			"icon2":"/static/image/housewhite.svg",
 			"list":"Private Bag 3105 Hamilton 3240"
 		},
 		{
 			"title":"Address",
 			"icon":"/static/image/address.png",
+			"icon2":"/static/image/addresswhite.svg",
 			"list":"University of Waikato,\nSchool of Arts, Linguistics\nKnighton Road\nHillcrest, Hamilton, New Zealand"
 		}
 	]
