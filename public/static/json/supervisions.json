@@ -31,7 +31,7 @@
         ]
     },
     {
-        "Masters": [
+        "MASTERS": [
             {
                 "student": "Jessie Burnette",
                 "student_link": "https://www.waikato.ac.nz/staff-profiles/people/jessieb",
@@ -53,7 +53,7 @@
         ]
     },
     {
-        "Honors": [
+        "HONOURS": [
             {
                 "student": "David Trye",
                 "student_link": "https://www.cs.waikato.ac.nz/~dgt12/",
@@ -75,7 +75,7 @@
         ]
     },
     {
-        "Summer Scholarships": [
+        "SUMMER SCHOLARSHIPS": [
             {
                 "student": "Jessie Burnette",
                 "student_link": "https://www.waikato.ac.nz/staff-profiles/people/jessieb",

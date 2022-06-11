@@ -2,10 +2,10 @@
   <div class="press">
       <div class="changeBtn">
         <span @click="changeTab('Courses')" :class="{'active': current == 'Courses'}">Courses</span>
-        <span @click="changeTab('Supervisions')" :class="{'active': current == 'Supervisions'}">Supervisions</span>
+        <span @click="changeTab('Supervisions')" :class="{'active': current == 'Supervisions'}">Supervision</span>
       </div>
       <div class="wrtten" v-if="isWrittem=='supervisions'">
-          <div class="title">Supervisions</div>
+          <div class="title">SUPERVISION</div>
           <div class="supervisions">
             <div v-for="(item,index) in studentList" :key="index" class="super-mian">
               <div class="sortName" :style="{'color':titleColor(item.title)}">{{item.title}}</div>
@@ -45,12 +45,10 @@
 
 <script setup lang="ts">
 import axios from "axios";
-import { log } from "console";
 import {onMounted, reactive, ref,toRaw,watchEffect,watch} from "vue";
 import { useRoute,useRouter} from 'vue-router'
 
 const route = useRoute()
-const router = useRouter();
 const current = ref('Courses')
 onMounted(() => {
     isWrittem.value = 'courses'
@@ -99,8 +97,6 @@ const getListData = (type:any) =>{
                 })
               }
             }
-            // console.log('test',studentList.value);
-            
           }      
        })
     }catch{
@@ -126,9 +122,10 @@ const openTo = (data:string) =>{
 const titleColor=(color:any)=>{
   switch (color){
     case 'Ph.D': return 'rgba(255, 195, 0, 1)';break
-    case 'Master': return 'rgba(2, 182, 205, 1)';break;
-    case 'Honors': return 'rgba(181, 108, 212, 1)';break;
-    case 'Summer Scholarships': return 'rgba(250, 145, 40, 1)';break;
+    case 'MASTERS': return 'rgba(2, 182, 205, 1)';break;
+    case 'HONOURS': return 'rgba(181, 108, 212, 1)';break;
+    case 'SUMMER SCHOLARSHIPS': return 'rgba(250, 145, 40, 1)';break;
+    default:return 'rgb(24 152 216)';break;
   }
 }
 </script>

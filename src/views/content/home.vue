@@ -37,7 +37,7 @@
                                 <div>
                                     <div class="item-list" v-html="item.title"></div>
                                 </div>
-                                <div  class="customList" :title="item.content">{{item.content}}</div>
+                                <div  class="customList" :title="item.content" v-html="item.content"></div>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                         <div class="hight-item yellow">
                             <div class="item-list" v-html="item.title"></div>
                         </div>
-                        <div  class="customList" :title="item.content">{{item.content}}</div>
+                        <div  class="customList" :title="item.content" v-html="item.content"></div>
                     </div>
                 </div>
                 </div>
@@ -145,6 +145,7 @@ const getHomeData = () =>{
             highlights.value = response.data.highlights
             highlights.value.forEach((item:any)=>{
                 item.title = item.title.replace(/\n/g,'<br>')
+                item.content = item.content.replace(/\(/g,'<br>(')
             })
             introdution.value = response.data.introdution.replace(/\n/g,'<br>')
             occupationList.value = response.data.occupationList

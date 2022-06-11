@@ -5,23 +5,25 @@
       <div class="wrtten" >
           <div class="title">Projects</div>
           <div class="mediaList">
-            <div v-for="(item,index) in projectList" :key="index" class="media-item">
-                <div class="left-ctn" >
-                  <div class="left" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url"  :class="{'noUrl':!item.cover_url}"></div>
-                  <div class="date">{{item.title}}</div>
-                </div>
-                <div class="right">
-                  <div class="date">{{item.title}}</div>
-                  <div class="text" v-html="item.text"></div>
-                  <div class="operation">
-                    <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
-                      <div class="more-img" @click="openTo(item.link_url)" v-if="item.operation">
-                        <img src="/static/image/View_more.png"/>
-                        <img src="/static/image/next.png"/>
+            <template v-for="(item,index) in projectList" :key="index">
+              <div class="media-item"  v-if="!item.isShow">
+                  <div class="left-ctn" >
+                    <div class="left" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url"  :class="{'noUrl':!item.cover_url}"></div>
+                    <div class="date">{{item.title}}</div>
+                  </div>
+                  <div class="right">
+                    <div class="date">{{item.title}}</div>
+                    <div class="text" v-html="item.text"></div>
+                    <div class="operation">
+                      <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
+                        <div class="more-img" @click="openTo(item.link_url)" v-if="item.operation">
+                          <img src="/static/image/View_more.png"/>
+                          <img src="/static/image/next.png"/>
+                        </div>
                       </div>
-                    </div>
-                </div>
-            </div>
+                  </div>
+              </div>
+            </template>
           </div>
       </div>
       <div class="wrtten video" >
@@ -56,9 +58,11 @@ const getListData = () =>{
           projectList.value = response.data.Project
           clientstList.value = response.data.Clients
           projectList.value.forEach((item:any)=>{
+            if(!item.cover_url && !item.link_url && !item.text && !item.title){  
+              item.isShow = true
+            }
             item.text = item.text.replace(/\n/g,'<br>')
           })
-          // console.log(25,clientstList.value);
        })
     }catch{
 

@@ -31,13 +31,12 @@
 
 <script setup lang="ts">
 import axios from "axios";
-import { log } from "console";
-import {onMounted, reactive, ref, watchEffect, nextTick} from "vue";
+import {onMounted, ref, nextTick} from "vue";
 import { useRouter} from 'vue-router'
 const router = useRouter();
 const navList:any= ref(['Home','Books','Publications','Press','Interviews','Teaching','Funding','Consultancy']) //头部导航栏
 const pressNav:any = ref(['Written','Video/Podcasts']) //press二级菜单
-const teachingNav:any = ref(['Courses','Supervisions'])
+const teachingNav:any = ref(['Courses','Supervision'])
 const currentAtive = ref('Home')
 const bgImage:any = ref('')
 //获取导航栏
@@ -63,7 +62,7 @@ const changeTab = (data:any) =>{
                 name:'Press',
                 params:{type:data}
         })  
-     }else if(data=='Teaching'||data=='Courses'||data=='Supervisions'){
+     }else if(data=='Teaching'||data=='Courses'||data=='Supervision'){
          router.push({
                 name:'Teaching',
                 params:{type:data}
@@ -92,15 +91,6 @@ const isNavIconShow = () => {
             })
         }, 100)
     }
-    // if( width < 575) {
-    //     showNavIcon.value = true
-    //     dataSection(width)
-    //     console.log('qujina',topNav.scrollWidth)
-    // } else {
-    //     showNavIcon.value = false
-    // }
-    // console.log(2258,relheight);
-    
 }
 //判断数值区间
 const dataSection =(num:number)=>{
