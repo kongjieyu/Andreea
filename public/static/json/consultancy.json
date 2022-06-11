@@ -1,22 +1,6 @@
 {
     "Project": [
         {
-            "text": "Project introduction will be updated soon",
-            "title":"John Barker",
-            "cover_url": "/static/image/John_Barker_Law1.png",
-            "operation": "Learn more",
-            "link_url": "http://www.johnbarkerlaw.com/",
-            "sort": "present"
-        },
-        {
-            "text": "Project introduction will be updated soon",
-            "title":"Walker Law Limited",
-            "cover_url": "/static/image/WalkerLaw1.png",
-            "operation": "Learn more",
-            "link_url": "https://walkerlawltd.com/contact-us/",
-            "sort": "present"
-        },
-        {
             "text": "",
             "title":"",
             "cover_url": "",

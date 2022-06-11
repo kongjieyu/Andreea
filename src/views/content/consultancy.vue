@@ -2,7 +2,7 @@
   <div class="consultancy">
     <div class="consu-parent">
       <div class="consulty-name">Consultancy</div>
-      <div class="wrtten" >
+      <!-- <div class="wrtten" >
           <div class="title">Projects</div>
           <div class="mediaList">
             <template v-for="(item,index) in projectList" :key="index">
@@ -25,7 +25,7 @@
               </div>
             </template>
           </div>
-      </div>
+      </div> -->
       <div class="wrtten video" >
             <div class="title">Clients</div>
             <div class="mediaList">
