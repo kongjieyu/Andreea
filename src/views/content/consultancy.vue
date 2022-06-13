@@ -2,8 +2,8 @@
   <div class="consultancy">
     <div class="consu-parent">
       <div class="consulty-name">Consultancy</div>
-      <!-- <div class="wrtten" >
-          <div class="title">Projects</div>
+      <div class="wrtten" >
+          <div class="title" v-if="showProject">Projects</div>
           <div class="mediaList">
             <template v-for="(item,index) in projectList" :key="index">
               <div class="media-item"  v-if="!item.isShow">
@@ -25,12 +25,12 @@
               </div>
             </template>
           </div>
-      </div> -->
+      </div>
       <div class="wrtten video" >
-            <div class="title">Clients</div>
+            <div class="title" v-if="clientstList.length > 0" >Clients</div>
             <div class="mediaList">
               <div v-for="(item,index) in clientstList" :key="index" class="client-item">
-                  <div class="client-image" :class="{'noUrl':!item.cover_url}" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url"></div>
+                  <div class="client-image" :class="{'noUrl':!item.cover_url}" v-lazy:background-image="{src: item.cover_url}" :key="item.cover_url" @click="openTo(item.link_url)"></div>
               </div>
             </div>
       </div>
@@ -51,6 +51,8 @@ onMounted(() => {
 
 const projectList:any = ref([])
 const clientstList:any = ref([])
+const isShowList:any = ref([])
+const showProject:any = ref(true)
 //获取数据
 const getListData = () =>{ 
     try{
@@ -60,9 +62,13 @@ const getListData = () =>{
           projectList.value.forEach((item:any)=>{
             if(!item.cover_url && !item.link_url && !item.text && !item.title){  
               item.isShow = true
+              isShowList.value.push(true)
             }
             item.text = item.text.replace(/\n/g,'<br>')
           })
+          if(isShowList.value.length>0){
+            isShowList.value.length == projectList.value.length ? showProject.value = false : showProject.value = true
+          }
        })
     }catch{
 

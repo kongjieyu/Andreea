@@ -19,9 +19,9 @@
                         <div>Video/Podcasts</div>
                     </div> -->
                 </ul>
-                <div class="listIcon">
-                    <img class="iconMore" src="/static/image/list.svg">
-                    <ul class="list-ul">
+                <div class="listIcon" >
+                    <img class="iconMore" src="/static/image/list.svg" @click="openUl">
+                    <ul class="list-ul" v-if="isShow">
                         <li v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">{{item}}</li>
                     </ul>
                 </div>
@@ -51,7 +51,7 @@ const getList = () =>{
     }
 }
 
-
+const isShow = ref(false)
 //缩略显示
 const hiderSider:any = ref([])
 //点击切换
@@ -70,9 +70,9 @@ const changeTab = (data:any) =>{
      }else{
          router.push({name:data})
      }
+     isShow.value = false
 }
 //...显示
-const showNavIcon = ref(false)
 const isNavIconShow = () => {
     let topNav = document.querySelector('#top-nav') as HTMLElement
     let height = topNav.scrollHeight
@@ -91,6 +91,9 @@ const isNavIconShow = () => {
             })
         }, 100)
     }
+}
+const openUl = () =>{
+    isShow.value = true
 }
 //判断数值区间
 const dataSection =(num:number)=>{
