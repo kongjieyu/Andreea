@@ -59,7 +59,7 @@
         {
             "text": "\"How to lose your North, be gone with a raft, and have a bird\" published in Fully (sic), 27 August 2015.",
             "date":"27th August 2015",
-            "cover_url": "/static/image/default.png",
+            "cover_url": "/static/image/writtenDefault.png",
             "operation": "Read here",
             "link_url": "https://www.crikey.com.au/",
             "sort": "2015.08"
@@ -75,7 +75,7 @@
         {
             "text": "Letter entitled 'Languages With Soul' published in the New Scientist, Vol. 185: p. 33, 5 March 2005.",
             "date":"5th March 2005",
-            "cover_url": "/static/image/default.png",
+            "cover_url": "/static/image/writtenDefault.png",
             "operation": "Read here",
             "link_url": "https://www.newscientist.com/article.ns/?id=mg18524890.500",
             "sort": "2005.03"
