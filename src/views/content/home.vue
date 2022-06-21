@@ -188,14 +188,11 @@ onMounted(()=>{
     getHomeData()
 })
 watchEffect(()=>{
-            //     nextTick(()=>{
-            //     isLoading.value = false
-            // })
-            if(siderbar.value){
-                let sidebarData:any = document.getElementsByClassName('sidebar')
-                console.log(6699999,sidebarData[0]);
-                
-            }
+    if(siderbar.value){
+        let sidebarData:any = document.getElementsByClassName('sidebar')
+        console.log(6699999,sidebarData[0]);
+        
+    }
 })
 </script>
 

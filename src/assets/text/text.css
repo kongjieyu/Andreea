@@ -1,18 +1,18 @@
 @font-face {
     font-family: "chancery";
-    src: url('./apple_chancery.ttf');
+    src: url('./apple_chancery.woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "ArchivoNarrow";
-    src: url('./ArchivoNarrow-Regular.ttf');
+    src: url('./ArchivoNarrow-Regular.woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "Roboto";
-    src: url('./Roboto-Regular-14.ttf');
+    src: url('./Roboto-Regular-14.woff2');
     font-weight: normal;
     font-style: normal;
 }
