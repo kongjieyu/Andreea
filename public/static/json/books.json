@@ -2,7 +2,7 @@
 	"books":[{	
 		"title": "",
 		"des": "Linguistics of Social Media: An Introduction",
-		"publisher":"London, Routledge",
+		"publisher":"London: Routledge",
 		"publish_year":" 2023",
 		"book_image":"/static/image/comingsoon.png",
 		"book_url": ""
@@ -10,14 +10,14 @@
 	{
 		"title": "",
 		"des": "A Guide to Complexities of the English Language",
-		"publisher":"Routledge",
+		"publisher":"London: Routledge",
 		"publish_year":" 2021",
 		"book_image":"/static/image/Mysteries_of_English_Grammar.png",
 		"book_url": "https://www.routledge.com/Mysteries-of-English-Grammar-A-Guide-to-Complexities-of-the-English-Language/Calude-Bauer/p/book/9780367710279"
 	},
 	{	"title": "",
 		"des": "What Everyone Should Know About Language in the 21st Century",
-		"publisher":"Routledge",
+		"publisher":"London: Routledge",
 		"publish_year":" 2020",
 		"book_image":"/static/image/Questions_About_Language.png",
 		"book_url": "https://www.routledge.com/Questions-about-Language-What-Everyone-Should-Know-About-Language-in-the/Bauer-Calude/p/book/9780367175016"

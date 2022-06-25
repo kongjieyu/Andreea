@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="wrtten">
-        <div class="title" style="margin-top:0px;">Awards & Prize</div>
+        <div class="title" style="margin-top:0px;">Awards & Prizes</div>
           <div class="mediaList">
             <div v-for="(item,index) in mediaList2" :key="index" class="media-item">
                 <div class="left">
