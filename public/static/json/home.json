@@ -2,8 +2,8 @@
 	"occupationList": ["SPEAKER", "WRITER", "EDUCATOR"],
 	"backgroundBg":"/static/image/Dr_Andreea_Calude.png",
 	"introdution": "I research various aspects of language,\nespecially the language of social  media and I speak,\n write and teach courses and workshops about this.",
-	"belife": "I am available  to :",
-	"belifeList": [
+	"Capablity": "I am available  to :",
+	"CapablityList": [
 		"speak at your event.",
 		"run workshops for your company.",
 		"consult on forensic linguistics as an expert witness."

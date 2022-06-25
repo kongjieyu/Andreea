@@ -15,10 +15,10 @@
                     <div class="divider"></div>
                 </div>
                 <div class="skill">
-                    {{belife}}
+                    {{Capablity}}
                 </div>
                 <div class="skill-list">
-                    <template v-for="(item, index) in belifeList" :key="index">
+                    <template v-for="(item, index) in CapablityList" :key="index">
                         <div class="skill-item">
                             <div class="circle"></div>    
                             <div class="text">{{item}}</div>
@@ -120,8 +120,8 @@ import { loadImageEnd } from "../../utils/utils";
 import {onMounted, ref, watchEffect,nextTick} from "vue";
 
 const bgPic = ref('')              //背景图片
-const belife = ref('')          //信条
-const belifeList = ref([])      //列表
+const Capablity = ref('')          //信条
+const CapablityList = ref([])      //列表
 const contact:any = ref([])         //联系
 const highlights:any = ref([])      //高亮
 const introdution = ref('')     //介绍
@@ -139,8 +139,8 @@ const getHomeData = () =>{
        axios.get('/static/json/home.json').then(response=>{
             isLoading.value = true
             bgPic.value = response.data.backgroundBg
-            belife.value = response.data.belife
-            belifeList.value = response.data.belifeList
+            Capablity.value = response.data.Capablity
+            CapablityList.value = response.data.CapablityList
             contact.value = response.data.contact
             highlights.value = response.data.highlights
             highlights.value.forEach((item:any)=>{
