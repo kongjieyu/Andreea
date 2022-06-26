@@ -1,5 +1,5 @@
 <template>
-  <div class="interviews">
+  <div class="interviews" @scroll="Scrollbottom($event)">
     <div class="wrtten">
         <div class="title">Interviews</div>
         <div class="mediaList">
@@ -30,24 +30,41 @@ import {onMounted, reactive, ref, watchEffect,watch} from "vue";
 onMounted(() => {
     getListData()
 })
-
+const initLoadNum = ref(6) //初始加载
+const Scrollbottom =(event:any)=> {
+  let scrollHeight:number = event.target.scrollTop //滚动高度
+  if(scrollHeight>80){ //控制什么时候加载出来
+    initLoadNum.value++
+    getSpliceData()
+  }  
+}
 const mediaList:any = ref([])
+const copyData:any = ref([])
 //获取数据
 const getListData = () =>{ 
     try{
        axios.get('/static/json/interviews.json').then(response=>{
-          //  console.log('video',response.data);
-           
-          mediaList.value = response.data.Written
-          mediaList.value.forEach((item:any)=>{
-            item.text = item.text.replace(/\n/g,'<br>')
+          response.data.Written && response.data.Written.forEach((item:any)=>{
+             item.text = item.text.replace(/\n/g,'<br>')
           })
-          // console.log(112,mediaList.value);
-          
+          mediaList.value = []
+          copyData.value = JSON.parse(JSON.stringify(response.data.Written))
+          copyData.value && copyData.value.forEach((item:any,index:number)=>{
+            if(index<initLoadNum.value){
+              mediaList.value.push(item)
+            }
+          })
        })
     }catch{
 
     }
+}
+const getSpliceData = () =>{
+  copyData.value && copyData.value.forEach((item:any)=>{
+      if(!mediaList.value.includes(item)){
+          mediaList.value.push(item)
+      }
+  })
 }
 const openTo = (data:any) =>{
   if(data){

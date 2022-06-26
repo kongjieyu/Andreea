@@ -1,5 +1,5 @@
 <template>
-  <div class="press">
+  <div class="press"  @scroll="Scrollbottom($event)">
     <div class="changeBtn">
       <span @click="changeTab('Written')" :class="{'active': current == 'Written'}">Written</span>
       <span @click="changeTab('Video/Podcasts')" :class="{'active': current == 'Video/Podcasts'}">Video</span>
@@ -37,12 +37,9 @@
 
 <script setup lang="ts">
 import axios from "axios";
-import { log } from "console";
-import {onMounted, reactive, ref, watchEffect,watch} from "vue";
-import { useRoute,useRouter} from 'vue-router'
-
+import {onMounted, ref, watchEffect,watch} from "vue";
+import { useRoute} from 'vue-router'
 const route = useRoute()
-const router = useRouter();
 const current = ref('Written')
 onMounted(() => {
     isWrittem.value = 'press_written'
@@ -70,23 +67,41 @@ watchEffect(()=>{
   }
 })
 
+const initLoadNum = ref(6) //初始加载
+const Scrollbottom =(event:any)=> {
+  let scrollHeight:number = event.target.scrollTop //滚动高度
+  if(scrollHeight>150){
+    initLoadNum.value++
+    getSpliceData()
+  }  
+}
 const mediaList:any = ref([])
+const copyData:any = ref([])
 //获取数据
 const getListData = (type:any) =>{ 
     try{
        axios.get(`/static/json/${type}.json`).then(response=>{
-          //  console.log('video',response.data);
-           
-          mediaList.value = response.data.Written
-          mediaList.value.forEach((item:any)=>{
-            item.text = item.text.replace(/\n/g,'<br>')
+          response.data.Written && response.data.Written.forEach((item:any)=>{
+             item.text = item.text.replace(/\n/g,'<br>')
+          })
+          mediaList.value = []
+          copyData.value = JSON.parse(JSON.stringify(response.data.Written))
+          copyData.value && copyData.value.forEach((item:any,index:number)=>{
+            if(index<initLoadNum.value){
+              mediaList.value.push(item)
+            }
           })
        })
     }catch{
-
     }
 }
-
+const getSpliceData = () =>{
+  copyData.value && copyData.value.forEach((item:any)=>{
+      if(!mediaList.value.includes(item)){
+          mediaList.value.push(item)
+      }
+  })
+}
 const openTo = (data:any) =>{
   if(data){
       window.open(data);

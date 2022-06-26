@@ -1,5 +1,5 @@
 <template>
-  <div class="press">
+  <div class="press"  @scroll="Scrollbottom($event)">
       <div class="changeBtn">
         <span @click="changeTab('Courses')" :class="{'active': current == 'Courses'}">Courses</span>
         <span @click="changeTab('Supervisions')" :class="{'active': current == 'Supervisions'}">Supervision</span>
@@ -66,7 +66,7 @@ watch(
               getListData('supervisions')
             }
       }
-);
+)
 watchEffect(()=>{
   if(isWrittem.value == 'supervisions'){
       current.value = 'Supervisions'
@@ -74,34 +74,69 @@ watchEffect(()=>{
     current.value = 'Courses'
   }
 })
-
+const initLoadNum = ref(6) //初始加载
+const Scrollbottom =(event:any)=> {
+  let scrollHeight:number = event.target.scrollTop //滚动高度
+  if(scrollHeight>150){
+    initLoadNum.value++
+    getSpliceData()
+  }  
+}
 const mediaList:any = ref([])   //Courses
 const studentList:any = ref([]) //Supervisions
+const copyData:any = ref([])
 //获取数据
 const getListData = (type:any) =>{ 
     try{
        axios.get(`/static/json/${type}.json`).then(response=>{
+          copyData.value = []
           if(type=='courses'){//Courses
-              mediaList.value = response.data.Courses
-              mediaList.value&&mediaList.value.forEach((item:any)=>{
+              response.data.Courses&&response.data.Courses.forEach((item:any)=>{
                 item.courseIntro = item.courseIntro.replace(/\n/g,'<br>')
+              })
+              mediaList.value = []
+              copyData.value = JSON.parse(JSON.stringify(response.data.Courses))
+              copyData.value && copyData.value.forEach((item:any,index:number)=>{
+                if(index<initLoadNum.value){
+                  mediaList.value.push(item)
+                }
               })
           }else{//Supervisions
             studentList.value=[]
             let data = toRaw(response.data)
             for(let key in data){
               for(let child in data[key]){
-                studentList.value.push({
+                copyData.value.push({
                   title:child,
                   list:data[key][child]
                 })
               }
             }
+            copyData.value && copyData.value.forEach((item:any,index:number)=>{
+              if(index<initLoadNum.value){
+                studentList.value.push(item)
+              }
+            })
           }      
        })
     }catch{
 
     }
+}
+const getSpliceData = () =>{
+  if(isWrittem.value == 'supervisions'){
+    copyData.value && copyData.value.forEach((item:any)=>{
+        if(!studentList.value.includes(item)){
+            studentList.value.push(item)
+        }
+    })
+  }else{
+    copyData.value && copyData.value.forEach((item:any)=>{
+        if(!mediaList.value.includes(item)){
+            mediaList.value.push(item)
+        }
+    })
+  }
 }
 const changeTab = (data:any)=>{
   current.value = data
