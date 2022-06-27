@@ -33,7 +33,7 @@ onMounted(() => {
 const initLoadNum = ref(6) //初始加载
 const Scrollbottom =(event:any)=> {
   let scrollHeight:number = event.target.scrollTop //滚动高度
-  if(scrollHeight>80){ //控制什么时候加载出来
+  if(scrollHeight>50){ //控制什么时候加载出来
     initLoadNum.value++
     getSpliceData()
   }  
