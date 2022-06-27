@@ -77,7 +77,7 @@ watchEffect(()=>{
 const initLoadNum = ref(6) //初始加载
 const Scrollbottom =(event:any)=> {
   let scrollHeight:number = event.target.scrollTop //滚动高度
-  if(scrollHeight>150){
+  if(scrollHeight>50){
     initLoadNum.value++
     getSpliceData()
   }  
