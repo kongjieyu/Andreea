@@ -1,7 +1,7 @@
 {
 	"occupationList": ["SPEAKER", "WRITER", "EDUCATOR"],
 	"backgroundBg":"/static/image/Dr_Andreea_Calude.png",
-	"introdution": "I research various aspects of language,\nespecially the language of social  media and I speak,\n write and teach courses and workshops about this.",
+	"introdution": "I research various aspects of language,\n especially the language of social media and \n I speak and write about this.",
 	"Capablity": "I am available  to :",
 	"CapablityList": [
 		"speak at your event.",
