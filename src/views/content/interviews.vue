@@ -56,7 +56,6 @@ const getListData = () =>{
           })
        })
     }catch{
-
     }
 }
 const getSpliceData = () =>{

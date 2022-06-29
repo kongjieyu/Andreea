@@ -1,4 +1,9 @@
 {
+	"infoList":{
+		"first":"Welcome to my page, I am Dr.Andreea Calude.",
+		"second":"I am bubbly and approachable and I can make anyone excited about",
+		"last":"<span class='larger'>language</span>and<span class='larger'>communication.</span>"
+	},
 	"occupationList": ["SPEAKER", "WRITER", "EDUCATOR"],
 	"backgroundBg":"/static/image/Dr_Andreea_Calude.png",
 	"introdution": "I research various aspects of language,\n especially the language of social media and \n I speak and write about this.",

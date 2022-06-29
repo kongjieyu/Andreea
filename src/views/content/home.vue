@@ -105,9 +105,9 @@
                 <div class="item"></div>
                 <div class="item"></div>
             </div>
-            <div class="loading-one">Welcome to my page, I am Dr.Andreea Calude.</div>
-            <div class="loading-two">I am bubbly and approachable and I can make anyone excited about </div>
-            <div class="loading-three"><span class="larger">language</span>and<span class="larger">communication.</span></div>
+            <div class="loading-one" v-html="infoList.first"></div>
+            <div class="loading-two" v-html="infoList.second"></div>
+            <div class="loading-three" v-html="infoList.last"></div>
         </div>
         
     </div>
@@ -132,12 +132,15 @@ const siderbar = ref()
 const style = ref({
     backgroundImage: ''
 })
-
+const infoList = ref({first:'',second:'',last:''})
 const isLoading = ref(true) //加载中
 const getHomeData = () =>{ 
     try{
        axios.get('/static/json/home.json').then(response=>{
             isLoading.value = true
+            infoList.value.first = response.data.infoList.first
+            infoList.value.second = response.data.infoList.second
+            infoList.value.last = response.data.infoList.last
             bgPic.value = response.data.backgroundBg
             Capablity.value = response.data.Capablity
             CapablityList.value = response.data.CapablityList
@@ -196,6 +199,6 @@ watchEffect(()=>{
 })
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 @import url(@/style/home.less);
 </style>

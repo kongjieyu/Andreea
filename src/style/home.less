@@ -126,7 +126,7 @@
                 position: absolute;
                 top: 50.5%;
                 left: 20%;
-                .larger{
+                :deep(.larger){
                     font-size: 21px;
                     padding: 0 15px;
                 }
@@ -318,7 +318,7 @@
                             flex: 1;
                             margin-left: 10px;
                             line-height: 32px;
-                            max-width: 360px;
+                            max-width: 400px;
                             max-height: 100px;
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -495,11 +495,11 @@
                 position: absolute;
                 top: 53.5%;
                 width: 100%;
-                .larger{
+                :deep(.larger){
                     font-size: 21px;
                     padding: 0 3vw;
                 }
-                .larger:first-child{
+                :deep(.larger:first-child){
                     padding-left: 0;
                 }
             }

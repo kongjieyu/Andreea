@@ -93,15 +93,21 @@ const getList = () =>{
           nextTick(() => {
               jq('.publications-item i').on('click', (e:any) => {
                 const journalUrl = jq(e.target).parents(".publications-item").attr('journalUrl')
-                window.open(journalUrl)
+                if(journalUrl.length>0){
+                    window.open(journalUrl)
+                }
               })
               jq('.publications-item span.title').on('click', (e:any) => {
                 const articlesTitleUrl = jq(e.target).parents(".publications-item").attr('articlesTitleUrl')
-                window.open(articlesTitleUrl)
+                if(articlesTitleUrl.length>0){
+                    window.open(articlesTitleUrl)
+                }
               })
               jq('.publications-item span.pdf').on('click', (e:any) => {
                 const pdfUrl = jq(e.target).parents(".publications-item").attr('pdfUrl')
-                window.open(pdfUrl)
+                if(pdfUrl.length>0){
+                  window.open(pdfUrl)
+                }
               })
           })
       }).catch((error) => {
@@ -146,15 +152,21 @@ const getList = () =>{
           nextTick(() => {
               jq('.publications-item1 i').on('click', (e:any) => {
                 const journalUrl = jq(e.target).parents(".publications-item1").attr('journalUrl')
-                window.open(journalUrl)
+                if(journalUrl.length>0){
+                  window.open(journalUrl)
+                }    
               })
               jq('.publications-item1 span.title').on('click', (e:any) => {
                 const articlesTitleUrl = jq(e.target).parents(".publications-item1").attr('articlesTitleUrl')
-                window.open(articlesTitleUrl)
+                if(articlesTitleUrl.length>0){
+                  window.open(articlesTitleUrl)
+                }
               })
               jq('.publications-item1 span.pdf').on('click', (e:any) => {
                 const pdfUrl = jq(e.target).parents(".publications-item1").attr('pdfUrl')
-                window.open(pdfUrl)
+                if(pdfUrl.length>0){
+                  window.open(pdfUrl)
+                }
               })
           })
       }).catch((error) => {
