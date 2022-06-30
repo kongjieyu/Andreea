@@ -14,8 +14,8 @@
               <div class="operation">
                 <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
                 <div class="more-img" @click="openTo(item.link_url)" v-if="item.operation">
-                  <img src="/static/image/View_more.png"/>
-                  <img src="/static/image/next.png"/>
+                  <img :src="View_more"/>
+                  <img :src="next"/>
                 </div>
               </div>
           </div>
@@ -39,8 +39,12 @@
 import axios from "axios";
 import {onMounted, ref, watchEffect,watch} from "vue";
 import { useRoute} from 'vue-router'
+import View_more from '@/assets/image/View_more.png'
+import next from '@/assets/image/next.png'
+
 const route = useRoute()
 const current = ref('Written')
+
 onMounted(() => {
     isWrittem.value = 'press_written'
     getListData('press_written')
@@ -80,7 +84,7 @@ const copyData:any = ref([])
 //获取数据
 const getListData = (type:any) =>{ 
     try{
-       axios.get(`/static/json/${type}.json`).then(response=>{
+       axios.get(`./static/json/${type}.json`).then(response=>{
           response.data.Written && response.data.Written.forEach((item:any)=>{
              item.text = item.text.replace(/\n/g,'<br>')
           })

@@ -1,7 +1,7 @@
 <template>
     <div class="home" v-if="!isLoading">
         <div class="mobileBg">
-            <div class="sidebar" :style="style" ref="siderbar"></div>
+            <div class="sidebar" :style="style"></div>
         </div>
         <div class="content">
             <div class="ctn-div">
@@ -127,7 +127,6 @@ const highlights:any = ref([])      //高亮
 const introdution = ref('')     //介绍
 const occupationList = ref([])  //职业
 const iconList:any = ref([])        //外部链接
-const siderbar = ref()
 
 const style = ref({
     backgroundImage: ''
@@ -136,7 +135,7 @@ const infoList = ref({first:'',second:'',last:''})
 const isLoading = ref(true) //加载中
 const getHomeData = () =>{ 
     try{
-       axios.get('/static/json/home.json').then(response=>{
+       axios.get('./static/json/home.json').then(response=>{
             isLoading.value = true
             infoList.value.first = response.data.infoList.first
             infoList.value.second = response.data.infoList.second
@@ -190,13 +189,7 @@ const cancleModal = () =>{
 onMounted(()=>{
     getHomeData()
 })
-watchEffect(()=>{
-    if(siderbar.value){
-        let sidebarData:any = document.getElementsByClassName('sidebar')
-        console.log(6699999,sidebarData[0]);
-        
-    }
-})
+
 </script>
 
 <style lang="less" scoped>

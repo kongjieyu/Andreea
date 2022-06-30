@@ -32,7 +32,7 @@ const books:any = ref([])
 //获取book数据
 const getHomeData = () =>{ 
     try{
-       axios.get('/static/json/books.json').then(response=>{
+       axios.get('./static/json/books.json').then(response=>{
           books.value = response.data.books
        })
     }catch{

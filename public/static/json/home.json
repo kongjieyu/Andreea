@@ -5,7 +5,7 @@
 		"last":"<span class='larger'>language</span>and<span class='larger'>communication.</span>"
 	},
 	"occupationList": ["SPEAKER", "WRITER", "EDUCATOR"],
-	"backgroundBg":"/static/image/Dr_Andreea_Calude.png",
+	"backgroundBg":"./static/image/Dr_Andreea_Calude.png",
 	"introdution": "I research various aspects of language,\n especially the language of social media and \n I speak and write about this.",
 	"Capablity": "I am available  to :",
 	"CapablityList": [
@@ -28,34 +28,34 @@
 	"contact": 
 		[{
 			"title":"Email",
-			"icon":"/static/image/email.png",
-			"icon2":"/static/image/xinfen.svg",
+			"icon":"./static/image/email.png",
+			"icon2":"./static/image/xinfen.svg",
 			"list":"andreea.calude@waikato.ac.nz"
 		},
 		{
 			"title":"Postal address",
-			"icon":"/static/image/post.png",
-			"icon2":"/static/image/housewhite.svg",
+			"icon":"./static/image/post.png",
+			"icon2":"./static/image/housewhite.svg",
 			"list":"Private Bag 3105 Hamilton 3240"
 		},
 		{
 			"title":"Address",
-			"icon":"/static/image/address.png",
-			"icon2":"/static/image/addresswhite.svg",
+			"icon":"./static/image/address.png",
+			"icon2":"./static/image/addresswhite.svg",
 			"list":"University of Waikato,\nSchool of Arts, Linguistics\nKnighton Road\nHillcrest, Hamilton, New Zealand"
 		}
 	]
 	,
 	"iconList":[{
-		"pic_src":"/static/image/Instagram.png",
+		"pic_src":"./static/image/Instagram.png",
 		"pic_url":"https://www.instagram.com/drandreeacalude/"
 	},
 	{
-		"pic_src":"/static/image/Linkedin.png",
+		"pic_src":"./static/image/Linkedin.png",
 		"pic_url":"https://www.linkedin.com/in/andreeacalude/ "
 	},
 	{
-		"pic_src":"/static/image/twitter.png",
+		"pic_src":"./static/image/twitter.png",
 		"pic_url":"https://twitter.com/AndreeaCalude"
 	}]
 }

@@ -88,7 +88,7 @@ const copyData:any = ref([])
 //获取数据
 const getListData = (type:any) =>{ 
     try{
-       axios.get(`/static/json/${type}.json`).then(response=>{
+       axios.get(`./static/json/${type}.json`).then(response=>{
           copyData.value = []
           if(type=='courses'){//Courses
               response.data.Courses&&response.data.Courses.forEach((item:any)=>{

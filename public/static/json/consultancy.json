@@ -12,22 +12,22 @@
     ],
     "Clients":[
         {
-            "cover_url": "/static/image/John_Barker_Law.png",
+            "cover_url": "./static/image/John_Barker_Law.png",
             "link_url": "http://www.johnbarkerlaw.com/",
             "sort": ""
         },
         {
-            "cover_url": "/static/image/Shortland_Chamber.png",
+            "cover_url": "./static/image/Shortland_Chamber.png",
             "link_url": "https://www.shortlandchambers.co.nz/",
             "sort": ""
         },
         {
-            "cover_url": "/static/image/James_and_Wells.png",
+            "cover_url": "./static/image/James_and_Wells.png",
             "link_url": "https://www.jamesandwells.com/nz/",
             "sort": ""
         },
         {
-            "cover_url": "/static/image/WalkerLaw.png",
+            "cover_url": "./static/image/WalkerLaw.png",
             "link_url": "https://walkerlawltd.com/contact-us/",
             "sort": ""
         }

@@ -20,7 +20,7 @@
                     </div> -->
                 </ul>
                 <div class="listIcon" >
-                    <img class="iconMore" src="/static/image/list.svg" @click="openUl">
+                    <img class="iconMore" :src="list" @click="openUl">
                     <ul class="list-ul" v-if="isShow">
                         <li v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">{{item}}</li>
                     </ul>
@@ -33,6 +33,8 @@
 import axios from "axios";
 import {onMounted, ref, nextTick} from "vue";
 import { useRouter} from 'vue-router'
+import list from '@/assets/image/list.svg'
+
 const router = useRouter();
 const navList:any= ref(['Home','Books','Publications','Press','Interviews','Teaching','Funding','Consultancy']) //头部导航栏
 const pressNav:any = ref(['Written','Video/Podcasts']) //press二级菜单
@@ -42,7 +44,7 @@ const bgImage:any = ref('')
 //获取导航栏
 const getList = () =>{
     try{
-       axios.get('/static/json/header.json').then(response=>{
+       axios.get('./static/json/header.json').then(response=>{
            navList.value = response.data.navList
            bgImage.value = response.data.title
           })
@@ -128,6 +130,7 @@ const mouseLeave =(e:any)=>{
     showBar.value = false
 // console.log('移出：', e,e.currentTarget.className);
 }
+
 onMounted(()=>{
     currentAtive.value = <any>router.currentRoute.value.name
     getList()

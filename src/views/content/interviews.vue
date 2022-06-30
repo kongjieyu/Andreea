@@ -12,8 +12,8 @@
                   <div class="date2">{{item.date}}</div>
                   <div class="opration-item" @click="openTo(item.link_url)">{{item.operation}}</div>
                     <div class="more-img" @click="openTo(item.link_url)" v-if="item.operation">
-                      <img src="/static/image/View_more.png"/>
-                      <img src="/static/image/next.png"/>
+                      <img :src="View_more"/>
+                      <img :src="next"/>
                     </div>
                   </div>
               </div>
@@ -26,6 +26,8 @@
 <script setup lang="ts">
 import axios from "axios";
 import {onMounted, reactive, ref, watchEffect,watch} from "vue";
+import View_more from '@/assets/image/View_more.png'
+import next from '@/assets/image/next.png'
 
 onMounted(() => {
     getListData()
@@ -43,7 +45,7 @@ const copyData:any = ref([])
 //获取数据
 const getListData = () =>{ 
     try{
-       axios.get('/static/json/interviews.json').then(response=>{
+       axios.get('./static/json/interviews.json').then(response=>{
           response.data.Written && response.data.Written.forEach((item:any)=>{
              item.text = item.text.replace(/\n/g,'<br>')
           })

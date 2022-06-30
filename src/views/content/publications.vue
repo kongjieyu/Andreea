@@ -49,7 +49,7 @@ import {onMounted, reactive, ref, watchEffect, nextTick} from "vue";
 const dataList:any = ref([])
 const dataList2:any = ref([]) 
 const getList = () =>{
-      axios.get('/static/json/publications.json').then((response) => {
+      axios.get('./static/json/publications.json').then((response) => {
           let buffer1:any = []
           let buffer2:any = {}
           let copyArr = JSON.parse(JSON.stringify(response.data.Publications))
@@ -112,7 +112,7 @@ const getList = () =>{
           })
       }).catch((error) => {
       })
-      axios.get('/static/json/book_reviews.json').then((response) => {
+      axios.get('./static/json/book_reviews.json').then((response) => {
           let buffer1:any = []
           let buffer2:any = {}
           let copyArr = JSON.parse(JSON.stringify(response.data.Book_reviews))

@@ -6,7 +6,7 @@
           <div v-for="(item,index) in mediaList1" :key="index" class="media-item">
               <div class="left">
                   <div class="circle">
-                      <img src="/static/image/grant.png" alt="">
+                      <img :src="grant" alt="">
                   </div>
               </div>
               <div class="right">
@@ -22,7 +22,7 @@
             <div v-for="(item,index) in mediaList2" :key="index" class="media-item">
                 <div class="left">
                     <div class="circle blue">
-                        <img src="/static/image/award.png" alt="">
+                        <img :src="award" alt="">
                     </div>
                 </div>
                 <div class="right">
@@ -38,6 +38,8 @@
 <script setup lang="ts">
 import axios from "axios";
 import {onMounted, reactive, ref, watchEffect,watch} from "vue";
+import grant from '@/assets/image/grant.png'
+import award from '@/assets/image/award.png'
 
 onMounted(() => {
     getListData()
@@ -50,7 +52,7 @@ const mediaList2:any = ref([])
 //获取数据
 const getListData = () =>{ 
     try{
-       axios.get('/static/json/funding.json').then(response=>{      
+       axios.get('./static/json/funding.json').then(response=>{      
         mediaList1.value = response.data.Research_grants
         mediaList2.value = response.data.Awards_Prizes
         for (let i = 0; i < mediaList1.value.length-1; i++) {
