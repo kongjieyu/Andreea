@@ -2,24 +2,21 @@
     "Written": [
         {
             "text": "My TED-ED Lesson: \"Does Grammar Matter?\"",
-            "date":"Apr 2016",
+            "date":"April 2016",
             "cover_url": "./static/image/Does_Grammar_Matter.png",
-            "link_url": "https://ed.ted.com/lessons/does-grammar-matter-andreea-s-calude",
-            "sort": "2020"
+            "link_url": "https://ed.ted.com/lessons/does-grammar-matter-andreea-s-calude"
         },
         {
             "text": "My animation \"Why do languages borrow words?\" produced by SciAnimated .",
-            "date":"Apr 2020",
+            "date":"April 2020",
             "cover_url": "./static/image/Why_do_languages_borrow_words.png",
-            "link_url": "https://www.youtube.com/watch?v=6y-NljmQIo8",
-            "sort": "2020"
+            "link_url": "https://www.youtube.com/watch?v=6y-NljmQIo8"
         },
         {
             "text": "Guardian Science Weekly postcast",
-            "date":"",
+            "date":"Since June 2018",
             "cover_url": "./static/image/The_Guardian.png",
-            "link_url": "https://www.theguardian.com/science/audio/2018/jun/29/slice-of-pie-proto-indo-european-linguistic-common-ancestor-science-weekly-podcast",
-            "sort": "2019"
+            "link_url": "https://www.theguardian.com/science/audio/2018/jun/29/slice-of-pie-proto-indo-european-linguistic-common-ancestor-science-weekly-podcast"
         }
     ]
 }
