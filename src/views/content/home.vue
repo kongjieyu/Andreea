@@ -14,7 +14,8 @@
                     <div class="text" v-html="introdution"></div>
                     <div class="divider"></div>
                 </div>
-                <div class="skill" v-html="Capablity"></div>
+                <div class="skill-first" v-html="occupationDes"></div>
+                <div class="skill">{{Capablity}}</div>
                 <div class="skill-list">
                     <template v-for="(item, index) in CapablityList" :key="index">
                         <div class="skill-item">
@@ -113,11 +114,11 @@
 
 <script setup lang="ts">
 import axios from "axios";
-import { log } from "console";
 import { loadImageEnd } from "../../utils/utils";
 import {onMounted, ref, watchEffect,nextTick} from "vue";
 
 const bgPic = ref('')              //背景图片
+const occupationDes = ref([])      //职业描述
 const Capablity = ref('')          //信条
 const CapablityList = ref([])      //列表
 const contact:any = ref([])         //联系
@@ -139,8 +140,9 @@ const getHomeData = () =>{
             infoList.value.second = response.data.infoList.second
             infoList.value.last = response.data.infoList.last
             bgPic.value = response.data.backgroundBg
-            Capablity.value = response.data.Capablity.replace(/\n/g,'<br>')
+            Capablity.value = response.data.Capablity
             CapablityList.value = response.data.CapablityList
+            occupationDes.value = response.data.occupationDes.replace(/\n/g,'<br>')
             contact.value = response.data.contact
             highlights.value = response.data.highlights
             highlights.value.forEach((item:any)=>{
