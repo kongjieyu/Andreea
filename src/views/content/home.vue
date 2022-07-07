@@ -14,9 +14,7 @@
                     <div class="text" v-html="introdution"></div>
                     <div class="divider"></div>
                 </div>
-                <div class="skill">
-                    {{Capablity}}
-                </div>
+                <div class="skill" v-html="Capablity"></div>
                 <div class="skill-list">
                     <template v-for="(item, index) in CapablityList" :key="index">
                         <div class="skill-item">
@@ -141,7 +139,7 @@ const getHomeData = () =>{
             infoList.value.second = response.data.infoList.second
             infoList.value.last = response.data.infoList.last
             bgPic.value = response.data.backgroundBg
-            Capablity.value = response.data.Capablity
+            Capablity.value = response.data.Capablity.replace(/\n/g,'<br>')
             CapablityList.value = response.data.CapablityList
             contact.value = response.data.contact
             highlights.value = response.data.highlights
