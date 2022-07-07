@@ -7,7 +7,7 @@
 	"occupationList": ["SPEAKER", "WRITER", "EDUCATOR"],
 	"backgroundBg":"./static/image/Dr_Andreea_Calude.png",
 	"introdution": "I research various aspects of language,\n especially the language of social media and \n I speak and write about this.",
-	"occupationDes":"I currently work as a <a> Senior Lecturer in Linguistics </a> at the University of Waikato, in New Zealand. ",
+	"occupationDes":"I currently work as a <a target='_blank' href='https://www.waikato.ac.nz/fass/about/staff/andreea'> Senior Lecturer in Linguistics </a> at the University of Waikato, in New Zealand. ",
 	"Capablity": " I am available  to :",
 	"CapablityList": [
 		"speak at your event.",

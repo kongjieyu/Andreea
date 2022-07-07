@@ -10,11 +10,12 @@
                         <div>{{item}}</div>
                     </template>
                 </div>
+                 
                 <div class="introdution">
                     <div class="text" v-html="introdution"></div>
+                    <div class="skill-first" v-html="occupationDes"></div>
                     <div class="divider"></div>
                 </div>
-                <div class="skill-first" v-html="occupationDes"></div>
                 <div class="skill">{{Capablity}}</div>
                 <div class="skill-list">
                     <template v-for="(item, index) in CapablityList" :key="index">
