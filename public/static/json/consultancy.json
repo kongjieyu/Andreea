@@ -5,31 +5,26 @@
             "title":"",
             "cover_url": "",
             "operation": "",
-            "link_url": "",
-            "sort": ""
+            "link_url": ""
         }
        
     ],
     "Clients":[
         {
             "cover_url": "./static/image/John_Barker_Law.png",
-            "link_url": "http://www.johnbarkerlaw.com/",
-            "sort": ""
+            "link_url": "http://www.johnbarkerlaw.com/"
         },
         {
             "cover_url": "./static/image/Shortland_Chamber.png",
-            "link_url": "https://www.shortlandchambers.co.nz/",
-            "sort": ""
+            "link_url": "https://www.shortlandchambers.co.nz/"
         },
         {
             "cover_url": "./static/image/James_and_Wells.png",
-            "link_url": "https://www.jamesandwells.com/nz/",
-            "sort": ""
+            "link_url": "https://www.jamesandwells.com/nz/"
         },
         {
             "cover_url": "./static/image/WalkerLaw.png",
-            "link_url": "https://walkerlawltd.com/contact-us/",
-            "sort": ""
+            "link_url": "https://walkerlawltd.com/contact-us/"
         }
 
     ]

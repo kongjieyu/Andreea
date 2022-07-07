@@ -2,18 +2,28 @@
     {
         "Ph.D": [
             {
+                "student": "Beau Stowers",
+                "student_link": "https://www.waikato.ac.nz/staff-profiles/people/bstowers",
+                "intro":"(with Enoka Murphy), Decolonizing Māori Grammar.",
+                "intro_link":"",
+                "photo": "./static/image/Beau_Stowers.png",         
+                "researchPeriod": "2022 - ongoing",
+                "institution": "University of Waikato , NZ"
+            },
+            {
                 "student": "David Trye",
                 "student_link": "https://www.cs.waikato.ac.nz/~dgt12/",
-                "intro":"(with Mark Apperley and David Bainbridge), <i>Visualisation techniques of multidimensional language data.</i>",
+                "intro":"(with Mark Apperley and David Bainbridge), Visualisation techniques of multidimensional language data.",
                 "intro_link":"",
                 "photo": "./static/image/David_Trye.jpg",         
                 "researchPeriod": "2020 - ongoing",
                 "institution": "University of Waikato , NZ"
             },
+
             {
                 "student": "Anita Pu",
                 "student_link": "",
-                "intro":"(with Roger Barnard and Rosemary de Luca) <i>Research perceptions of a blended collaborative approach to writing and their practices.</i>",
+                "intro":"(with Roger Barnard and Rosemary de Luca) Research perceptions of a blended collaborative approach to writing and their practices.",
                 "intro_link":"",
                 "photo": "./static/image/Anita-Pu.png",     
                 "researchPeriod": "2015 - 2020",
@@ -22,7 +32,7 @@
             {
                 "student": "Jemma König",
                 "student_link": "",
-                "intro":"(with Ian Witten, Shaoqun Wu, Mark Apperley), <i>Modelling Vocabulary Acquisition in Extensive Reading.</i>",
+                "intro":"(with Ian Witten, Shaoqun Wu, Mark Apperley), Modelling Vocabulary Acquisition in Extensive Reading.",
                 "intro_link":"",
                 "photo": "./static/image/Jemma_konig.png",       
                 "researchPeriod": "2016 - 2019",
