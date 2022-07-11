@@ -11,7 +11,8 @@
             }
         }
         .nav {
-            margin: 0 4vw;
+            margin-left: 4vw;
+            display: flex;
             width:calc(100% - 560px);
             ul{
                 margin: 0;
@@ -26,6 +27,8 @@
                 flex-basis: auto;
                 flex-grow: 1;
                 flex-shrink: 1;
+                overflow: hidden; 
+                flex-wrap: wrap;
                 height: 75px;
                 color: rgb(32, 33, 36);
                 font-size: 18px;
@@ -76,6 +79,50 @@
                     border-bottom: 1px solid rgba(166, 166, 166, 0.2);
                 }
             }
+            .moreItem {
+                span {
+                    display: inline-block;
+                    margin-top: 21px;
+                }
+                position: relative;
+                cursor: pointer;
+                margin-right: 4vw;
+                .item-ul {
+                    position:absolute;
+                    display: none;
+                    top: 56px;
+                    right: -10px;
+                    text-align: center;
+                    background: rgb(240 240 240 / 88%);;
+                    border: 1px solid rgba(166, 166, 166, 0.6);
+                    box-shadow: 0px 2px 6px rgb(166 166 166 / 40%);
+                    border-radius: 2px;
+                    font-family: Roboto;
+                    color: rgb(32, 33, 36);
+                    font-size: 20px;
+                    cursor: pointer;
+                    z-index: 99;
+                }
+                .item-ul > li{
+                    padding: 12px 21px;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid rgba(166, 166, 166, 0.2);
+                }
+                .item-ul > li:active,.item-ul > li:hover{
+                    color: rgba(2, 182, 205, 1);
+                }
+                .item-ul > li:last-child{
+                    border:none
+                }
+            }
+            .moreItem:hover {
+                span {
+                    color: #02b6cd;
+                }
+                .item-ul {
+                    display: block;
+                }
+            }
             .listIcon{
                 display: none;
             }
@@ -92,7 +139,7 @@
             width: 80vw;
             img {
                 height: 100%;
-                width: 70vw;
+                max-width: 70vw;
                 background-size: cover;
                 margin-top: 5px;
                 margin-left: 5vw;

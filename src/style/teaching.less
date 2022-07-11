@@ -208,7 +208,173 @@
        .curson:hover{text-decoration: underline;}
       }
 }
-@media screen and (max-width:900px) {
+@media screen and (min-width:700px) and (max-width:900px) {
+  .press{
+      height: calc(100% - 7.8%);
+      overflow-y: auto;
+      font-family: Roboto;
+      overflow-x: hidden;
+      .changeBtn{
+          display: flex;
+          justify-content: center;
+          margin-top: 4.3vw;
+          span{
+              border: 1px solid rgba(166, 166, 166, 0.6);
+              border-radius: 2px;
+              width: 27vw;
+              padding: 0.8vh 0;
+              text-align: center;
+              cursor: pointer;
+              color: rgba(112, 112, 112, 1);
+              font-size: 3.7vw;
+          }
+          span:first-child{border-right: none;border-radius: 2px 0 0 2px;}
+          span:last-child{border-left: none;border-radius: 0 2px 2px 0;}
+          .active{
+              background: rgba(2, 182, 205, 1);
+              color: white;
+          }
+      }
+      .wrtten{
+          padding: 0 5vw;
+          .title{
+              font-weight: bold;
+              font-size: 4.3vw;
+              // display: none;
+              margin-top: 3vh;
+              color: rgba(32, 33, 36, 1);
+          }
+          .mediaList{
+              margin-top: 2vh;
+              display: flex;
+              flex-wrap: wrap;
+              .media-item{ 
+                  border: 1px solid rgba(166, 166, 166, 0.6);
+                  box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
+                  border-radius: 6px;
+                  width: 47%;
+                  margin-right: 4%;
+                  // min-height: 347px;
+                  overflow: hidden;
+                  margin-bottom: 3vh;
+                  display: flex;
+                  flex-direction: column;
+                  .media-image{ //子
+                      height: 25vw;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: cover;
+                      border-top: 1px solid rgba(166, 166, 166, 0.2);
+                      border-bottom: 1px solid rgba(166, 166, 166, 0.2);
+                  }
+                  .noUrl{
+                      background: rgba(229, 229, 229, 1);
+                  }
+                  .curson{cursor: pointer;}
+                  .curson:hover{text-decoration: underline;}
+                  .course-parent{
+                      .bookCourse{
+                          color: rgba(32, 33, 36, 1);
+                          font-size: 3.0vw;
+                          font-weight: 500;
+                          padding: 0 1.7vw;
+                      }
+                      .intro{
+                          color: rgba(112, 117, 122, 0.9);
+                          font-size: 2.5vw;
+                          padding: 0 1.7vw;
+                          height: 13vw;
+                          overflow: auto;
+                      }
+                      .time{
+                          color: rgba(2, 182, 205, 1);
+                          font-size: 3.0vw;
+                          padding: 1vw 1.7vw;
+                      }
+                  }
+              }
+              .media-item:nth-child(2n) {
+                margin-right: 0;
+              }
+          }
+          .supervisions{
+              margin-top: 2vh;
+              .sortName{
+                  // color: rgba(32, 33, 36, 1) !important;
+                  font-size: 4.3vw;
+              }
+              .sortMain{
+                  margin-top: 2vh;
+                  display: flex;
+                  flex-wrap: wrap;
+                  .sortList{
+                      border: 1px solid rgba(166, 166, 166, 0.6);
+                      box-shadow: 0px 2px 6px rgba(166, 166, 166, 0.2);
+                      border-radius: 6px;
+                      width: 47%;
+                      margin-right: auto;
+                      margin-bottom: 3vh;
+                      display: flex;
+                      .left-ctn{
+                          flex-basis: 20%;
+                          margin: 0 1.0vw;
+                          margin-right: 0;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          flex-direction: column;
+                          .left{
+                              width: 12vw;
+                              height: 12vw;
+                              // cursor: pointer;
+                              border-radius: 100%;
+                              background-repeat: no-repeat;
+                              background-position: center;
+                              background-size: cover;
+                          }
+                          .nickName{
+                              font-size: 2.3vw;
+                              margin-top: 1vw;
+                              text-align: center;
+                          }
+                          .curson{cursor: pointer;}
+                      }
+                      .right{
+                          flex: 1;
+                          padding: 1vh 0;
+                          .date{
+                              font-size: 2.5vw;
+                              margin-bottom: 1vh;
+                              padding: 0 1.2vw;
+                          }
+                          .nickName{
+                             display: none; 
+                          }
+                          .curson{cursor: pointer;}
+                          .text{
+                              height: 12vw;
+                              overflow: auto;
+                              font-size: 2.5vw;
+                              line-height: 4vw;
+                              padding: 0 1.2vw;
+                          }
+                          .institution{
+                              color: rgba(112, 117, 122, 0.9);
+                              font-size: 2.3vw;
+                              // margin-top: 1vh;
+                              padding-right: 0.5vw;
+                          }
+                      }
+                  }
+                  .sortList:nth-child(2n){
+                    margin-right: 0;
+                  }
+              }
+          }
+      }
+  }
+}
+@media screen and (max-width:700px) {
     .press{
         height: calc(100% - 7.8%);
         overflow-y: auto;

@@ -92,7 +92,82 @@
        .curson:hover{text-decoration: underline;}
       }
 }
-@media screen and (max-width:900px) {
+@media screen and (min-width:700px) and (max-width:900px) {
+    .press{
+        height: calc(100% - 7.8%);
+        overflow-y: auto;
+        font-family: Roboto;
+        overflow-x: hidden;
+        padding: 0 5vw;
+        .title{
+            color: rgba(32, 33, 36, 1);
+            font-size: 4.3vw;
+            font-weight: bold;
+            margin-top: 3vh;
+        }
+        .mediaList{
+            margin-top: 2vh;
+            display: flex;
+            flex-wrap: wrap;
+            .media-item{
+                border: 1px solid rgba(166, 166, 166, 0.5);
+                box-shadow: 0px 2px 6px 2px rgba(166, 166, 166, 0.2);
+                border-radius: 6px;
+                width: 47%;
+                height: 22vw;
+                margin-right: 4%;
+                margin-bottom: 3vh;
+                display: flex;
+                .left{
+                    flex-basis: 32%;
+                    position: relative;
+                    overflow: hidden;
+                    .circle{
+                        position:absolute;
+                        width: 8vw;
+                        left: 1.8vw;
+                        bottom: 15vw;
+                        height: 8vw;
+                        border-radius:100%;
+                        background-color: rgba(253, 194, 16, 1);
+                        img{
+                            width: 4vw;
+                            height: 4vw;
+                            position: absolute;
+                            left: 2vw;
+                            top: 2vw;
+                        }
+                    }
+                    .blue{
+                        background-color: rgba(2, 182, 205, 1);
+                    }
+                }
+                .right{
+                    flex: 1;
+                    padding: 0.5vh 1.7vw 1vh 0;
+                    overflow: auto;
+                    .year{
+                        color: rgba(255, 195, 0, 1);
+                        font-size: 3.0vw;
+                    }
+                    .blue1{
+                        color: rgba(2, 182, 205, 1)
+                    }
+                    .text{
+                        color: rgba(32, 33, 36, 1);
+                        font-size: 2.5vw;
+                        // margin-top: 1vw;
+                        line-height: 3.7vw;
+                    }
+                }
+            }
+            .media-item:nth-child(2n){
+                margin-right: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:700px) {
     .press{
         height: calc(100% - 7.8%);
         overflow-y: auto;

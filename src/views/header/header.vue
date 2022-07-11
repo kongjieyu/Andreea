@@ -19,7 +19,13 @@
                         <div>Video/Podcasts</div>
                     </div> -->
                 </ul>
-                <div class="listIcon" >
+                <div class="moreItem" v-if="hiddenItemsOut.length>0">
+                    <span>...</span>
+                    <ul class="item-ul">
+                        <li v-for="(item,index) in hiddenItemsOut"  @click="changeTab(item)" :key="index">{{item}}</li>
+                    </ul>
+                </div>
+                <div class="listIcon">
                     <img class="iconMore" :src="list" @click="openUl">
                     <ul class="list-ul" v-if="isShow">
                         <li v-for="(item,index) in navList"  @click="changeTab(item)" :key="index">{{item}}</li>
@@ -31,7 +37,7 @@
 
 <script setup lang="ts">
 import axios from "axios";
-import {onMounted, ref, nextTick} from "vue";
+import {onMounted, ref, nextTick, watchEffect} from "vue";
 import { useRouter} from 'vue-router'
 import list from '@/assets/image/list.svg'
 
@@ -75,22 +81,23 @@ const changeTab = (data:any) =>{
      isShow.value = false
 }
 //...显示
+const showMoreItem = ref(false)
+const hiddenItemsOut = ref([])
 const isNavIconShow = () => {
+    hiddenItemsOut.value = []
     let topNav = document.querySelector('#top-nav') as HTMLElement
     let height = topNav.scrollHeight
-    // let scrollHeight = topNav.scrollHeight
-    let width = topNav.scrollWidth
-    let siderNum = 70
-    // let relheight = scrollHeight - height
     if(height > 75) {
         const hiddenItems:any = []
         const menuItems = document.querySelectorAll('#top-nav .nav-item')
         setTimeout(() => {
             menuItems.forEach((item:any) => {
                 if(item.offsetTop > 0) {
-                    hiddenItems.push(item.innerHTML)
+                    let ele = item.querySelectorAll('span:first-child')[0].innerText 
+                    hiddenItems.push(ele)
                 }
             })
+            hiddenItemsOut.value = hiddenItems
         }, 100)
     }
 }
@@ -130,7 +137,6 @@ const mouseLeave =(e:any)=>{
     showBar.value = false
 // console.log('移出：', e,e.currentTarget.className);
 }
-
 onMounted(()=>{
     currentAtive.value = <any>router.currentRoute.value.name
     getList()
