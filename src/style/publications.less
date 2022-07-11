@@ -100,7 +100,62 @@
         .bookreview{padding: 6vh 4vw 0vh 6vw;font-size: 26px;font-weight: bold;}
       }
 }
-@media screen and (max-width:900px) {
+@media screen and (min-width:700px) and (max-width:900px) {
+    .publications{
+        font-family: Roboto;
+        height: calc(100% - 7.8%);
+        overflow-x: hidden;
+        padding: 0 5vw;
+        .bookreview{margin: 4vh 0 0 0;color: #ffc403;font-size: 4.8vw;}
+        .pub_ctn{
+            padding-top: 3vh;
+            border-bottom: 1px solid rgba(166, 166, 166, 0.7);
+            .year{
+                margin-bottom: 2vh;
+                color: rgba(255, 196, 3, 1);
+                font-size: 4.2vw;
+            }
+            .list{
+                font-size: 3.0vw;
+                color: rgba(32, 33, 36, 1);
+                line-height: 4.6vw;
+                :deep(.title){
+                  color: rgba(2, 182, 205, 1);
+                }
+                .articlesTitleUrl{
+                  :deep(.title:hover){
+                      color: rgba(2, 182, 205, 1);
+                      border-bottom: 1px solid;
+                      cursor: pointer;
+                    }
+                }
+                :deep(.pdf){
+                  color: #ffc300;
+                }
+                .pdfUrl{
+                  :deep(.pdf:hover){
+                      color: #ffc300;
+                      cursor: pointer;
+                      border-bottom: 1px solid;
+                  }
+                }
+                :deep(i){
+                }
+                .journalUrl{
+                  :deep(i:hover){
+                    cursor: pointer;
+                    border-bottom: 1px solid;
+                  }
+                }
+                .list-item{
+                  margin-bottom: 3vh;
+                }
+              }
+        }
+
+    }
+}    
+@media screen and (max-width:700px) {
     .publications{
         font-family: Roboto;
         height: calc(100% - 7.8%);
