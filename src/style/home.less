@@ -169,6 +169,15 @@
                 font-size: 22px;
                 color: #202124;
                 letter-spacing: 1px;
+                :deep(a){
+                color: #02b6cd;
+                text-decoration:none;
+                }   
+                :deep(a:hover){
+                cursor: pointer;
+                text-decoration: underline;
+                // color: #02b6cd;
+                }
             }
         }
         .divider {
@@ -209,7 +218,7 @@
                 display: flex;
                 align-items: flex-start;
                 color: #202124;
-                font-size: 24px;
+                font-size: 22px;
                 line-height: 38px;
                 margin-bottom: 0.8vw;
                 .circle {
@@ -220,7 +229,18 @@
                     margin-top: 14px;
                     margin-right: 24px;
                 }
-                .text {flex: 1;}
+                .text { 
+                    flex: 1;
+                    :deep(a){
+                    color: #02b6cd;
+                    text-decoration:none;
+                        }   
+                    :deep(a:hover){
+                            cursor: pointer;
+                            text-decoration: underline;
+                            // color: #02b6cd;
+                    }
+                }
             }
         }
         .btn-bottom {
@@ -545,6 +565,15 @@
                 font-size: 4.3vw;
                 color: #202124;
                 letter-spacing: 1px;
+                :deep(a){
+                color: #02b6cd;
+                text-decoration:none;
+                }   
+                :deep(a:hover){
+                cursor: pointer;
+                text-decoration: underline;
+                // color: #02b6cd;
+                }
             }
         }
         .divider {
@@ -570,21 +599,57 @@
                 // color: #02b6cd;
             }
         }
+        // .skill {
+        //     font-family: Roboto;
+        //     color: rgba(2, 182, 205, 1);
+        //     font-size: 4.3vw;
+        //     padding: 0px 10vw;
+        //     margin: 4vh 0 2vh 0;
+        //     text-align: center;
+        // }
+        // .skill-list{
+        //     padding: 0px 5vw;
+        //     text-align: center;
+        //     font-size: 4.3vw;
+        //     .skill-item{
+        //         margin-bottom: 1vh;
+        //         font-family: Roboto;
+                
+        //     }
+        // }
         .skill {
             font-family: Roboto;
             color: rgba(2, 182, 205, 1);
             font-size: 4.3vw;
             padding: 0px 10vw;
             margin: 4vh 0 2vh 0;
-            text-align: center;
+            text-align: left;
         }
         .skill-list{
-            padding: 0px 5vw;
-            text-align: center;
+            padding: 0px 10vw;
+            text-align: left;
             font-size: 4.3vw;
+            line-height: 7vw;
             .skill-item{
                 margin-bottom: 1vh;
                 font-family: Roboto;
+                display: flex;
+                .circle {
+                    width: 1.5vw;
+                    height: 1.5vw;
+                    margin-right: 16px;
+                    margin-top: 3vw;
+                    background: #02b6cd;
+                    border-radius: 50%;
+                }
+                .text {
+                    flex: 1;
+                    :deep(a){
+                        color: rgba(2, 182, 205, 1);
+                        text-decoration: none;
+                    }
+                }
+       
             }
         }
         .btn-bottom {
