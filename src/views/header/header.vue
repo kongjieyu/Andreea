@@ -19,12 +19,12 @@
                         <div>Video/Podcasts</div>
                     </div> -->
                 </ul>
-                <div class="moreItem" v-if="hiddenItemsOut.length>0">
+                <!-- <div class="moreItem" v-if="hiddenItemsOut.length>0">
                     <span>...</span>
                     <ul class="item-ul">
                         <li v-for="(item,index) in hiddenItemsOut"  @click="changeTab(item)" :key="index">{{item}}</li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="listIcon">
                     <img class="iconMore" :src="list" @click="openUl">
                     <ul class="list-ul" v-if="isShow">
@@ -104,48 +104,17 @@ const isNavIconShow = () => {
 const openUl = () =>{
     isShow.value = true
 }
-//判断数值区间
-const dataSection =(num:number)=>{
-        hiderSider.value = []
-        switch (true) {
-        // case num*2 > height && height > num: 
-        case 576>num&&num > 469:
-            hiderSider.value = ['Consultancy']; break
-        case 469>num&&num >378: 
-            hiderSider.value = ['Teaching','Consultancy']; break
-        case 378>num&&num > 278: 
-            hiderSider.value = ['Interviews','Teaching','Consultancy']; break
-        case 278>num&&num >231: 
-            hiderSider.value = ['Press','Interviews','Teaching','Consultancy']; break
-        case 117<num&&num < 231: 
-            hiderSider.value = ['Publications','Press','Interviews','Teaching','Consultancy']; break
-        case num==117: 
-            hiderSider.value = ['Books','Publications','Press','Interviews','Teaching','Consultancy']; break
-        // default: hiderSider.value =[]
-        
-}
-}
 //鼠标移入事件
 const showBar = ref(false)
-const mouseOver =(e:any)=>{
-    showBar.value = true
-// console.log('移入：', e,e.currentTarget.className);
-    // e.currentTarget.className = "xxx";
-}
-//鼠标移出事件
-const mouseLeave =(e:any)=>{
-    showBar.value = false
-// console.log('移出：', e,e.currentTarget.className);
-}
 onMounted(()=>{
     currentAtive.value = <any>router.currentRoute.value.name
     getList()
-    nextTick(() => {
-        isNavIconShow()
-    })
-    window.onresize = () => {
-        isNavIconShow()
-    }
+    // nextTick(() => {
+    //     isNavIconShow()
+    // })
+    // window.onresize = () => {
+    //     isNavIconShow()
+    // }
 })
 
 //document.querySelector('.nav').scrollHeight

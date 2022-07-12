@@ -1,8 +1,9 @@
 @media screen and (min-width:900px){
     .header{
         display: flex;
+        justify-content: space-between;
         .header-bg{
-            min-width: 560px;
+            min-width: 360px;
             text-align: left;
             img {
                 height: 70px;
@@ -11,9 +12,10 @@
             }
         }
         .nav {
-            margin-left: 4vw;
+            // margin-left: 4vw;
+            margin-right: 1vw;
             display: flex;
-            width:calc(100% - 560px);
+            // width:calc(100% - 560px);
             ul{
                 margin: 0;
                 padding: 0;
@@ -27,17 +29,22 @@
                 flex-basis: auto;
                 flex-grow: 1;
                 flex-shrink: 1;
-                overflow: hidden; 
-                flex-wrap: wrap;
+                // overflow-x: auto; 
+                // overflow-y: hidden;
+                // overflow: hidden;
+                // flex-wrap:wrap;
+                flex-wrap: nowrap;
                 height: 75px;
                 color: rgb(32, 33, 36);
-                font-size: 18px;
+                // font-size: 18px;
+                font-size: 1.3vw;
                 display: flex;
                 justify-content: space-between;
                 .nav-item{
                     cursor: pointer;
                     line-height: 72px;
-                    margin-right:20px;
+                    // margin-right:20px;
+                    margin-right: 1.5vw;
                 }
                 .nav-item:hover, .press-style ul li:hover{
                     color:rgba(2, 182, 205, 1);
@@ -172,7 +179,7 @@
                     position:absolute;
                     display: none;
                     top: 50px;
-                    right: -10px;
+                    right: 2px;
                     text-align: center;
                     background: rgb(240 240 240 / 88%);;
                     border: 1px solid rgba(166, 166, 166, 0.6);
