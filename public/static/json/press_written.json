@@ -19,7 +19,7 @@
             "date":"August 2017-present",
             "cover_url": "./static/image/Lippy_linguist.png",
             "operation": "Read here",
-            "link_url": "https://sciblogs.co.nz/lippy-linguist/"
+            "link_url": "https://ndhadeliver.natlib.govt.nz/webarchive/20220622093355/https://sciblogs.co.nz/category/science-and-society/"
         },
         {
             "text": "Guest story for the SpinOff on grammar <strong>Does Grammar Really Matter?</strong>.",
@@ -33,7 +33,7 @@
             "date":"April 2018",
             "cover_url": "./static/image/PechaKucha_talk.png",
             "operation": "Read here",
-            "link_url": "https://www.calude.net/andreea/2018_PechaKucha.jpg"
+            "link_url": "./static/image/2018_PechaKucha.jpg"
         },
         {
             "text": "NZ Royal Society blog piece 'Words As Windows into our Minds', for the 150-years NZRS celebrations promoting linguistics research, also archived on <a href='https://sciblogs.co.nz/infrequently-asked-questions/2017/07/06/words-windows-minds/' target='_blank'>SciBlogs</a>, July 2017.",
@@ -42,20 +42,7 @@
             "operation": "Read here",
             "link_url": "https://www.royalsociety.org.nz/150th-anniversary/past-and-future/words-as-windows-into-our-minds"
         },
-        {
-            "text": "\"Does Big Data Equal Big Problems?\" published in Fully (sic), 13 November 2015.",
-            "date":"November 2015",
-            "cover_url": "./static/image/Does_Big_Data_Equal_Big_Problems.png",
-            "operation": "Read here",
-            "link_url": "https://www.crikey.com.au/"
-        },
-        {
-            "text": "\"How to lose your North, be gone with a raft, and have a bird\" published in Fully (sic), 27 August 2015.",
-            "date":"August 2015",
-            "cover_url": "./static/image/writtenDefault.png",
-            "operation": "Read here",
-            "link_url": "https://www.crikey.com.au/"
-        },
+
         {
             "text": "Opinion Piece entitled 'Whose Words Are They Anyway' published in Waikato Times, 6 March 2013.",
             "date":"March 2013",
@@ -63,13 +50,7 @@
             "operation": "Read here",
             "link_url": "http://www.stuff.co.nz/waikato-times/life-style/8390290/Whose-words-are-they-anyway"
         },
-        {
-            "text": "Letter entitled 'Languages With Soul' published in the New Scientist, Vol. 185: p. 33, 5 March 2005.",
-            "date":"March 2005",
-            "cover_url": "./static/image/writtenDefault.png",
-            "operation": "Read here",
-            "link_url": "https://www.newscientist.com/article.ns/?id=mg18524890.500"
-        },
+
         {
             "text": "Book Review entitled \"A Beautiful Mind\" published in The New Zealand Listener , reviewing John Casti's 'Mathematical Mountaintops', 183, May 18-24, 2002.",
             "date":"May 2002",

@@ -83,10 +83,11 @@ const getList = () =>{
               }
               buffer3[j] = temp;
           }
-          buffer3.unshift({
-              year: 'UNDER REVIEW',
-              list: buffer1
-          })
+          buffer1.length > 0 && buffer3.unshift({
+                year: 'UNDER REVIEW',
+                list: buffer1
+            })
+
           dataList.value = buffer3
          // @ts-ignore
           const jq =  window.$
